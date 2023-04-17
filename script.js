@@ -78,7 +78,7 @@ $(document).ready(function () {
     });
 
     var type = new Typed(".typing__two", {
-        strings: ["Web Developer", "Web Designer", "Mobile App Developer"],
+        strings: ["Web Designer", "Web App Developer", "Mobile App Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
