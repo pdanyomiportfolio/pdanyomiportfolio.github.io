@@ -71,7 +71,7 @@ $(document).ready(function () {
 
     // Typed animating
     var type = new Typed(".typing", {
-        strings: ["Web Developer", "Web Designer", "Mobile App Developer"],
+        strings: ["Web Designer", "Web App Developer", "Mobile App Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
