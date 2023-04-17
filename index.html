@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en" class="overflow-x-hidden max-w-full">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Portfolio | Prince David Anyomi </title>
+
+        <meta name="description" content="Toronto based web desginer building custom website solutions that help your business grow. My work is conversion-focused, brand-accurate, and user-friendly.">
+        <meta property="og:title" content="Toronto Web Designer | Michael Mannucci Web Design">
+        <meta property="og:site_name" content="Michael Mannucci Web Design" />
+        <meta property="og:description" content="Toronto based web desginer building custom website solutions that help your business grow. My work is conversion-focused, brand-accurate, and user-friendly.">
+        <meta property="og:image" content="/assets/site/open-graph.png">
+        <meta property="og:image:alt" content="">
+        <meta property="og:locale" content="en_CA">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="/assets/site/open-graph.png">
+        <meta property="og:url" content="https://michaelmannucci.com">
+        <link rel="canonical" href="https://michaelmannucci.com">
+
+        <link rel="icon" href="/assets/site/favicon-32x32.png">
+        <link rel="icon" href="/assets/site/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/assets/site/webclip.png">
+        <meta name="theme-color" content="#34a1cd">
+        
+        <link rel="stylesheet" href="/css/tailwind.css?id=848ee72a6e80e18f3671cc0df21af609">
+    </head>
+    <body class="text-grey-900 overflow-x-hidden max-w-full">
+        <div>
+            <div class="py-8 hidden lg:block" data-aos="fade-down">
+    <div class="container flex justify-between items-center">
+        <a href="/" class="flex-grow text-4xl">👋</a>
+        <div class="flex gap-12 font-bold items-center">
+            <a href="/#services" class="link">Services</a>
+            <a href="/#portfolio" class="link">Portfolio</a>
+            <a href="/#testimonials" class="link">Testimonials</a>
+            <a href="/blog" class="link">Blog</a>
+            <a href="/#connect" class="button py-3 px-8 bg-grey-900">Connect</a>
+        </div>
+    </div>
+</div>
+            <div 
+    x-data="{ open : false }" 
+    x-data="{ animation: '' }"
+    x-init="
+    animation = lottie.loadAnimation({
+        container: btn,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: '/assets/site/burger-menu.json'
+    })">
+    <div class="py-10 absolute top-0 w-full lg:hidden z-50 transition-colors">
+        <div class="container flex justify-between items-center">
+            
+            <a href="/" class="flex-grow text-4xl">👋</a>
+    
+            
+            <div class="w-full h-full flex justify-end items-center">
+                <div class="w-10 h-10 cursor-pointer relative stroke-primary">
+                    <div 
+                        id="btn"
+                        class="w-10 h-10 cursor-pointer relative fill-current text-brandGreen-main" 
+                        @click="
+                            open = !open, 
+                            open ? (animation.setDirection(1), animation.setSpeed(1.5), animation.play()) : (animation.setDirection(-1), animation.setSpeed(2), animation.play())
+                        "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div 
+        class="absolute inset-0 z-20 bg-blue-300 overflow-scroll"
+        x-show="open"
+        x-cloak
+        x-transition.opacity.duration.500ms
+    >
+        <div class="h-28 bg-blue-300 fixed z-40 w-full"></div>
+        <nav class="mt-28 pb-12 container grid grid-cols-1 divide-y divide-purple-500 divide-opacity-50">
+    
+            <a href="/#services" class="block font-semibold text-3xl py-8" @click="open = !open, open ? (animation.setDirection(1), animation.setSpeed(1.5), animation.play()) : (animation.setDirection(-1), animation.setSpeed(2), animation.play())">Services</a>
+    
+            <a href="/#portfolio" class="block font-semibold text-3xl py-8" @click="open = !open, open ? (animation.setDirection(1), animation.setSpeed(1.5), animation.play()) : (animation.setDirection(-1), animation.setSpeed(2), animation.play())">Portfolio</a>
+    
+            <a href="/#testimonials" class="block font-semibold text-3xl py-8" @click="open = !open, open ? (animation.setDirection(1), animation.setSpeed(1.5), animation.play()) : (animation.setDirection(-1), animation.setSpeed(2), animation.play())">Testimonials</a>
+
+            <a href="/blog" class="block font-semibold text-3xl py-8" @click="open = !open, open ? (animation.setDirection(1), animation.setSpeed(1.5), animation.play()) : (animation.setDirection(-1), animation.setSpeed(2), animation.play())">Blog</a>
+    
+            <a href="/#connect" class="block font-semibold text-3xl py-8" @click="open = !open, open ? (animation.setDirection(1), animation.setSpeed(1.5), animation.play()) : (animation.setDirection(-1), animation.setSpeed(2), animation.play())">Connect</a>
+            
+        </nav>
+    </div>
+</div>
+            <div id="mobile-menu" class="absolute inset-0 z-20 bg-blue-300 overflow-scroll hidden">
+    <div class="h-28 bg-blue-300 fixed z-40 w-full"></div>
+    <nav class="mt-28 pb-12 container grid grid-cols-1 divide-y divide-purple-500 divide-opacity-50">
+
+        <a href="/#services" class="block font-semibold text-3xl py-8">Services</a>
+
+        <a href="/#portfolio" class="block font-semibold text-3xl py-8">Portfolio</a>
+
+        <a href="/#testimonials" class="block font-semibold text-3xl py-8">Testimonials</a>
+
+        <a href="/blog" class="block font-semibold text-3xl py-8">Blog</a>
+
+        <a href="/#connect" class="block font-semibold text-3xl py-8">Connect</a>
+        
+    </nav>
+</div>
+            <header>
+    <div class="container grid lg:grid-cols-2 gap-12 items-center pt-36 lg:pt-28 pb-24 lg:pb-48">
+        <div>
+            <div class="flex mb-2" data-aos="fade-up">
+                <img src="https://d33wubrfki0l68.cloudfront.net/6e15034b71981e7553ddb6ba5acdf9b64c152af1/2e27b/assets/site/location.svg" alt="web designers in etobicoke" class="w-3.5 mr-2" width="512" height="512">
+                <h1 class="text-base text-grey-600">Toronto Web Designer</h1>
+            </div>
+            <h2 class="title mb-6" data-aos="fade-up" data-aos-once="true">I Build Custom <span class="text-blue-900">Website Solutions</span> That Help Your <span class="text-blue-900">Business Grow</span></h2>
+            <p data-aos="fade-up" data-aos-delay="200" data-aos-once="true">I help you increase conversion and performance in every possible way.</p>
+            <div class="flex gap-4 text-white mt-8" data-aos="fade-up" data-aos-delay="400" data-aos-offset="-200" data-aos-once="true">
+                <a href="#portfolio" class="button w-44">See my work</a>
+                <a href="mailto:contact@michaelmannucci.com?subject=Wanted to chat about..." class="button w-44 bg-blue-900 hover:shadow-blue-900/20">Start a project</a>
+            </div>
+        </div>
+        <div class="relative">
+            <script>
+        window.addEventListener('load', function () {
+            window.responsiveResizeObserver = new ResizeObserver((entries) => {
+                entries.forEach(entry => {
+                    const imgWidth = entry.target.getBoundingClientRect().width;
+                    entry.target.parentNode.querySelectorAll('source').forEach((source) => {
+                        source.sizes = Math.ceil(imgWidth / window.innerWidth * 100) + 'vw';
+                    });
+                });
+            });
+
+            document.querySelectorAll('[data-statamic-responsive-images]').forEach(responsiveImage => {
+                responsiveResizeObserver.onload = null;
+                responsiveResizeObserver.observe(responsiveImage);
+            });
+        });
+    </script>
+
+<picture>
+    
+    <img
+        class="hidden lg:block absolute top-8 left-0 z-10" data-aos="fade" data-aos-delay="800" data-aos-once="1"
+        src="https://d33wubrfki0l68.cloudfront.net/42b55b52cc435b03f1437a0fa12f87f0fc01daf4/0f7ea/assets/site/purple-dots.svg"
+                alt="purple-dots.svg"
+                 width="149"          height="93"             >
+</picture>
+
+            <div class="w-full pb-[100%] h-0 bg-blue-500 lg:rounded-tr-none overflow-hidden relative rounded-full" data-aos="fade-left" data-aos-delay="400" data-aos-once="true">
+                <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDI2Ij4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMjYiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBYUNBWUFBQURXbTE0L0FBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFFcjBsRVFWUklpYldWMjQ0YzFSV0d2N1ZQZGVxZTd2RWM4QkNNaE1FS0poRWFCRUpjNUNZWGVZVzhSSlRYeVN2bEprcENKQ1N1RUVnSnlHSHNhZmQwZDFYdFl5NnFQVVFJS2QyUkthbXFWTnA3ci85YmgxcExTaWtjZTEyY0xzZW1kczRvb1FDcENMc3hmSFh6L1BtN3g5cVNZd0hlZnVPc25NNDdHbWZSQXJtQWo1bk42Rmx0dGp4N3ZwSmo3SmxqTnI5emRWRWVYNTN6eG5KT1Z6a1VFR05rTndadWR6MjFFUzVQVDhxL2I5Y0hReHdGOFBEMGhDZHZYdkxXK1lKWjVaQlNHTDFudmV1NXVhc3dXdEg3Y0l6SjR3Q3V6cFk4dW56QUw4NFd6SnlGa3VtSGdkWVpSQW03RUhtMjJod0ZvQTdkK05tSFQzOXpkWEhHZzVNWjg2YWlxU3kxTlZUV1VqbEw0eHh0WFZFNSsvTUFYSnpNLzNpK21ORldEcTBVcFJSU0xxU2NTVGtqQXM1bzJ1cG5BckNhMzNkN3I1VUlwUlJpU3NTWVNDa0RVR25Gc3ExNSt2YkRnMyt0Z3dHVWdGRUtyUVFsVEJGSWlaQWlPU1drWkt4V2RKVmxWbGVIbWoyOENFUEtEQ0V3K0loa0ljVkVQM3I2d1RONGovZUJGQk9sZ0J6UkNRNEd1T3VIK1AzTHJYRUNyVldRRStQbzJmWUQyMkdnOTVGdFNHeEh6eGp6NndlNHZkdVpmOTNja3Z6STNHbWNncFFpL2VDNUd3WTJZMkRqRTZzK3NCdjk2d2Q0dVJ2NDdzV2FPSTRzYThQTWFaVEFHQUxyM2NETGZ1VGxtRmdQZ2UxNGVETTZHS0Qza2R2dFFFbVI0RFcrdGppajhTRnkxM3RXdTVIMUVObUV4QmpUNndmSW9oaHpZVDE0Y2hSOENGUkdFMU5pM1krc2U4OG1aTVlzb0E1dnNBZFB3OGRQZmxtYzFaUXdvS09uVWdVamtITm01eU83a0FnSVJUdEVXMUFLRVVVcCtaL2ZmdlAxby84YjRQMFByOHZzWklFeGhqRDI3TllyeHMyYUVrYklpWnd6SVJVaUlNWmhtNDZxN2FqcUZ1c3FSS1ppelNtVFl2ekRsNS8vOVUvL0UrQ0RqejdwdS9tOGJyc1o4OFdTcW1tSXdYTzN1bVgxL1RQV0wyNFlkeHVpOStTY3lBVlFCbHZYMUxNVDJ2a0pUVGZiUXppTU5TaFIrSEZrdmJybDlzWHptNisrK01jRi9LZ0dyai85N0crTEIrZlg3ejM5RmUxOGpxdHFySFA3dzhNMEExS2s1SVJXQ2ovMHBCZ29BTnBpNjVhbTdXamFHVTAzbzI1YVhGWGpLb2ZXaHB3ejdjbUNkbjV5L3Y3MUorWEx2LzlGekgrTHYvWDQzZXZUODB2cXBzVlloOVlhVVJvb2FLTXBPZS9GaGFhdThmMldHRHdwRjlBRzdScXFycVB1NWpSTmg2dHJiRlZoclVXYlNlcVZYV010bi83MmQrVWVZUEhnN1ByMC9KTDVZb2syRmxFS0VVRkVvQlRFVmRCTlU4OWFTOWZOOFAyVzRFZFN5bVJSaUhXWXFxR3FtL3ZvYVdQUlJxT1VvaFJRdXVDcW12bnlsTGFiVFNsNGV2MXhlZkxCcjZtYkZtMHRTdW1wUUppYXVvaWd0TVpXTmFJVTFscEMyeEtHbnVoSFlrcGsxQlFGNjlEV1lvemRSM0J5QkpnaVdBb0lhSzBRN0FSd2VmVW04K1VweHJwSjlLY21pZ2hLRyt3ZXhsaUhyV3BpQ09TY0tBaW9LV1ZLcVh2aFVxYkpXWEltNTB4T2lSd1RLU1ZLenVnL2YvNUZPYnQ4eUd5eHdEcUhLQVg3MEF0eXp5R3ZZcUlFSlFwUk1vbHBNM2xzSzZ4MUdEdDVydmNRMDFYSU9aTlNJc1ZJaklFVUl5bGx6S1BINzZHTlFSczdlVjNLSkNmM3F0TzdnRWpaQjJjU0Z3MUtaRnI3Z1hMeW1zbnI2YnVRU3liblJFcHgzeGNTdVJSTTAzV1V5ZjZlRldULy9LbXhMdmQ3OWlDaWZqaDl2MWdndjRJcFA3cW5WSlFwTi93SDE4VlZ0SHU2SjBRQUFBQUFTVVZPUks1Q1lJST0iIC8+Cjwvc3ZnPgo= 32w, https://d33wubrfki0l68.cloudfront.net/40ec5ee46b3f896b0ddf1f2e6a63103a5384cc0a/7b9aa/img/containers/assets/site/michael.png/ed16411baf40e496410e1f7173a19de6.webp 214w, https://d33wubrfki0l68.cloudfront.net/299ecc9e6a1fc3e56d0c0f1f561e7580acbae070/a34b7/img/containers/assets/site/michael.png/b42093a6a60501cf802391ed2eeb2057.webp 256w, https://d33wubrfki0l68.cloudfront.net/fe9265cf5a333702156cb90ed714137dc47681bd/bec5e/img/containers/assets/site/michael.png/0f2274f4ce9c9a3105172bfbdc48d2a4.webp 306w, https://d33wubrfki0l68.cloudfront.net/259a6f03ad0e6ab36272cd8fdca2cb39a4ac3b25/55f58/img/containers/assets/site/michael.png/907eac7a9cfabb1e0935231802c7837f.webp 366w, https://d33wubrfki0l68.cloudfront.net/8b0c2969bb3f9d58ceea73763f3b10944710ad62/cb202/img/containers/assets/site/michael.png/b449f8b093f7dc5c310df3ada678236f.webp 437w, https://d33wubrfki0l68.cloudfront.net/2c5a572eacfa5657c2d58a6ab5ec18956cb8c168/3f17b/img/containers/assets/site/michael.png/d91333b59739a06d2e43d5d602492049.webp 522w, https://d33wubrfki0l68.cloudfront.net/827c984eb2bb35d306479ecb42aee9559dd01400/67413/img/containers/assets/site/michael.png/7a24463eb390accaf8406c1cd859a0f1.webp 624w, https://d33wubrfki0l68.cloudfront.net/d530a47809a8b75ce3ffe61a52157f43d0893f0c/735b8/img/containers/assets/site/michael.png/44c2ae15e464c772b5d26df63b8de3f1.webp 747w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDI2Ij4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMjYiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBYUNBWUFBQURXbTE0L0FBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFFcjBsRVFWUklpYldWMjQ0YzFSV0d2N1ZQZGVxZTd2RWM4QkNNaE1FS0poRWFCRUpjNUNZWGVZVzhSSlRYeVN2bEprcENKQ1N1RUVnSnlHSHNhZmQwZDFYdFl5NnFQVVFJS2QyUkthbXFWTnA3ci85YmgxcExTaWtjZTEyY0xzZW1kczRvb1FDcENMc3hmSFh6L1BtN3g5cVNZd0hlZnVPc25NNDdHbWZSQXJtQWo1bk42Rmx0dGp4N3ZwSmo3SmxqTnI5emRWRWVYNTN6eG5KT1Z6a1VFR05rTndadWR6MjFFUzVQVDhxL2I5Y0hReHdGOFBEMGhDZHZYdkxXK1lKWjVaQlNHTDFudmV1NXVhc3dXdEg3Y0l6SjR3Q3V6cFk4dW56QUw4NFd6SnlGa3VtSGdkWVpSQW03RUhtMjJod0ZvQTdkK05tSFQzOXpkWEhHZzVNWjg2YWlxU3kxTlZUV1VqbEw0eHh0WFZFNSsvTUFYSnpNLzNpK21ORldEcTBVcFJSU0xxU2NTVGtqQXM1bzJ1cG5BckNhMzNkN3I1VUlwUlJpU3NTWVNDa0RVR25Gc3ExNSt2YkRnMyt0Z3dHVWdGRUtyUVFsVEJGSWlaQWlPU1drWkt4V2RKVmxWbGVIbWoyOENFUEtEQ0V3K0loa0ljVkVQM3I2d1RONGovZUJGQk9sZ0J6UkNRNEd1T3VIK1AzTHJYRUNyVldRRStQbzJmWUQyMkdnOTVGdFNHeEh6eGp6NndlNHZkdVpmOTNja3Z6STNHbWNncFFpL2VDNUd3WTJZMkRqRTZzK3NCdjk2d2Q0dVJ2NDdzV2FPSTRzYThQTWFaVEFHQUxyM2NETGZ1VGxtRmdQZ2UxNGVETTZHS0Qza2R2dFFFbVI0RFcrdGppajhTRnkxM3RXdTVIMUVObUV4QmpUNndmSW9oaHpZVDE0Y2hSOENGUkdFMU5pM1krc2U4OG1aTVlzb0E1dnNBZFB3OGRQZmxtYzFaUXdvS09uVWdVamtITm01eU83a0FnSVJUdEVXMUFLRVVVcCtaL2ZmdlAxby84YjRQMFByOHZzWklFeGhqRDI3TllyeHMyYUVrYklpWnd6SVJVaUlNWmhtNDZxN2FqcUZ1c3FSS1ppelNtVFl2ekRsNS8vOVUvL0UrQ0RqejdwdS9tOGJyc1o4OFdTcW1tSXdYTzN1bVgxL1RQV0wyNFlkeHVpOStTY3lBVlFCbHZYMUxNVDJ2a0pUVGZiUXppTU5TaFIrSEZrdmJybDlzWHptNisrK01jRi9LZ0dyai85N0crTEIrZlg3ejM5RmUxOGpxdHFySFA3dzhNMEExS2s1SVJXQ2ovMHBCZ29BTnBpNjVhbTdXamFHVTAzbzI1YVhGWGpLb2ZXaHB3ejdjbUNkbjV5L3Y3MUorWEx2LzlGekgrTHYvWDQzZXZUODB2cXBzVlloOVlhVVJvb2FLTXBPZS9GaGFhdThmMldHRHdwRjlBRzdScXFycVB1NWpSTmg2dHJiRlZoclVXYlNlcVZYV010bi83MmQrVWVZUEhnN1ByMC9KTDVZb2syRmxFS0VVRkVvQlRFVmRCTlU4OWFTOWZOOFAyVzRFZFN5bVJSaUhXWXFxR3FtL3ZvYVdQUlJxT1VvaFJRdXVDcW12bnlsTGFiVFNsNGV2MXhlZkxCcjZtYkZtMHRTdW1wUUppYXVvaWd0TVpXTmFJVTFscEMyeEtHbnVoSFlrcGsxQlFGNjlEV1lvemRSM0J5QkpnaVdBb0lhSzBRN0FSd2VmVW04K1VweHJwSjlLY21pZ2hLRyt3ZXhsaUhyV3BpQ09TY0tBaW9LV1ZLcVh2aFVxYkpXWEltNTB4T2lSd1RLU1ZLenVnL2YvNUZPYnQ4eUd5eHdEcUhLQVg3MEF0eXp5R3ZZcUlFSlFwUk1vbHBNM2xzSzZ4MUdEdDVydmNRMDFYSU9aTlNJc1ZJaklFVUl5bGx6S1BINzZHTlFSczdlVjNLSkNmM3F0TzdnRWpaQjJjU0Z3MUtaRnI3Z1hMeW1zbnI2YnVRU3liblJFcHgzeGNTdVJSTTAzV1V5ZjZlRldULy9LbXhMdmQ3OWlDaWZqaDl2MWdndjRJcFA3cW5WSlFwTi93SDE4VlZ0SHU2SjBRQUFBQUFTVVZPUks1Q1lJST0iIC8+Cjwvc3ZnPgo= 32w, https://d33wubrfki0l68.cloudfront.net/f2b1d6f8015a055576c8f0e74be8f3778cad31e0/cf4ef/img/containers/assets/site/michael.png/3237f7d43af3e337c76970912051abc6.png 214w, https://d33wubrfki0l68.cloudfront.net/508e5cf6913eaf2f065993ea0cd29368c759c0f3/50752/img/containers/assets/site/michael.png/e8a3ab7d4f065e7db0790b3aacd33a65.png 256w, https://d33wubrfki0l68.cloudfront.net/dcef6e41856788b2901330474f3899b0932fb395/c60d6/img/containers/assets/site/michael.png/ddbc722122105019c07fa6ee65473bef.png 306w, https://d33wubrfki0l68.cloudfront.net/6cac42c76596a2a2c8ad1fbec1c0d4d383d54bdb/fe57f/img/containers/assets/site/michael.png/9ce17b8237ecc4434ae68d5839a5a600.png 366w, https://d33wubrfki0l68.cloudfront.net/b180daeb4c8a3c5f3199110d14ab8ad99535f563/6e184/img/containers/assets/site/michael.png/7130af278f0f6c3e914e869ae83015cb.png 437w, https://d33wubrfki0l68.cloudfront.net/aaf15907c874e37d98222435108d614e0d2ef77d/7f809/img/containers/assets/site/michael.png/96b8005a66d0ec48ab665cb0a72dbe3e.png 522w, https://d33wubrfki0l68.cloudfront.net/7d02fee49b0729e108264876978df5f0baa57c2a/58d2a/img/containers/assets/site/michael.png/6a3844eb4042b10a1ba827dee012e734.png 624w, https://d33wubrfki0l68.cloudfront.net/40d489a2652286be769adaa477a0323c222c9363/b8e6a/img/containers/assets/site/michael.png/47b0a0979b76983425d2557ab9d58aba.png 747w"
+             sizes="1px"         >
+    
+    <img
+        width="747" height="613" class="absolute h-full inset-0 object-cover"
+        src="https://d33wubrfki0l68.cloudfront.net/assets/site/64f5664d7864bb0b15c389f8ab2b5c5f892b5edb/michael.png"
+                alt="michael.png"
+                 width="747"          height="613"                 data-statamic-responsive-images
+            >
+</picture>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="w-full bg-purple-300 h-px mb-8 sm:mb-28"></div>
+
+<div id="services" class="container py-16">
+    <h2 class="title text-center mb-12" data-aos="fade-up">My Services</h2>
+
+    <div class="grid sm:grid-cols-2 gap-8">
+
+        
+        <div data-aos="fade-up">
+            <div class="p-8 sm:p-12 rounded-2xl shadow-3xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-3xl transition-shadow duration-500">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-4">
+                    <div class="bg-blue-500 p-4 rounded-2xl"><picture>
+    
+    <img
+        class="w-8"
+        src="https://d33wubrfki0l68.cloudfront.net/5cb8d43b8b1aa9f101e03eb8ee60256b5b692011/77ecf/assets/site/dev.svg"
+                alt="dev.svg"
+                 width="48"          height="48"             >
+</picture>
+</div>
+                    <h3 class="text-2xl font-bold">Web Design & Development</h3>
+                </div>
+                <p><b>I don't just design websites.</b> I build high-performing, beautiful websites that are conversion-focused, brand-accurate, and user-friendly.</p>
+            </div>
+        </div>
+
+        
+        <div data-aos="fade-up">
+            <div class="p-8 sm:p-12 rounded-2xl shadow-3xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-3xl transition-shadow duration-500">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-4">
+                    <div class="bg-yellow-300 p-4 rounded-2xl"><picture>
+    
+    <img
+        class="w-8"
+        src="https://d33wubrfki0l68.cloudfront.net/0de1524cc6e6e00d74033964afe06f6abbf535b9/8eebf/assets/site/seo.svg"
+                alt="seo.svg"
+                 width="59.5"          height="59.5"             >
+</picture>
+</div>
+                    <h3 class="text-2xl font-bold">SEO</h3>
+                </div>
+                <p><b>A greater audience.</b> A high converting website won't be effective if no one visits it. Ranking on Google is essential to getting new clients in the door.</p>
+            </div>
+        </div>
+
+        
+        <div data-aos="fade-up">
+            <div class="p-8 sm:p-12 rounded-2xl shadow-3xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-3xl transition-shadow duration-500">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-4">
+                    <div class="bg-red-300 p-4 rounded-2xl"><picture>
+    
+    <img
+        class="w-8"
+        src="https://d33wubrfki0l68.cloudfront.net/7d53e157b675f7fa9bc5b7ba168893353dbcf633/03f20/assets/site/branding.svg"
+                alt="branding.svg"
+                 width="50"          height="48"             >
+</picture>
+</div>
+                    <h3 class="text-2xl font-bold">Graphic & Branding</h3>
+                </div>
+                <p><b>Catch the eye.</b> In addition to web services, I can produce branding and marketing resources for both print and digital applications.</p>
+            </div>
+        </div>
+
+        
+        <div data-aos="fade-up">
+            <div class="p-8 sm:p-12 rounded-2xl shadow-3xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-3xl transition-shadow duration-500">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-4">
+                    <div class="bg-purple-300 p-4 rounded-2xl"><picture>
+    
+    <img
+        class="w-8"
+        src="https://d33wubrfki0l68.cloudfront.net/fc1f13a6bd0db94af77699d93cf6c1a2e6b42a69/00a1e/assets/site/photo.svg"
+                alt="photo.svg"
+                 width="48"          height="48"             >
+</picture>
+</div>
+                    <h3 class="text-2xl font-bold">Photo & Video</h3>
+                </div>
+                <p><b>Show, don't tell.</b> Photos and videos are effective at telling the story of who you are and what you do, establishing trust, and building relationships with potential customers.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="portfolio" class="pt-24 pb-16 relative">
+    <div class="bg-red-300 rounded-l-[3.5rem] absolute top-0 right-0 w-[70%] py-56" data-aos="fade-left"></div>
+    <div class="container relative z-50">
+        <div data-aos="fade-up">
+            <h3 class="font-bold uppercase tracking-widest text-grey-600">Portfolio</h3>
+            <h2 class="title">Recent Work</h2>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-8 mt-24" data-aos="fade-up">
+
+            <a href="https://canada1carsales.ca/" target="_blank" class="relative">
+    <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFGelVsRVFWUlloWjJYM1hMYnlCR0Z2KzZaQVVDS29peHJyVlEyUDd0YmxjdTgveU1sMlkxdFdXVlNFb0NaNlZ6MEFDUmxPeHNIVlJCWUZERjkrdlRwTXozeTc3LzkzUmg2YkxmRHJuY3c5QkFpcUNJaWlBb2lDaUpZakxDN3d2NXdULzM1Sit6bnYyTDM5OWp1Q21JRUViNzNpdlE5N0hid3d4MzI5aGEyVzBqSkFRUUZEYUFDb2tnTTJMQ0J0MitRTnpldzJYaGdkWUQvSDREZEZkemRZWC81TS9iakg3SDlIcnFFaElDRmdDd0JnanFvbEJ6a2ZnL1gxOUIzaUFaTTlic0NTd1ByQU43ZXdwOStoRjkrd201dmZkRVFrQkE5d3hDUTRDeVlxb1BxRW5RZEVoTVd2RnpuREpqWi93aGdHR0IzaGR6ZUl1L2VJVC9jUWQ4akliVEFpcXhsRUVRRWEwOWUzMThKOEhzZ0lpRjROa09QYkxmbzFSWFc5eXZsSm9xcGZKSGgrU0p5K2NWWGc3MW01TVNBU2d2aWdhb0twZ0lJMVF5b1VEMkl0TXdYTUd1V0M0ai9rdlczR0luVzBOVlN5SE1tVHhQRjJtTENSVUFWUVZVSklSQkNRRlVSMFl2Z2NvcjR1enB3QnN5d1dzazVNNDR2ak1jbjVqaXVkWmJtQjZwSzBFQktrUmdUc09qQjNDY1dxaytjZjBIOTh2bWNqWWhCWFFGTVBEMC9NNmxRT2MvV256RW1SSVFRd2plenM3UEFaa1p0Q1ZhekZkUTVpTGlncm1hVVVzZzVNNHRRQlVJSUxhQWlaOVF2b0pieUxFRnJyWmdacFZacXJaUlNLRG1UUzZHVWdsWERzUFU5RlhFQUlwenFxMG9NaW9rUVk2THJFbDNYa2JxT0xpVlN1eGNOc0lEUG1UbG41bmxlNzJtYS9EblA1SnlwcFRTd2dxcWdva1FYbDJmWGR3a2JCbUp6djVnaVhkYzdnQlNKTVY0SWNNbTZsTUxMeXd1SDQ1SGo4Y2p6OHpQak9ES09FOU04TVUwVE9XZEtMcFRHa2dDcVNsd0VsbUpFdW82d0dTaGRCeUVRVS9JN2VuQlZSVVhiQm5XaWZwNW5Eb2NEN3o5ODRNT0hqM3orL0pseGZQSE1sekxrc3BiWXkxRmRBMEpUZWd4bzF4R0hnZHIzRUNNYUFob0NRZFZiRG5IRnREYVZKclk4enh5Zm5uajQrTUJ2di8zSzQrTWo0elM1RUZ0SHVOQUw4enlUR3pBekk0cTB4ZFM5WDJQQ0dnT3I4ZFNLbFFxWWcxQ0JFSHlUV3RSZmpWSTl5OXF5Q3hyUUpsWXpvNVJLaXBFcFJrck8xRnFKelcwY1JOQzJjRUJVd1F6SkJmSU04OXhBNEp0UjMzbkpSRWdwc2QxdWVYUHpocHd6bTgyR1VtcHJZMTE5b3RiWFpURHZncVV2VGRxV3E4M1Zhb1ZwUkk1UGNIeUNjWFNuNjN0a3QwT3VkK2pRTTNRZE56ZDdWSVhkN29weEhLbTFyaWJtYnRsOG9iWG80Z3R4c2R2VjIwVXdwSmxEUmFZWk9SemgweWM0UGlGbXlIYnI3SFNKMEhkSTh2bWg3M3YyKzcxbmQrNTZaM3BaN3BNVG5qdFQyM0pSOFFDQW1qa1RPY004Z1lITU01S3pBOFFOUzJNa3BjUXdESmN1K1dxM2ZPMmdEdUNjQmRWMXVwRnFTTmNoMnczTTF4QWpZZ2JEZ0d5M1NKZDhWbWp2cVRqd3I1bDA2NTh2TGkrQi8wR2xqVjRobkY2MEh0Z2pYUWZ6N0YrbWhBeERtd25Ea3RwRnhzc09lWjZ4dkdMbXNnVElhakFYZUVPQXplQURpN1YvYVFNWmd1dWxsRk43dGdIVkdoc3J1RnI5YWRiSzdMODdLd0VyY3JNS3RXTHpETlc4SlZNODlmNnluWnBocGNBaXVtVmVqUEdTZ1ZxeG5LRVVCOUFTRUEwbkJwYkx6TEJTc1R6RE9HRldrUmpkSThUSGRKRVd2RllzRjJ5ZVBNTVFXWngxTVNtckZTc0ZtMTNFVnMzbnpaUWdMaVZvMURqYXRuOFhmeEdySUlyV2lwaWh2cUd1WUdzdDFGSmFSd2hhSzFRRFpWMXpXY3V5L3c0YXF5SkU2aW00MUFwV1Z3KzNvRDRQcXJqOVc4V3FJc3ZpME13cmVNM2JOaTVub2x6V3FrMDdKaURpVHpBaXBjQ2NZWnhnSExGcGNrbGFiY0pxSWkzRmExOXJXNmg1UlZDUTVQNnc3QkZOSTdaMGhZcWZNVVM4RStSMDBJazJqdGp4aUQwK1loOGYxaGFUaXhieVJaWVRrc1hZYXBoYU4wU1dUYzA3WUJYVXFucUpvZEZ3K3AyWDRIREVIaDZ3Zi95VDJuWEk0ZUE5cm5veDRVS2pNRVpzTThEdUdydmVZZHVOZ3hFOW1WQXA2OHhuNTYxNFBwcTM3eU9IQS9ZK1VGTkN4Z241MTYvSTBEY1ZDeGMrcXNFUExUZDc3UDRkVnUvYkdZSVQ5ZDg2RzN4dGlCVWg4dklDbndNVzMyTnpSajU5Y3RkVHZRd3U0Z0MyRyt6cERvc0J1N3JDbHRQMDJTSGxlNjcvQUJVaUtaM1NvN0YxQUFBQUFFbEZUa1N1UW1DQyIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/1cfdb284731762d7f3edc12abb3b3ef9c9f2f4b2/787ad/img/containers/assets/work/canada1.png/1f063db7c28f6edf92469fedabca9916.webp 425w, https://d33wubrfki0l68.cloudfront.net/e95e8e5e038a98be8ad1f8462c96b5300357cb44/eef4a/img/containers/assets/work/canada1.png/be47637a071973ad051b897f576d194a.webp 508w, https://d33wubrfki0l68.cloudfront.net/39e35a5a65927c01ff8a39219540d360b3f37321/828cf/img/containers/assets/work/canada1.png/3cce25c24906d512796de0b18587480f.webp 607w, https://d33wubrfki0l68.cloudfront.net/bf0c08d9cfa9140001db76165e2c719e12447289/b3e8c/img/containers/assets/work/canada1.png/6f0b2dbeef93809c5ddd3b8fc730a90e.webp 726w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFGelVsRVFWUlloWjJYM1hMYnlCR0Z2KzZaQVVDS29peHJyVlEyUDd0YmxjdTgveU1sMlkxdFdXVlNFb0NaNlZ6MEFDUmxPeHNIVlJCWUZERjkrdlRwTXozeTc3LzkzUmg2YkxmRHJuY3c5QkFpcUNJaWlBb2lDaUpZakxDN3d2NXdULzM1Sit6bnYyTDM5OWp1Q21JRUViNzNpdlE5N0hid3d4MzI5aGEyVzBqSkFRUUZEYUFDb2tnTTJMQ0J0MitRTnpldzJYaGdkWUQvSDREZEZkemRZWC81TS9iakg3SDlIcnFFaElDRmdDd0JnanFvbEJ6a2ZnL1gxOUIzaUFaTTlic0NTd1ByQU43ZXdwOStoRjkrd201dmZkRVFrQkE5d3hDUTRDeVlxb1BxRW5RZEVoTVd2RnpuREpqWi93aGdHR0IzaGR6ZUl1L2VJVC9jUWQ4akliVEFpcXhsRUVRRWEwOWUzMThKOEhzZ0lpRjROa09QYkxmbzFSWFc5eXZsSm9xcGZKSGgrU0p5K2NWWGc3MW01TVNBU2d2aWdhb0twZ0lJMVF5b1VEMkl0TXdYTUd1V0M0ai9rdlczR0luVzBOVlN5SE1tVHhQRjJtTENSVUFWUVZVSklSQkNRRlVSMFl2Z2NvcjR1enB3QnN5d1dzazVNNDR2ak1jbjVqaXVkWmJtQjZwSzBFQktrUmdUc09qQjNDY1dxaytjZjBIOTh2bWNqWWhCWFFGTVBEMC9NNmxRT2MvV256RW1SSVFRd2plenM3UEFaa1p0Q1ZhekZkUTVpTGlncm1hVVVzZzVNNHRRQlVJSUxhQWlaOVF2b0pieUxFRnJyWmdacFZacXJaUlNLRG1UUzZHVWdsWERzUFU5RlhFQUlwenFxMG9NaW9rUVk2THJFbDNYa2JxT0xpVlN1eGNOc0lEUG1UbG41bmxlNzJtYS9EblA1SnlwcFRTd2dxcWdva1FYbDJmWGR3a2JCbUp6djVnaVhkYzdnQlNKTVY0SWNNbTZsTUxMeXd1SDQ1SGo4Y2p6OHpQak9ES09FOU04TVUwVE9XZEtMcFRHa2dDcVNsd0VsbUpFdW82d0dTaGRCeUVRVS9JN2VuQlZSVVhiQm5XaWZwNW5Eb2NEN3o5ODRNT0hqM3orL0pseGZQSE1sekxrc3BiWXkxRmRBMEpUZWd4bzF4R0hnZHIzRUNNYUFob0NRZFZiRG5IRnREYVZKclk4enh5Zm5uajQrTUJ2di8zSzQrTWo0elM1RUZ0SHVOQUw4enlUR3pBekk0cTB4ZFM5WDJQQ0dnT3I4ZFNLbFFxWWcxQ0JFSHlUV3RSZmpWSTl5OXF5Q3hyUUpsWXpvNVJLaXBFcFJrck8xRnFKelcwY1JOQzJjRUJVd1F6SkJmSU04OXhBNEp0UjMzbkpSRWdwc2QxdWVYUHpocHd6bTgyR1VtcHJZMTE5b3RiWFpURHZncVV2VGRxV3E4M1Zhb1ZwUkk1UGNIeUNjWFNuNjN0a3QwT3VkK2pRTTNRZE56ZDdWSVhkN29weEhLbTFyaWJtYnRsOG9iWG80Z3R4c2R2VjIwVXdwSmxEUmFZWk9SemgweWM0UGlGbXlIYnI3SFNKMEhkSTh2bWg3M3YyKzcxbmQrNTZaM3BaN3BNVG5qdFQyM0pSOFFDQW1qa1RPY004Z1lITU01S3pBOFFOUzJNa3BjUXdESmN1K1dxM2ZPMmdEdUNjQmRWMXVwRnFTTmNoMnczTTF4QWpZZ2JEZ0d5M1NKZDhWbWp2cVRqd3I1bDA2NTh2TGkrQi8wR2xqVjRobkY2MEh0Z2pYUWZ6N0YrbWhBeERtd25Ea3RwRnhzc09lWjZ4dkdMbXNnVElhakFYZUVPQXplQURpN1YvYVFNWmd1dWxsRk43dGdIVkdoc3J1RnI5YWRiSzdMODdLd0VyY3JNS3RXTHpETlc4SlZNODlmNnluWnBocGNBaXVtVmVqUEdTZ1ZxeG5LRVVCOUFTRUEwbkJwYkx6TEJTc1R6RE9HRldrUmpkSThUSGRKRVd2RllzRjJ5ZVBNTVFXWngxTVNtckZTc0ZtMTNFVnMzbnpaUWdMaVZvMURqYXRuOFhmeEdySUlyV2lwaWh2cUd1WUdzdDFGSmFSd2hhSzFRRFpWMXpXY3V5L3c0YXF5SkU2aW00MUFwV1Z3KzNvRDRQcXJqOVc4V3FJc3ZpME13cmVNM2JOaTVub2x6V3FrMDdKaURpVHpBaXBjQ2NZWnhnSExGcGNrbGFiY0pxSWkzRmExOXJXNmg1UlZDUTVQNnc3QkZOSTdaMGhZcWZNVVM4RStSMDBJazJqdGp4aUQwK1loOGYxaGFUaXhieVJaWVRrc1hZYXBoYU4wU1dUYzA3WUJYVXFucUpvZEZ3K3AyWDRIREVIaDZ3Zi95VDJuWEk0ZUE5cm5veDRVS2pNRVpzTThEdUdydmVZZHVOZ3hFOW1WQXA2OHhuNTYxNFBwcTM3eU9IQS9ZK1VGTkN4Z241MTYvSTBEY1ZDeGMrcXNFUExUZDc3UDRkVnUvYkdZSVQ5ZDg2RzN4dGlCVWg4dklDbndNVzMyTnpSajU5Y3RkVHZRd3U0Z0MyRyt6cERvc0J1N3JDbHRQMDJTSGxlNjcvQUJVaUtaM1NvN0YxQUFBQUFFbEZUa1N1UW1DQyIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/03cf8618ad48eee2bcd187eebc40f2363f5bf510/eb958/img/containers/assets/work/canada1.png/2fd79a8c171b426c59e692b35d44923d.png 425w, https://d33wubrfki0l68.cloudfront.net/520f87064628d09155ea9fcc48791c9d41c3938e/f5a38/img/containers/assets/work/canada1.png/ece0a1e1e4d9c048c167b8d78e460285.png 508w, https://d33wubrfki0l68.cloudfront.net/00a1e299cc527f94dc5468bd55cf520b7893145c/6a4fa/img/containers/assets/work/canada1.png/29fbc7a85192083d2abc6593fa4f061f.png 607w, https://d33wubrfki0l68.cloudfront.net/91afda18cf94334599ea5667eb66b336fad90b95/f7177/img/containers/assets/work/canada1.png/9f2b13d828734cfa8b872a0f86f30e61.png 726w"
+             sizes="1px"         >
+    
+    <img
+        alt="Canada 1 Car Sales website" width="726" height="726" class="rounded-3xl"
+        src="https://d33wubrfki0l68.cloudfront.net/a0c81d3e3b67a60d5f5a17b63af17ec4ccec63b3/4ecf1/assets/work/canada1.png"
+                 width="726"          height="726"                 data-statamic-responsive-images
+            >
+</picture>
+
+    <div class="absolute inset-0 flex justify-center items-center overflow-hidden rounded-3xl opacity-0 hover:opacity-100 duration-500 group">
+        <div class="absolute inset-0 bg-grey-700 opacity-80"></div>
+        <div class="z-10 flex flex-col justify-center items-center translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+            <picture>
+    
+    <img
+        alt="open car sales website" class="w-5 mb-1"
+        src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg"
+                 width="448"          height="512"             >
+</picture>
+
+            <p class="text-white">canada1carsales.ca</p>
+        </div>
+    </div>
+</a>
+
+            <a href="https://latherandsteel.ca/" target="_blank" class="relative">
+    <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFKTGtsRVFWUlloV1dYK1lybVNIYkZmN0ZKQ3UzZmxrczFOVDBZZ3czekJETXZNUFpielhPYVliREI3cTdNck16OFZtMnh6Ui9LN0M2d1FBaUVGUGZlRStmY09GZjg1MS8vSXdrcFNTbXh1SVZwSEJuSGljVTVJZ0psTWt4aDBWbU9rQklSSTBZSnRuM0x2LzdMSC9uVHYvOGJQMy85Q1NVRlQwKy84SSsvL3hmLyt6Ly96ZW45bmVBV1VrZ3NQakE1anc4UkpTV0ZWcFNaSWRNS0xhVUVJVWdwSVlWQVNZblJDbElrSVpCYVlaUkNhWTJRRW1KRWlrU0tpV1ZaR0tlUmVWa29iVTZlNTFSVlJWVlZ1R25BRVlreUlnVUFPQmxSVW1IempOcm1GRWFqeTlJU1FzUTVSd3dlcGRTYW1VZ0lJWkhHb0RLTk5BcWtJc2FJU0pFUUk4TXdjanFkdVZ5djVKbWh0Q1hiN1pieGNpSXRJeU9KNEJ4T1NvUVFLQitSU21PTG5MSzBsSG1HUGh3T2pPUEk1WG9oQkk5V0FtazB5aWlVRkVobFFFdVNFZ1FoaUVJU0k0UVF1VjV2dkw2KzBYY3RwUzJvYkU3ZmI1aHZGL3cwSUlKbnZxMW9hUy93UWlCSXhKUUlFWHdFL2ZYclR4eVBKeURoblNNRmg1Q0NUQXEwV2pQM1NlQmlJSkNJQ1dKS0xNRnp1U1NlWDc1VGxaYXFMTWtmRHRpeW90dnNHQzVYcHR2SU5NdzROek12bnNsNWtwQ0VKSWhJSmgvUlAvLzhsYkswZU85WWxobGlRS1JJcmlSYXJwVUdGd2plc1FSd1NSQlRJc1hBTW8yazZDa3lRMU5YTkhYSnBtdW82NWFtMjNCNlB4RTRjNXM5cDl2TTdEeEloVStTS0EwT2hmN3B5eGVNTWN6enpETFBDQ0M2QlNYNDJPc0Y3ejN6TkRNdWdTV3VLS1FVa1NTU1gzakxOYTk5eldIYjBWU1czSlkwM1FiYkhFbjZqY0hCZFhRc0laRGxnbHdxZEY2UWxSYTkzKzhRUWpDT0k5TTRFV05rdUY0SjNoSGNza3BvbmhtR2dXRjJ1QkNKZ0FDMEFpOGM4MkFZTG04TWwxZmMzR0hibnJwcHFidWV2S3hCR2FLUVNCVXA4b3kyS2RsdU8rcTZRWmZXNHJ1V3U4T0IyM1ZnbWliYzRsaVdoZGw1eG5saG5HZkdjV0thWjBKTUNDa3dXcEJwaGRXU1VqbE12QktuSTJFNkk1b0thM1BhdnFQdE8rcTJacDV2Q0JSZFU3RHZTM1pkUmRuVWFCODhXbXVhcG1hNzNYQTZuVGlmVGx4VCtpMlJWYUlPRVFPS2hGR1NLdGUwbFdiYkdQYU5vTWtjT2w0STB6dGhhZEJGUjlzMkhBNDd6cWRYVkJvUmZxS3BjamFscHM0RmhZcm85L2NqU2ltME5yUk5UZGUxdkwrVlhNNG5wR0FOS0tFd0NpTWpXZ25LUXRQVkdac21ZOVBrOUUxR1d5UjBISEREa1hsb1VhYWdLalB1RGx2bTRaNkNHVGVleUxYQTZvU0tNemlCL3I5ZmZxV3VLa3ByS2F4bHUrazVIemVNMXd0aEhoRmh4dUNvc29RVWhqeVQxS1docXpLNk9xT3hHcHRyTWczSlQ0elhJeXF2RUxva0wzczJtNWJvN2luRXpQVk5FdHlFa2dLaUo3Z1o5WmUvL1BsdndRZTAwZVJaaGxLU0ZEekJMZUFkV2dTc1NiUldzV2t5OW4zQm9iZnNXa3RiWmRoY1k3UWtBWXVQakV0azloQ0ZJY3N0aFMyeGVZWlJBaVVTUW9BUUVxUkdLclVpTUU4eldtdU0wVmhyMmU5MytIbEF4WW1iY2NRNW9ZVWgwNUJua2l6VGFDVlJVcEJJK0pDWVhPQTJPeWJ2a1JlNGhSeVIxVHdVRlhYYnI2UTFpdU5yenUxMlkzR2VGRUcvdkx3UXZDZlBNNnd0Mkc1NjJyWWhMbnRVR0xpcWlUQUZWTkpvRlZGS0lJUWdKdkFCRnA4WTVzaGw4Qnh2QzdjcElreGdUSmE4MmROdjcraTZEYmJJMFVvaHBRTDVTanhmbU9kbEpXSHdBV01NMWxxS1BLT3BTL3ErUS9ndE9WZm15d0llU0o2VUVpNGtKaGNaNThCMUNwd0h6K20yY0xvdGpITkVaeEpkVGx5SEdlY1QwbVNVUllhVUVyZDRycmVKZUxveXpRdjZlRHd5VHpNQWVaNVJsUVZGYmloc1FkdjFzSnlSWVdBZUZ2d1NtWjFqbUFPWHdYTWVIS2ZCY3hrRDE4a3pMWkdJcEpJWlNoZG9rNk5OaHNseXNxS0VCSm05SUpSaDhaSGJPS0ZQeHlPRHZ1Rzl3MmhGWFpYVVZVbTJYYnVZclh2bThjSXdEdHlXaWZQTmM3ck9ISytPOCtDNXpvSFpKWHlVU0pWVGx4VzczWTc3aDBjT2h6dmFycU1vU3JLOElNV0lLVXBVVnBDa0ppU0pQcDh2S0NsWjNJSldpcWFwMlhRZFZXbXBiWTRwZTJSeFp1Yk1jVHp6L2VSNE84MmNCc2U0UkVLVUNKVmhTMHZUTnV6M2V4NGZIL25ESDc3eTlldFh0dHNkWlZsaGpDYkZTR0ZyeXJxamFuckdjVUdQNDdnZXVkNWp0S1p0YXJhYkRWM1hrbWM3VkY2aGJJOVg3MXpjTzI4M2VMdEZwZ1dTeU1odFFkMDBiRFliN2c0SEhyODg4dVhMSXc4UER4ejJlN3F1b3lnczhzTVdsVTFEdjkwejNFYTBNbWp2UFFBcFJrN25NODh2TDJ4Ky9aWHRka3RWVmRSVmdiRTl4bTRnT3hMVURYUmNPNW90NmZ1ZS9YN1B3LzA5RDQ4UDNOL2ZjVGdjNlB1ZXVxckppd0tsRkpBUVFGVTFiSGQ3aUpHbXF0RXh4dFd2cGNRNERMeTl2ZlB0MnhPNzdaYSs3OGp6ZTNKYjAyNE9iTTRqNHdKNU9hSzFwdTg2N2c0SDdoL3V1YisvWTcvZnMrbDc2cWJCV292SmNwVFNDQ0VnSlVCUTJFalg5MmdwYVpzV25WSWlwWVFRZ3NVNXJ0Y3JMeS9mK2VVRGhhWnA2TnFXM2VGQVFGRFdEZE0waytjWm0zN0QvckRuc04vUjl6MU5YVk5ZUzVabGFKTWhsVVpLQ2F3TlMwcUZOaG0yck5CS1VWWFZtZ0JBU29rUTFyUC9kRHJ5OVBUTWJyZGp1OTFTMXpWZDEyTnR5ZDNoZ0ErQlBNdG9tb2EyNjJqcWVxM1lhSlJVU0NVUkgwNDRwZ1Fwc1VZQklSVTZXM3VDeVRNMFAxd3BKYngzM0c0RHI2K3ZmUHYxRzRmOW50MXVTOTkxZEYyTEVHc25OTWFRRjVhaVdDdFdVaUxFR295VWlERkNDaVErWDYwb1M3RW1JVFhJSkg5UFFIeWtIR05pWGhiTzV3dlBMeTk4ZTNyaS92NmV3MkhQcHRoUVdvdldCcVUxMmhpVU5raXBWcmNiQXlrRVlvb2tINGhFWWtyRW1CQUlwSkpvclZCQ3JDMFpnZjZzNkhjVXdIdlBPSTRjajBlZW4xLzQvdjA3WHg0ZjJPMTJLSzNKOHh5bE5Vb1poRkxyWUJNanNOcTFFQkloQnNKdi9wRVZjaWtnd1RxcHJMZjhNZmlQVzdFUzhzYmI2eHZQenkrOHZyMXh2ZDd3M3BNRTY1ajJNWEI4Smg0aStKQndQcks0Z1BPQkVNSXF3YzlDeGUvQlFTQS9EdWlQaFg1WXpBZkdjZVQ5ZU9UcCtabW5weGZlMzk4WmhvSGcxME1wc1Nvb3hvUVBBZWM5aS9NNEh6NDRrSkJTb3BSR2EvMGI3Sit6UlV5Z3lyTDgyeWNHYXpIaXQ3MUlmRUJuTXNxcXBHMWIyaytORzRPVXF4RUpNZUo5d0h0SENQRkRjdkxENm1tVVh1WDRPMXFSVC9uTFQyaUVrRDhnc0k1UDNudUdZZUQ5L1oyWGx4ZGV2bi9uZEw0d3p6TWhoSStGSWlsK1BOTktacVZXZ3Bvc1c0a3FWNkRUaHpwQ1dPOFk0Z2NKL3g4SFBqNE9FZWRXUWw0dUY2NlhLK000cmk0NWhsVmFQL3duaFVCSXViTDlzd2w5QlA1Yzg3UHZ3TXJIZndMcW9ncXF5YTdrSUFBQUFBQkpSVTVFcmtKZ2dnPT0iIC8+Cjwvc3ZnPgo= 32w, https://d33wubrfki0l68.cloudfront.net/3b37b1a9f939b5e44ed70018363545f7609a09f5/6439a/img/containers/assets/work/latherandsteel.png/8fe3d3ecb17d1b16bacc0fd65d618087.webp 208w, https://d33wubrfki0l68.cloudfront.net/04809fbaf80659a9739ddc2c524e9b85f672d901/02549/img/containers/assets/work/latherandsteel.png/61a0ce7c345c213bf02dcfb348c74c03.webp 249w, https://d33wubrfki0l68.cloudfront.net/ab41e5313563605f3a553c10eb3bb0241f130c25/b8748/img/containers/assets/work/latherandsteel.png/1368d24f178d36a124dc3eda484a36eb.webp 297w, https://d33wubrfki0l68.cloudfront.net/8c71edea54d526535699ab82721dc8088e69719d/c0373/img/containers/assets/work/latherandsteel.png/ffcbe398873e0479a4053e47f6e58cc8.webp 355w, https://d33wubrfki0l68.cloudfront.net/936fd5f44b5790d6cb5c8c99a813f178d58b54a6/af290/img/containers/assets/work/latherandsteel.png/a849aff1c83ebb2c0f5ffbc48d36f9dc.webp 425w, https://d33wubrfki0l68.cloudfront.net/802a59ba30470d539877da27f7f4264cb1fdfcb9/82ab4/img/containers/assets/work/latherandsteel.png/3301515ec206ab054e0a62ef68f1b6c5.webp 508w, https://d33wubrfki0l68.cloudfront.net/df592a669bac60c36762d8b163e1d011871204f6/b02c5/img/containers/assets/work/latherandsteel.png/a60dea00309cac03d92a109dcb8ff677.webp 607w, https://d33wubrfki0l68.cloudfront.net/ccc4d1656f2e739e7cd3fb3f8e89b7dca6b5c90f/3b4d3/img/containers/assets/work/latherandsteel.png/e6f361bfcc20bebcf788353a87c843be.webp 726w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFKTGtsRVFWUlloV1dYK1lybVNIYkZmN0ZKQ3UzZmxrczFOVDBZZ3czekJETXZNUFpielhPYVliREI3cTdNck16OFZtMnh6Ui9LN0M2d1FBaUVGUGZlRStmY09GZjg1MS8vSXdrcFNTbXh1SVZwSEJuSGljVTVJZ0psTWt4aDBWbU9rQklSSTBZSnRuM0x2LzdMSC9uVHYvOGJQMy85Q1NVRlQwKy84SSsvL3hmLyt6Ly96ZW45bmVBV1VrZ3NQakE1anc4UkpTV0ZWcFNaSWRNS0xhVUVJVWdwSVlWQVNZblJDbElrSVpCYVlaUkNhWTJRRW1KRWlrU0tpV1ZaR0tlUmVWa29iVTZlNTFSVlJWVlZ1R25BRVlreUlnVUFPQmxSVW1IempOcm1GRWFqeTlJU1FzUTVSd3dlcGRTYW1VZ0lJWkhHb0RLTk5BcWtJc2FJU0pFUUk4TXdjanFkdVZ5djVKbWh0Q1hiN1pieGNpSXRJeU9KNEJ4T1NvUVFLQitSU21PTG5MSzBsSG1HUGh3T2pPUEk1WG9oQkk5V0FtazB5aWlVRkVobFFFdVNFZ1FoaUVJU0k0UVF1VjV2dkw2KzBYY3RwUzJvYkU3ZmI1aHZGL3cwSUlKbnZxMW9hUy93UWlCSXhKUUlFWHdFL2ZYclR4eVBKeURoblNNRmg1Q0NUQXEwV2pQM1NlQmlJSkNJQ1dKS0xNRnp1U1NlWDc1VGxaYXFMTWtmRHRpeW90dnNHQzVYcHR2SU5NdzROek12bnNsNWtwQ0VKSWhJSmgvUlAvLzhsYkswZU85WWxobGlRS1JJcmlSYXJwVUdGd2plc1FSd1NSQlRJc1hBTW8yazZDa3lRMU5YTkhYSnBtdW82NWFtMjNCNlB4RTRjNXM5cDl2TTdEeEloVStTS0EwT2hmN3B5eGVNTWN6enpETFBDQ0M2QlNYNDJPc0Y3ejN6TkRNdWdTV3VLS1FVa1NTU1gzakxOYTk5eldIYjBWU1czSlkwM1FiYkhFbjZqY0hCZFhRc0laRGxnbHdxZEY2UWxSYTkzKzhRUWpDT0k5TTRFV05rdUY0SjNoSGNza3BvbmhtR2dXRjJ1QkNKZ0FDMEFpOGM4MkFZTG04TWwxZmMzR0hibnJwcHFidWV2S3hCR2FLUVNCVXA4b3kyS2RsdU8rcTZRWmZXNHJ1V3U4T0IyM1ZnbWliYzRsaVdoZGw1eG5saG5HZkdjV0thWjBKTUNDa3dXcEJwaGRXU1VqbE12QktuSTJFNkk1b0thM1BhdnFQdE8rcTJacDV2Q0JSZFU3RHZTM1pkUmRuVWFCODhXbXVhcG1hNzNYQTZuVGlmVGx4VCtpMlJWYUlPRVFPS2hGR1NLdGUwbFdiYkdQYU5vTWtjT2w0STB6dGhhZEJGUjlzMkhBNDd6cWRYVkJvUmZxS3BjamFscHM0RmhZcm85L2NqU2ltME5yUk5UZGUxdkwrVlhNNG5wR0FOS0tFd0NpTWpXZ25LUXRQVkdac21ZOVBrOUUxR1d5UjBISEREa1hsb1VhYWdLalB1RGx2bTRaNkNHVGVleUxYQTZvU0tNemlCL3I5ZmZxV3VLa3ByS2F4bHUrazVIemVNMXd0aEhoRmh4dUNvc29RVWhqeVQxS1docXpLNk9xT3hHcHRyTWczSlQ0elhJeXF2RUxva0wzczJtNWJvN2luRXpQVk5FdHlFa2dLaUo3Z1o5WmUvL1BsdndRZTAwZVJaaGxLU0ZEekJMZUFkV2dTc1NiUldzV2t5OW4zQm9iZnNXa3RiWmRoY1k3UWtBWXVQakV0azloQ0ZJY3N0aFMyeGVZWlJBaVVTUW9BUUVxUkdLclVpTUU4eldtdU0wVmhyMmU5MytIbEF4WW1iY2NRNW9ZVWgwNUJua2l6VGFDVlJVcEJJK0pDWVhPQTJPeWJ2a1JlNGhSeVIxVHdVRlhYYnI2UTFpdU5yenUxMlkzR2VGRUcvdkx3UXZDZlBNNnd0Mkc1NjJyWWhMbnRVR0xpcWlUQUZWTkpvRlZGS0lJUWdKdkFCRnA4WTVzaGw4Qnh2QzdjcElreGdUSmE4MmROdjcraTZEYmJJMFVvaHBRTDVTanhmbU9kbEpXSHdBV01NMWxxS1BLT3BTL3ErUS9ndE9WZm15d0llU0o2VUVpNGtKaGNaNThCMUNwd0h6K20yY0xvdGpITkVaeEpkVGx5SEdlY1QwbVNVUllhVUVyZDRycmVKZUxveXpRdjZlRHd5VHpNQWVaNVJsUVZGYmloc1FkdjFzSnlSWVdBZUZ2d1NtWjFqbUFPWHdYTWVIS2ZCY3hrRDE4a3pMWkdJcEpJWlNoZG9rNk5OaHNseXNxS0VCSm05SUpSaDhaSGJPS0ZQeHlPRHZ1Rzl3MmhGWFpYVVZVbTJYYnVZclh2bThjSXdEdHlXaWZQTmM3ck9ISytPOCtDNXpvSFpKWHlVU0pWVGx4VzczWTc3aDBjT2h6dmFycU1vU3JLOElNV0lLVXBVVnBDa0ppU0pQcDh2S0NsWjNJSldpcWFwMlhRZFZXbXBiWTRwZTJSeFp1Yk1jVHp6L2VSNE84MmNCc2U0UkVLVUNKVmhTMHZUTnV6M2V4NGZIL25ESDc3eTlldFh0dHNkWlZsaGpDYkZTR0ZyeXJxamFuckdjVUdQNDdnZXVkNWp0S1p0YXJhYkRWM1hrbWM3VkY2aGJJOVg3MXpjTzI4M2VMdEZwZ1dTeU1odFFkMDBiRFliN2c0SEhyODg4dVhMSXc4UER4ejJlN3F1b3lnczhzTVdsVTFEdjkwejNFYTBNbWp2UFFBcFJrN25NODh2TDJ4Ky9aWHRka3RWVmRSVmdiRTl4bTRnT3hMVURYUmNPNW90NmZ1ZS9YN1B3LzA5RDQ4UDNOL2ZjVGdjNlB1ZXVxckppd0tsRkpBUVFGVTFiSGQ3aUpHbXF0RXh4dFd2cGNRNERMeTl2ZlB0MnhPNzdaYSs3OGp6ZTNKYjAyNE9iTTRqNHdKNU9hSzFwdTg2N2c0SDdoL3V1YisvWTcvZnMrbDc2cWJCV292SmNwVFNDQ0VnSlVCUTJFalg5MmdwYVpzV25WSWlwWVFRZ3NVNXJ0Y3JMeS9mK2VVRGhhWnA2TnFXM2VGQVFGRFdEZE0waytjWm0zN0QvckRuc04vUjl6MU5YVk5ZUzVabGFKTWhsVVpLQ2F3TlMwcUZOaG0yck5CS1VWWFZtZ0JBU29rUTFyUC9kRHJ5OVBUTWJyZGp1OTFTMXpWZDEyTnR5ZDNoZ0ErQlBNdG9tb2EyNjJqcWVxM1lhSlJVU0NVUkgwNDRwZ1Fwc1VZQklSVTZXM3VDeVRNMFAxd3BKYngzM0c0RHI2K3ZmUHYxRzRmOW50MXVTOTkxZEYyTEVHc25OTWFRRjVhaVdDdFdVaUxFR295VWlERkNDaVErWDYwb1M3RW1JVFhJSkg5UFFIeWtIR05pWGhiTzV3dlBMeTk4ZTNyaS92NmV3MkhQcHRoUVdvdldCcVUxMmhpVU5raXBWcmNiQXlrRVlvb2tINGhFWWtyRW1CQUlwSkpvclZCQ3JDMFpnZjZzNkhjVXdIdlBPSTRjajBlZW4xLzQvdjA3WHg0ZjJPMTJLSzNKOHh5bE5Vb1poRkxyWUJNanNOcTFFQkloQnNKdi9wRVZjaWtnd1RxcHJMZjhNZmlQVzdFUzhzYmI2eHZQenkrOHZyMXh2ZDd3M3BNRTY1ajJNWEI4Smg0aStKQndQcks0Z1BPQkVNSXF3YzlDeGUvQlFTQS9EdWlQaFg1WXpBZkdjZVQ5ZU9UcCtabW5weGZlMzk4WmhvSGcxME1wc1Nvb3hvUVBBZWM5aS9NNEh6NDRrSkJTb3BSR2EvMGI3Sit6UlV5Z3lyTDgyeWNHYXpIaXQ3MUlmRUJuTXNxcXBHMWIyaytORzRPVXF4RUpNZUo5d0h0SENQRkRjdkxENm1tVVh1WDRPMXFSVC9uTFQyaUVrRDhnc0k1UDNudUdZZUQ5L1oyWGx4ZGV2bi9uZEw0d3p6TWhoSStGSWlsK1BOTktacVZXZ3Bvc1c0a3FWNkRUaHpwQ1dPOFk0Z2NKL3g4SFBqNE9FZWRXUWw0dUY2NlhLK000cmk0NWhsVmFQL3duaFVCSXViTDlzd2w5QlA1Yzg3UHZ3TXJIZndMcW9ncXF5YTdrSUFBQUFBQkpSVTVFcmtKZ2dnPT0iIC8+Cjwvc3ZnPgo= 32w, https://d33wubrfki0l68.cloudfront.net/3c912e39dc7b130e4bd0af6fa5de880c0d69ffb1/3d30b/img/containers/assets/work/latherandsteel.png/dd86226cd390e11ee2922e1b8738a893.png 208w, https://d33wubrfki0l68.cloudfront.net/93d8b0c0acdc2e5192b721c33ac144adc9ad2c49/6c6a7/img/containers/assets/work/latherandsteel.png/0d4933bf643e0bf7311d36152c464f55.png 249w, https://d33wubrfki0l68.cloudfront.net/465347ede93c54db099ea01d5c5924d468750d84/4e815/img/containers/assets/work/latherandsteel.png/8275ba100afa365f2ace36bf1ac3bef2.png 297w, https://d33wubrfki0l68.cloudfront.net/8949bc1697fc172761863aa036c6a5a8edddf93c/16c52/img/containers/assets/work/latherandsteel.png/2eb53908a4374e9157335ef32a4b3ab0.png 355w, https://d33wubrfki0l68.cloudfront.net/d7667860532ebcb7adef652d4e0e44aa21b323e9/ab936/img/containers/assets/work/latherandsteel.png/456000b9969f852547aff9ed42130e47.png 425w, https://d33wubrfki0l68.cloudfront.net/11bf8d6803aff5bc10a3de23b5497dc9b160013c/199bb/img/containers/assets/work/latherandsteel.png/6096c0da0aacb238963fa346964611e7.png 508w, https://d33wubrfki0l68.cloudfront.net/13793efc4b16f255d765840f396fad4c0a6f8e7c/21f63/img/containers/assets/work/latherandsteel.png/903285e8fdd2f94bbb662ce533009e32.png 607w, https://d33wubrfki0l68.cloudfront.net/50af9184319aa0a9860493d1089ea443f01a715e/c88a6/img/containers/assets/work/latherandsteel.png/11192cfe367c6a7ccbb97235884070a7.png 726w"
+             sizes="1px"         >
+    
+    <img
+        alt="Lather and Steel web design" width="726" height="726" class="rounded-3xl"
+        src="https://d33wubrfki0l68.cloudfront.net/cbae856c38b2dd19def61ad0a1897cfd1ab0f889/0ab09/assets/work/latherandsteel.png"
+                 width="726"          height="726"                 data-statamic-responsive-images
+            >
+</picture>
+
+    <div class="absolute inset-0 flex justify-center items-center overflow-hidden rounded-3xl opacity-0 hover:opacity-100 duration-500 group">
+        <div class="absolute inset-0 bg-grey-700 opacity-80"></div>
+        <div class="z-10 flex flex-col justify-center items-center translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+            <picture>
+    
+    <img
+        alt="open car sales website" class="w-5 mb-1"
+        src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg"
+                 width="448"          height="512"             >
+</picture>
+
+            <p class="text-white">latherandsteel.ca</p>
+        </div>
+    </div>
+</a>
+
+            <a href="https://westminsterchapel.ca/" target="_blank" class="relative">
+    <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFGcVVsRVFWUlloWTJYd1k0a1NSRkVuM2xFWmszUDdMQW54UDhmK1E0K0FrNklBM3NBQ1NTazNwbXV6QWczRGhHUlZUMnpnMmlwT3J1cU04UE56YzNOdmZUSFAvM1p2L3p6My96bGI3L3cxNy8vZzMvOTU1WGVPeVdDV29PUUFHZzl1WitkKzltNG40MmpkVnBQZWlacDR6UUFBaVFSUlVRRUVZSG1HZXNuMDlqR21EcWZ3QXBTZ1FrNkhrZWxpQkMyNllhT1NNYTlsckhBRXNZUUJodWtpU0lnQ2tTZ0VKSVFBMGpZcEFmZ0NocUhLRWhWbWdvbjBDMGloZWE1NmFBWkdvVytBa2VPNERaNHBuY2xKSWlDYWlGS29aUkFDaFlabm85VlFxQ0NvNUpSNmJIVDFPWlpBZys2TWsxYWRJbXVJRXRpR2NWVDhQV2prVEVsMEZZcDIwYXRHNlVVRkpvb0FVTkZBYVdnc2tHOXdkWXc5V0xUTnM0a1pWSkpLa0ZHbVlUOUx2bEZ3QUlRSlNqYlJ0bDN0bjJuMWcxRjhLeUlHaHBDaWJwUjk1MnlkMm9rdmxBbW1VbGtrdlB2VEkvckF1RDNGR2dDS0tWUXQ0M3RkbnNINEVvZnFKS0lLSlJhS0hWbjI1TXNmdERvaEJuYzJjbjBVSDRtbVpPaENRUUdIWkpRREFEYnRySHRPL3UrVTBvZCtwZ2RNRVE0YjQ0SVNva2hHSXdpS0JHRVRHQndZajlsdjFwcHNUQVp3WjRBZ2xJS3BkYkJRcTNFekQ2bkFNSFVkOVVUb0lGT05pSFlTckNGaU5VT1BBSS9pajkxTWtFQjB3TUtLa0ZFSGNuRlEzeXJhblcxUk5yME5MMG5yU1doUkppcW9kelFvNWMxOFFaUWd2Ry8yU2wyQXNNL0ZERThZNzRQaWFLckIwWWJlcHBDejZUMTVHeWQ0MndJMFh2SFdlZ3RxQ0VrUnRkcUJLMGhRa0V0UVZVQUpqTUdPQTBEU3NRMFNTSk1EVkUwa3JDaHBvYzF0cDZjWitNNEd2ZWpZWnNTd1hIR0RLU240QVBBVnNUTFZzbGI1Y05XaUNVd2c4T0VSN3JQV2drTEJXZ0tkakNRU1crUDdJL2pKS2VhQi9XWHdZMHJKa0pzSmJqdmxkWTN6cjFTUzdBbWdpSXBFU0NST1Vvc214SU1ObWVqMStWeVBUdXRkYzdXT0ZzZnRNMWl5YnI2Rm8wSGwwRDdIRWozTTZmZDZsSHpHSXBKR01QS0hsMjFTdmtRNFpobW1lT3czcWZKUEx6dEFZQUhnRUdyNklhM3hyQmE2ZktRSmRiUlBPczBFNHROUVYwSFAzVVVTNWlYdVR3RnZ5QkpOSXhsZW9PN1RlbWU5ZVV5R3JQYTFhd3BzRVI4dGVGQ28xVnZEYmQ0ZHJkdkowN0diTitFSmhGb0NNeFQ0VHlMejZOOXhTaUxSTXhNNmtwcDJhZm1BcUhaMnc5KzNnT3c5VENVaEJSRUdqME5zWHhTditRcjhPb2lXZE9LMGFYNG9pa2dpMHNmRndHekJMTWRCb3NHZCtoZ0piUHozakdBR1orSHNBTkw1R1M3TGtHVkVEV0NyUVI3ZmVycDFPT2dKd0M2NmpZQ1h3eDU3VDErOERacGlka1R5MDlsVWVzTStIR3ZmSDdaK0hyZlIzdGxUdlQrTVFCMHFmeTduZUJadG42VW1jbjIyaFByclJaK2V0bjUvZTllZUR0T1B1NkYrOUhvbVZjSjNrMFA1cVkwS1J6M3JHRGZiMGRQSFRocnRwNmJBRDU5Mk1qOGdQdG5mdG9McjE4L2NyWitCZjZ1L291QmI3ZGRqN3V2eHJIbjJKMVhGbE9yUU9OVlA5MHFleEdmOXVBUG4zZk9zOUZ6QVpnNG43SmEzUktsL0hEbHpqblllcDhUMW1NSFNFTlAwL0x4dnI1c2xaY3QrUGtXK0ZNbGV4OGo5WnMxYTFFL2dnZWxWRXJFWk9KQmFaOUQ3ZTA0T2M1RzYyUEQ3aFl0NGVqbWFPYVk0R290b3Fpd1NSUUxNdDRMN3VrM2NLMWE2M1Y1aG9RTnJUZmUzcExvQ1djak1LbENScVdGa0lLV1NUWnpwc2RPT0NaVVVCa2RnL1A3Vlh2aTBQU0pzWWpNOVVzZTVpTndOMjRuNTlzWDdxOWZPTHRSM1ZIZHNUYXlCNzJaKzJtK25oNWZUSlpBUXlJYzQ2VGZRTERxdmE1ZU5yaUVaY2plT0k4N2I3Kys4dXZySzJjM1pidFJieTlRZGpJTC9ZUjJ3SG42ZVJhTTdXYU15UjhILy9hejk1OU9BWjRIOS9zYlg3OTg0VXl6cFVrRlVaS2VRWjdnQnB5bUxnRnBXbVZJeEpQaC9DajRVMVdXSitPeHA5Tjc1emdPN3NlZE15R2pRamtKaTU1QU42VjNhbjdMUUl5bGNhMWV6NDcxL3dEb3JjME5LR210Y1I0SHB3VzFFMm5LL0M2aDdGU2YzTWpIV3I0QXhGb2Fmd1BBL3dKam0xeGZ1Mnl5ZDFwck5Jdm9TVThqajIvU2txbVJFSjMvQWlDZTlMbENwenByQUFBQUFFbEZUa1N1UW1DQyIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/10174bd404d9d94a9902b2cca76fc1a0d734f192/c4aec/img/containers/assets/work/westminster.png/ad073f17a8d61c470f9e8226479412d6.webp 246w, https://d33wubrfki0l68.cloudfront.net/ea75a2b5e01106da5705fcfb5b253485becea07b/203d4/img/containers/assets/work/westminster.png/c574599d7a90a1cf3cdbf1fbcf3964c5.webp 295w, https://d33wubrfki0l68.cloudfront.net/292062a2338b6f3ccd83bc65819a02a6b252ac74/042a6/img/containers/assets/work/westminster.png/4b3654300d55badeca62b52d96059193.webp 352w, https://d33wubrfki0l68.cloudfront.net/1f0534b0f81713ef3aad0b88088faa02a59ea89c/28ea6/img/containers/assets/work/westminster.png/aae4731a5da1f6edba310f62c39baa99.webp 421w, https://d33wubrfki0l68.cloudfront.net/317e6b66b468a42a43a8a270718ab9fe14a9920d/4b092/img/containers/assets/work/westminster.png/6233cc7580aab19e237077f913d5bcb1.webp 504w, https://d33wubrfki0l68.cloudfront.net/d9739144d8a1b7e21d0addf1f3ead65d65a206e4/4e558/img/containers/assets/work/westminster.png/65bd719ec9751e8f2426e20d377636c0.webp 602w, https://d33wubrfki0l68.cloudfront.net/84971ba4e04e787d58a7d531d2c15bbc92b231ed/4b527/img/containers/assets/work/westminster.png/f45676e47a8e7f46f9142da2cb3a251a.webp 720w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFGcVVsRVFWUlloWTJYd1k0a1NSRkVuM2xFWmszUDdMQW54UDhmK1E0K0FrNklBM3NBQ1NTazNwbXV6QWczRGhHUlZUMnpnMmlwT3J1cU04UE56YzNOdmZUSFAvM1p2L3p6My96bGI3L3cxNy8vZzMvOTU1WGVPeVdDV29PUUFHZzl1WitkKzltNG40MmpkVnBQZWlacDR6UUFBaVFSUlVRRUVZSG1HZXNuMDlqR21EcWZ3QXBTZ1FrNkhrZWxpQkMyNllhT1NNYTlsckhBRXNZUUJodWtpU0lnQ2tTZ0VKSVFBMGpZcEFmZ0NocUhLRWhWbWdvbjBDMGloZWE1NmFBWkdvVytBa2VPNERaNHBuY2xKSWlDYWlGS29aUkFDaFlabm85VlFxQ0NvNUpSNmJIVDFPWlpBZys2TWsxYWRJbXVJRXRpR2NWVDhQV2prVEVsMEZZcDIwYXRHNlVVRkpvb0FVTkZBYVdnc2tHOXdkWXc5V0xUTnM0a1pWSkpLa0ZHbVlUOUx2bEZ3QUlRSlNqYlJ0bDN0bjJuMWcxRjhLeUlHaHBDaWJwUjk1MnlkMm9rdmxBbW1VbGtrdlB2VEkvckF1RDNGR2dDS0tWUXQ0M3RkbnNINEVvZnFKS0lLSlJhS0hWbjI1TXNmdERvaEJuYzJjbjBVSDRtbVpPaENRUUdIWkpRREFEYnRySHRPL3UrVTBvZCtwZ2RNRVE0YjQ0SVNva2hHSXdpS0JHRVRHQndZajlsdjFwcHNUQVp3WjRBZ2xJS3BkYkJRcTNFekQ2bkFNSFVkOVVUb0lGT05pSFlTckNGaU5VT1BBSS9pajkxTWtFQjB3TUtLa0ZFSGNuRlEzeXJhblcxUk5yME5MMG5yU1doUkppcW9kelFvNWMxOFFaUWd2Ry8yU2wyQXNNL0ZERThZNzRQaWFLckIwWWJlcHBDejZUMTVHeWQ0MndJMFh2SFdlZ3RxQ0VrUnRkcUJLMGhRa0V0UVZVQUpqTUdPQTBEU3NRMFNTSk1EVkUwa3JDaHBvYzF0cDZjWitNNEd2ZWpZWnNTd1hIR0RLU240QVBBVnNUTFZzbGI1Y05XaUNVd2c4T0VSN3JQV2drTEJXZ0tkakNRU1crUDdJL2pKS2VhQi9XWHdZMHJKa0pzSmJqdmxkWTN6cjFTUzdBbWdpSXBFU0NST1Vvc214SU1ObWVqMStWeVBUdXRkYzdXT0ZzZnRNMWl5YnI2Rm8wSGwwRDdIRWozTTZmZDZsSHpHSXBKR01QS0hsMjFTdmtRNFpobW1lT3czcWZKUEx6dEFZQUhnRUdyNklhM3hyQmE2ZktRSmRiUlBPczBFNHROUVYwSFAzVVVTNWlYdVR3RnZ5QkpOSXhsZW9PN1RlbWU5ZVV5R3JQYTFhd3BzRVI4dGVGQ28xVnZEYmQ0ZHJkdkowN0diTitFSmhGb0NNeFQ0VHlMejZOOXhTaUxSTXhNNmtwcDJhZm1BcUhaMnc5KzNnT3c5VENVaEJSRUdqME5zWHhTditRcjhPb2lXZE9LMGFYNG9pa2dpMHNmRndHekJMTWRCb3NHZCtoZ0piUHozakdBR1orSHNBTkw1R1M3TGtHVkVEV0NyUVI3ZmVycDFPT2dKd0M2NmpZQ1h3eDU3VDErOERacGlka1R5MDlsVWVzTStIR3ZmSDdaK0hyZlIzdGxUdlQrTVFCMHFmeTduZUJadG42VW1jbjIyaFByclJaK2V0bjUvZTllZUR0T1B1NkYrOUhvbVZjSjNrMFA1cVkwS1J6M3JHRGZiMGRQSFRocnRwNmJBRDU5Mk1qOGdQdG5mdG9McjE4L2NyWitCZjZ1L291QmI3ZGRqN3V2eHJIbjJKMVhGbE9yUU9OVlA5MHFleEdmOXVBUG4zZk9zOUZ6QVpnNG43SmEzUktsL0hEbHpqblllcDhUMW1NSFNFTlAwL0x4dnI1c2xaY3QrUGtXK0ZNbGV4OGo5WnMxYTFFL2dnZWxWRXJFWk9KQmFaOUQ3ZTA0T2M1RzYyUEQ3aFl0NGVqbWFPYVk0R290b3Fpd1NSUUxNdDRMN3VrM2NLMWE2M1Y1aG9RTnJUZmUzcExvQ1djak1LbENScVdGa0lLV1NUWnpwc2RPT0NaVVVCa2RnL1A3Vlh2aTBQU0pzWWpNOVVzZTVpTndOMjRuNTlzWDdxOWZPTHRSM1ZIZHNUYXlCNzJaKzJtK25oNWZUSlpBUXlJYzQ2VGZRTERxdmE1ZU5yaUVaY2plT0k4N2I3Kys4dXZySzJjM1pidFJieTlRZGpJTC9ZUjJ3SG42ZVJhTTdXYU15UjhILy9hejk1OU9BWjRIOS9zYlg3OTg0VXl6cFVrRlVaS2VRWjdnQnB5bUxnRnBXbVZJeEpQaC9DajRVMVdXSitPeHA5Tjc1emdPN3NlZE15R2pRamtKaTU1QU42VjNhbjdMUUl5bGNhMWV6NDcxL3dEb3JjME5LR210Y1I0SHB3VzFFMm5LL0M2aDdGU2YzTWpIV3I0QXhGb2Fmd1BBL3dKam0xeGZ1Mnl5ZDFwck5Jdm9TVThqajIvU2txbVJFSjMvQWlDZTlMbENwenByQUFBQUFFbEZUa1N1UW1DQyIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/529a6ba2e887d5ec78d5dd04a8b3bd78cddae048/9da54/img/containers/assets/work/westminster.png/cfcfbda6421aa9da049462e0970d10b7.png 246w, https://d33wubrfki0l68.cloudfront.net/040e9dac1cc7f3f8f575a6c62ff324da8a73cec9/54b6a/img/containers/assets/work/westminster.png/bc5e5cfe2af8f64c746db54d532ed8f5.png 295w, https://d33wubrfki0l68.cloudfront.net/316137225c8238fb32f986f4d82e20dfe7ffa947/4e0d9/img/containers/assets/work/westminster.png/5b6a51f3f57fb270ea9953b0abb05dba.png 352w, https://d33wubrfki0l68.cloudfront.net/1348ec3d919057e9d97325f9170c41f5b153fb86/0639d/img/containers/assets/work/westminster.png/411a808074e4a85ad023ec7d937dd55d.png 421w, https://d33wubrfki0l68.cloudfront.net/2c8fbe1ffcd02a1cea83f2073c9ecea5899b8711/abec9/img/containers/assets/work/westminster.png/287776b507472766fcbe318096f59fcb.png 504w, https://d33wubrfki0l68.cloudfront.net/da75e8d5eabb34577be426b6a9a8c78d6b8c9564/4b88c/img/containers/assets/work/westminster.png/bcb3c31ec52b6600132dcf4362c1caae.png 602w, https://d33wubrfki0l68.cloudfront.net/6e0218305b04eac719c05e8b45f0bc0793895c0d/5d9d9/img/containers/assets/work/westminster.png/572bd059eec179f2db52ee97a61d5643.png 720w"
+             sizes="1px"         >
+    
+    <img
+        alt="Westminster Chapel church website" width="726" height="726" class="rounded-3xl"
+        src="https://d33wubrfki0l68.cloudfront.net/84f605ecc860b9280c3694e5457470dffa89ec79/5699b/assets/work/westminster.png"
+                 width="720"          height="720"                 data-statamic-responsive-images
+            >
+</picture>
+
+    <div class="absolute inset-0 flex justify-center items-center overflow-hidden rounded-3xl opacity-0 hover:opacity-100 duration-500 group">
+        <div class="absolute inset-0 bg-grey-700 opacity-80"></div>
+        <div class="z-10 flex flex-col justify-center items-center translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+            <picture>
+    
+    <img
+        alt="open car sales website" class="w-5 mb-1"
+        src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg"
+                 width="448"          height="512"             >
+</picture>
+
+            <p class="text-white">westminsterchapel.ca</p>
+        </div>
+    </div>
+</a>
+
+            <a href="https://ohsnaptoronto.ca/" target="_blank" class="relative">
+    <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFHT0VsRVFWUlloWFdYMFk0a09SRkZUNFR0ck1ySzdwbWRaWGZGaWdja1h2aDNmb1Z2QUNRUVFyQUNzYlBkMjVXVmRsd2U3TXlxbVdGVHNybzYwM1pjUjl5SXVMYTNQLzVCcEFLbkM4d2Y0UEkxbk45QlBvTWxBRkJBTkdnM2JMdENYYkdvUUdEY0gvSGxJd3h3U0JtbEFtbUNWTUFUbUpQdHgzOUFMbWgrQmdQS0dhWkxOMnIrK1c2LzhGZ2ZBNDMwMlhRYjMvZVBFV08reVBiRG4yQ2E0T2tEbU5DMHdPa1owbWtBc0w1bzM5VU1jKytua3QwTmpMa0JoSVRpanRiTSs4QTZMTFVEUkxiLy9oMU9KOUFOblJaWXZvTzZRcTdkeUZoa2lnN2FFMUF3czdFSjRJNHNJWE5DMEZxaldhQVFadUFra2lYY0UyNTdTSVVRMmRZWHBJcWRacmk5UVYxUjNhQlZrSGZIR2QyZ09aWUt1SU55NTRXRXpNRVRnUk1ocXB3YUZaa3dqR1FPbmpGM2hEQTFpSW9weU1TSXlXZkRJa0J0R0RaSXcvVm1RTDRUTTdwbndoTENDZFMzTUJDQm1XR1dDRXVFT1VaZzFMRytraUdEWmFCdmNDZkw0ZjNCbDhIbWc1aWRkTEkrUlZnZlp1QUpUNGJVNDJ5cGU2alAwZGhTd3dQcEJENGhLMkI5RW9OemgzMkJKR2dCZzhCRWdLSy9IeUV5ZDF5UU1NejZONFArM2cwM3d4U0RqUDNKVE05UUN1UVpySFJQYUJnZ1JoN3JPREhIY28xVUZaWlRkNDRaN3Q3ZllZVGllSmZjY1JQZWVraDNDRm5QMzBGS2NGNVFXUWpMS0VDMTBYRUVpaUJHV3ZsWTdOYTU2TG56d25QUEJqTUhCYkhqNWc3TVRaaDJIdG53d0xlLzY3RXNCYzN2aVhTaUJkUjFvOVlidFZicVZtbXRndnBtMloyY2phbGt5bm1pNVB4UWtEaUF0OVlHQ1EybFhnZk03SEVxbWU5L2oxU1JSSGlocHBtMWl1dDI1ZTF0WTcxZVdhOHJkZHRRQ0hlalpPYzhUVHd0WnhaN3drOFRya0V4UWJUV2E4RUE0TzRvaEJJUDBkOEJmUE5iYURlMHJVUnIxT2E4cmNISGw1V1BIMTk1ZmZtWjllM0tkbHRwdFdHSXFXU2VscG5hM3BOT2hTa3U1RkV0dFZkQzZjRk0vMStEekVkMERMS1dENml1YUgwbDFwWGFLdXQyNDZmWG4vblBqeDk1K2ZFbnJtOXZiTmVWYmR0UUJOT1UrZXI5TStXVWVmcnFtUmJ4U1p2WVQ3Mjd2NWZpUnppUEhzZ1RVaUF2eUN0Qlk0dmc3YmJ5OHZyS3g1Y1gxcC9mMk5hVmJiMFIwVGhOaGFra3R0dEd0TGlUalc0c0hVMTBsT0tVQnFDSDRBOGcrV2drT3pNSDFCYml0bTJzNjVWMXZkSnVOK3AyNnhuaGhrVXZXKzcyY0ZMRGZSUXNRRDZhc1hzZjNUMjlXSTAyblhkTU8wUGRIVStKbFBxaUhhc2hlc1k1NTVLWXA4eXBaRXBLQXdSM3hydmhnaGg2d2N6dXhXZVU5dDQvQm9ET2pnNGllV0lxaGZQNXpPVXlzMTVta2dKbHgxb2hZU3p6ekx0bFlablBsSkpKUGxMc0liN2lUa3FOdjBjSWJBZ1VJRk1yYXUzb2JPN0c2VFR4L1B6RWVyMlJnTnRsUnRzTmp5QmpYTTRuUG54NHo3SmNtS1p5ZUVxSUVDaDZLNDdScnMxc2dCZ2g5b3hjWFJIRjJ5dmFic1IyaFdpNFo2WnA0dDA3eDNDVytjeDJ2VUt0ZURTUzRGUUt5ekt6TEF1bEZNeUhXNGMzcFc0OEJnbER3aVYwaENoQkFpbVIydy8vUkZGN01Vb0pPeStVYWVKeW1Va3BzOHhuMm5hRFdyRUlYQ0s3Y1NxRjB6eVJjdXJsOS84OW4xY2QyenNxdlpaTDVQYTN2NEFGeWdtV0o4d1NYbVpLU1pnWnhVR2JvOVlCbVByYW5CelA2YTRSQnRGMmhwdU5QdjJRWFhhUTBIdWlTR1Q5OWMrUUhTNHp0Ri9CYVliNUdWSWU0cVNDYWxjeHhIRzBuaGQwZytZUHFYd240YjBhNnNFRHd6UHFvTEwvKzE4d1phalBNTS9vZGtOdEkyb2lXaU8ybGRpMmc2U0dvVkZVcER4RWlBOE9qR1owY09EZWpqVzRjVzlHSXdSV2EzZkhMc2NVMEJwNFJhMml0cUhZdWhqWlQyOUNTcU9lMjJIYzZJU0xJVlIyRCtpTDNuQi9zbDJldXdmT1M3OFRXTUxVaGFOSDY3cE9NZko2MUhrTVA0U3FIZXA4ei8wNzV4N2E3d0N5UjJUL25mbm1leWlwYytEeURzb0pNeU4xV1lRVEJESFNheGNqUStINDNjQU9VSHphakRxUVQ3V211SHNtNjllLzZkSm1LakJmWURwM0RkZXZHTGdDUlVNdGtCenpoR0c0UFdRQTQrQy9jUG9EcFBTSjhlNkJyNzhkc2p0aEpVUE9PMDF4amJOcEgrTnU0QmxMR2ZNTTVyMlNqNXVPanMwZnRDUkNDaUkrTHd5UWJYaytXR25lODlpT1dGcVg3SGxJWkRMa0U1UVQ1QW1sM0pXMDJWRE9BOFFYWW1Tb2JOTW5IZ0hJbnNzZW12RlJ3NTBHSkpTc3ErWFNiemVrQ2FhQ1NvR2MraTBYSDJYNGJ2RExaeGdmZDRNZFJONWorRUNsTWI4RHdCSXFoanozRTZkaE9JM2huNWJpWDhpMk80YlBvdkEvSEJpREkwQjJUeTRBQUFBQVNVVk9SSzVDWUlJPSIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/2aef586e52e8fee1d27a20450148017c46a00eaf/dbd09/img/containers/assets/work/ohsnap.png/8392666e7be8c8630e084935bec99381.webp 295w, https://d33wubrfki0l68.cloudfront.net/479fd6f3cf3573c8a4b8a4779b974997af96ff70/03b7a/img/containers/assets/work/ohsnap.png/452a086c66a5629f8432c0d8827c9f41.webp 352w, https://d33wubrfki0l68.cloudfront.net/2386895b57654db7f65e3b70a4f5b4d9e7d90754/0e98f/img/containers/assets/work/ohsnap.png/caed082c0ec90f8a01a890554536e4bb.webp 421w, https://d33wubrfki0l68.cloudfront.net/ef9dc2f678750dbabc85b311984958ac6a68fa66/a5d4b/img/containers/assets/work/ohsnap.png/acd2d240668280d8f8454df2625fd5d1.webp 503w, https://d33wubrfki0l68.cloudfront.net/3742608f4ab3e5c7a43ca5cceab650f46377e513/b73f6/img/containers/assets/work/ohsnap.png/33c6b77c3c6a45988451b7280e82b643.webp 602w, https://d33wubrfki0l68.cloudfront.net/8b4178c8f454f7918ec69782bd292d666b6197d3/64865/img/containers/assets/work/ohsnap.png/47f4821344a320f440b7a69ca958cfd1.webp 720w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFHT0VsRVFWUlloWFdYMFk0a09SRkZUNFR0ck1ySzdwbWRaWGZGaWdja1h2aDNmb1Z2QUNRUVFyQUNzYlBkMjVXVmRsd2U3TXlxbVdGVHNybzYwM1pjUjl5SXVMYTNQLzVCcEFLbkM4d2Y0UEkxbk45QlBvTWxBRkJBTkdnM2JMdENYYkdvUUdEY0gvSGxJd3h3U0JtbEFtbUNWTUFUbUpQdHgzOUFMbWgrQmdQS0dhWkxOMnIrK1c2LzhGZ2ZBNDMwMlhRYjMvZVBFV08reVBiRG4yQ2E0T2tEbU5DMHdPa1owbWtBc0w1bzM5VU1jKytua3QwTmpMa0JoSVRpanRiTSs4QTZMTFVEUkxiLy9oMU9KOUFOblJaWXZvTzZRcTdkeUZoa2lnN2FFMUF3czdFSjRJNHNJWE5DMEZxaldhQVFadUFra2lYY0UyNTdTSVVRMmRZWHBJcWRacmk5UVYxUjNhQlZrSGZIR2QyZ09aWUt1SU55NTRXRXpNRVRnUk1ocXB3YUZaa3dqR1FPbmpGM2hEQTFpSW9weU1TSXlXZkRJa0J0R0RaSXcvVm1RTDRUTTdwbndoTENDZFMzTUJDQm1XR1dDRXVFT1VaZzFMRytraUdEWmFCdmNDZkw0ZjNCbDhIbWc1aWRkTEkrUlZnZlp1QUpUNGJVNDJ5cGU2alAwZGhTd3dQcEJENGhLMkI5RW9OemgzMkJKR2dCZzhCRWdLSy9IeUV5ZDF5UU1NejZONFArM2cwM3d4U0RqUDNKVE05UUN1UVpySFJQYUJnZ1JoN3JPREhIY28xVUZaWlRkNDRaN3Q3ZllZVGllSmZjY1JQZWVraDNDRm5QMzBGS2NGNVFXUWpMS0VDMTBYRUVpaUJHV3ZsWTdOYTU2TG56d25QUEJqTUhCYkhqNWc3TVRaaDJIdG53d0xlLzY3RXNCYzN2aVhTaUJkUjFvOVlidFZicVZtbXRndnBtMloyY2phbGt5bm1pNVB4UWtEaUF0OVlHQ1EybFhnZk03SEVxbWU5L2oxU1JSSGlocHBtMWl1dDI1ZTF0WTcxZVdhOHJkZHRRQ0hlalpPYzhUVHd0WnhaN3drOFRya0V4UWJUV2E4RUE0TzRvaEJJUDBkOEJmUE5iYURlMHJVUnIxT2E4cmNISGw1V1BIMTk1ZmZtWjllM0tkbHRwdFdHSXFXU2VscG5hM3BOT2hTa3U1RkV0dFZkQzZjRk0vMStEekVkMERMS1dENml1YUgwbDFwWGFLdXQyNDZmWG4vblBqeDk1K2ZFbnJtOXZiTmVWYmR0UUJOT1UrZXI5TStXVWVmcnFtUmJ4U1p2WVQ3Mjd2NWZpUnppUEhzZ1RVaUF2eUN0Qlk0dmc3YmJ5OHZyS3g1Y1gxcC9mMk5hVmJiMFIwVGhOaGFra3R0dEd0TGlUalc0c0hVMTBsT0tVQnFDSDRBOGcrV2drT3pNSDFCYml0bTJzNjVWMXZkSnVOK3AyNnhuaGhrVXZXKzcyY0ZMRGZSUXNRRDZhc1hzZjNUMjlXSTAyblhkTU8wUGRIVStKbFBxaUhhc2hlc1k1NTVLWXA4eXBaRXBLQXdSM3hydmhnaGg2d2N6dXhXZVU5dDQvQm9ET2pnNGllV0lxaGZQNXpPVXlzMTVta2dKbHgxb2hZU3p6ekx0bFlablBsSkpKUGxMc0liN2lUa3FOdjBjSWJBZ1VJRk1yYXUzb2JPN0c2VFR4L1B6RWVyMlJnTnRsUnRzTmp5QmpYTTRuUG54NHo3SmNtS1p5ZUVxSUVDaDZLNDdScnMxc2dCZ2g5b3hjWFJIRjJ5dmFic1IyaFdpNFo2WnA0dDA3eDNDVytjeDJ2VUt0ZURTUzRGUUt5ekt6TEF1bEZNeUhXNGMzcFc0OEJnbER3aVYwaENoQkFpbVIydy8vUkZGN01Vb0pPeStVYWVKeW1Va3BzOHhuMm5hRFdyRUlYQ0s3Y1NxRjB6eVJjdXJsOS84OW4xY2QyenNxdlpaTDVQYTN2NEFGeWdtV0o4d1NYbVpLU1pnWnhVR2JvOVlCbVByYW5CelA2YTRSQnRGMmhwdU5QdjJRWFhhUTBIdWlTR1Q5OWMrUUhTNHp0Ri9CYVliNUdWSWU0cVNDYWxjeHhIRzBuaGQwZytZUHFYd240YjBhNnNFRHd6UHFvTEwvKzE4d1phalBNTS9vZGtOdEkyb2lXaU8ybGRpMmc2U0dvVkZVcER4RWlBOE9qR1owY09EZWpqVzRjVzlHSXdSV2EzZkhMc2NVMEJwNFJhMml0cUhZdWhqWlQyOUNTcU9lMjJIYzZJU0xJVlIyRCtpTDNuQi9zbDJldXdmT1M3OFRXTUxVaGFOSDY3cE9NZko2MUhrTVA0U3FIZXA4ei8wNzV4N2E3d0N5UjJUL25mbm1leWlwYytEeURzb0pNeU4xV1lRVEJESFNheGNqUStINDNjQU9VSHphakRxUVQ3V211SHNtNjllLzZkSm1LakJmWURwM0RkZXZHTGdDUlVNdGtCenpoR0c0UFdRQTQrQy9jUG9EcFBTSjhlNkJyNzhkc2p0aEpVUE9PMDF4amJOcEgrTnU0QmxMR2ZNTTVyMlNqNXVPanMwZnRDUkNDaUkrTHd5UWJYaytXR25lODlpT1dGcVg3SGxJWkRMa0U1UVQ1QW1sM0pXMDJWRE9BOFFYWW1Tb2JOTW5IZ0hJbnNzZW12RlJ3NTBHSkpTc3ErWFNiemVrQ2FhQ1NvR2MraTBYSDJYNGJ2RExaeGdmZDRNZFJONWorRUNsTWI4RHdCSXFoanozRTZkaE9JM2huNWJpWDhpMk80YlBvdkEvSEJpREkwQjJUeTRBQUFBQVNVVk9SSzVDWUlJPSIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/46607d84f2516b5a93a1304b492994de3158c556/fb2ec/img/containers/assets/work/ohsnap.png/19a3d97405e4749213b76a2f45f37faf.png 295w, https://d33wubrfki0l68.cloudfront.net/07143d08e69ffa50ec19257cecd2bf6c783ca26d/92399/img/containers/assets/work/ohsnap.png/c995098849aaacef638376aec8c1ec5c.png 352w, https://d33wubrfki0l68.cloudfront.net/89329e4089d0b372bf2ae609f523740d464e73c1/0bf6a/img/containers/assets/work/ohsnap.png/b8a98f7a73f7eb313c67957952a1d901.png 421w, https://d33wubrfki0l68.cloudfront.net/cca41cd14d9a4ebc620e8d47649a0b57b6bd4af4/35996/img/containers/assets/work/ohsnap.png/ac8eb9b93a5719fefd04c80de4f0b3b7.png 503w, https://d33wubrfki0l68.cloudfront.net/f013c242d77d7dcffd07aeb04c1d123e3342c4ad/8b53b/img/containers/assets/work/ohsnap.png/eeff774b911acf085312be02086f7551.png 602w, https://d33wubrfki0l68.cloudfront.net/d98ad872fa09772143a60367bec97dc012f10bf3/15cbe/img/containers/assets/work/ohsnap.png/45411ae233a84c754abd74caf6e9cdc3.png 720w"
+             sizes="1px"         >
+    
+    <img
+        alt="Oh Snap Photo Booth web design" width="726" height="726" class="rounded-3xl"
+        src="https://d33wubrfki0l68.cloudfront.net/d04c873ae7d08c457c4c03b6533298b2a3410967/ff0c0/assets/work/ohsnap.png"
+                 width="720"          height="720"                 data-statamic-responsive-images
+            >
+</picture>
+
+    <div class="absolute inset-0 flex justify-center items-center overflow-hidden rounded-3xl opacity-0 hover:opacity-100 duration-500 group">
+        <div class="absolute inset-0 bg-grey-700 opacity-80"></div>
+        <div class="z-10 flex flex-col justify-center items-center translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+            <picture>
+    
+    <img
+        alt="open car sales website" class="w-5 mb-1"
+        src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg"
+                 width="448"          height="512"             >
+</picture>
+
+            <p class="text-white">ohsnaptoronto.ca</p>
+        </div>
+    </div>
+</a>
+
+            <a href="https://gobetterway.ca/" target="_blank" class="relative">
+    <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFHRmtsRVFWUlloVzJYYlk4anh3MkVueUk1MHE0dkZ5Qk8vditQQ3hEQU5tSTd1YjI3bFRSTk1oKzZSOUllTWtMdnRMUXp6V3ErRkt2MTlldlhabDNkOSttSHEybm9OV3RvaXU2bVNZcWlPK2R2RkFCQ0NFTXloR0U0a2dHYXkvQ3dFeDhOUEJsOGZIbjgyazFUVkNmVmcreEJyZEg5QUFEQ1pFaU9LWEFGUmlEc0RnL041K0tEc2Y4RDVnR29LYWJoVVRleXJveStrWFVqZTl5OThBeGdHdDl3TytFNjRiWk5JRElNZTNoZzJ1eDdHSDZFTkhkZlZPK011ckhYTzZNdWpMcVNmUUQ0d1FOTUQ3Z0M3ek5oWnpaZWNKMXhiZlNDRURQdVBUOWRWRGUxUUFnaHpjak5lTzhrVjdMWDRFWXhhUEx1cFFOMDBlaFl1K1pkQUNhc0JSSXRKdzdrMDdVN2V3MUdGOTBnQ1RmaEFzamxnU3VqcnlSajdsZzlZNnZudkhrR2t2TnJUWGpGekNObllISWlWMHh2K1ozMy9NNWx2SFBMUVRXWUdXRkdDS1NtVjhKbEg3dXV1NkVQUWV1R1ByeDZlTkl4QXJkdDVVVmdNdUtXVnk3aksxK3VmL0NmNisrOFhkKzRqQ3ZWalNUQ25EQmhSeTZzY3BOWXU0ZW5QL2RxZVFadzVJVXdUTDRxeE9iNjEzSGh5K1dOWDc3OXlpOXYvK0tQOTkvNWZuc25NMEhDSlV6QzF2cWE0Y01NWkVMR2g3S2FHWDJVN0E4QVdud29RNG00N0R0djErLzg5dlluLy96ekYzNTkrNVZ2MTIvc21YVDN4UDIwdmlUTWhhOWhMcVE1SGg3Z0k0QURST25oS2Mxblk4L2svYmJ6Mys4WC92MzJqZC9ldnZEMThvMDlCMVgxSWJ4YUFEeEVoQkdiWVM1c0lkVHl3QUdncWxkVlRlTUhtRjVyb1NheW1qMkw2MGplOThIN1hsd3l5U3lxaXE1bk55NFBwSWhxb2dzUHcremp4aHFvYWpLYlVRdElRZGVEN21VVFJEUlFEVmxRTlJNbExIQ0pYb3RVSFQxZ1FwL2VFOTFHOTN6L3FQT1ZsblJEOWdLUjg5NzFJRGs1bUNDV3YxQTNCbXdZTWtjWXJVVS9ncXdtVnpPWjN0T3M3V0x4d1QydlVCL3UxaU1jQjhHdDZyS0draFlWcjBVZE9ORnNEYjZ3N29oTE4xZEV0YWlHMWtFcVlOM3p4UVhBOUVUcGgrZWFSMlgwOFgraDdoOEFkQk5WV0E1aUJneXJaaFJjUzJTTGNZVENRQVZXWU5YMzhxeWpFcGc3cGgvSk95bGRSN0hRTFlKN25SdXUyVFRWNE5YUU5RMzBNODNva0FhVGZWdFFtcHp3MUxwbnVqUnVZRFN1SmpYekNYcHVRQ0pNd3MwNXhZblgweXUzOHlkYXdtclExV3pkdkxRb3dGc2tjMzdzeW56MkN6dDQ0T2ltcStUbGMxcXJMRE9MNm1KK21naHp6dHVaejY5LzRXK2YvODdteHJoZElKT3VJb0dCMk5mOXFBUTBkMjMyWUVudUJMU01HNWpOamtwRFZaRlo3RFc0MWM2b1FXeSs4ZW4wRS8vNDlETkc4LzNscjR6OVJpNEEwOHRIKzF5c1owSm1tSXlsSys0Wlhsa2NMZDVNaTZnTU5WVENxR1RQblV0ZXVkV05PTWVaeitkUGRQL01hMnhjYnUvcys1VXhCcFZMNDVsaHgzREgzWEFQWkVZTGttWmtrcG5rdnQ3cnhsMUVCRzRPT0ZXYTVkdzdlMS9aKzBhYzQ0UUozT0ExZ2t1Y3VGd3Y3UHVWWEFEY0RJOGc3bU1qWWtObWxPQld5WFVNYnRjYmc1MWt6Qkp6SjJMRC9VeXowUjAwaG5zaDI4R1NPUGsyUlljMVRtR2RxQWJXZzF5eGRYY2luRzBMdGppeGJTZkNUOGlkMFEwNXlCS3BtZ0traEdyS01sTkFuMmk5VW5vaDNIblp4RS9uNGhSTnVCbnFBRFlxTmpLRDNJSW15SnEwYTJaNE9KdjdiRUp1dU51ZGx1ZDROQXdCV28xb3I2WU15aHhzUTlvd004NmJlRDFCVEFVN1N6RjhZOXRPWkw4Z0UxVlRFOWc5NDIxMlBucXE0SjRsMVQyQXhGU0VRL3VrNEtwbVpKRlZsQmVtbWRRbVRjNlJQWmh3QWduQ1hqaUhDSjJvZm5CODYxQjBSVmFTUFlYbzZLSXlvUWRtQTNuU3A2WlVrSkExZ0IyekcrSEI1b1lmcmJ1YmVCeDZEQkdFenNpZFV2SkJNWlBra3VYVk41SkJkWkpkRTB4UGlwTDNrbXdOT2V2ZmNjeURVd1N2bTNGMjRVemVEaDRDSE1OcGdjeHAxZElCQjY4UFZLSlY2eVRVajFOUkplcmxZcHQ5QVFjclkxdTg1ZDZjdlRnSG5BTjg1VSt3WEFGQ3Nxa0RWRHlmRTJjWDgwbTNCd3ZXMUhoYWZhQTZaNk5aTlBoUXdodHVMNFNkT2RtSnpUYzJDM3dSV2F5dThXZ2t0c1Nqbms1SXEvMVpHMmFPVnpCNkkrdDhQeG5WL1dqV3k3eC9PSnFGblhHZENkc3d4VHdYSFhwQWkyNTFuNjlkM09YTEJLQ2VKMTIzamExUEt3K084Y2labWRDK1J0eUJtSHdCZTJpNEQzcmdZZTladVQ1ZG1pRG00ZEp4Y2htZUJIUjB3dW4rd3d0K2YxNDh1T05ZL0g5TCtuU3ZTbnMvcFFBQUFBQkpSVTVFcmtKZ2dnPT0iIC8+Cjwvc3ZnPgo= 32w, https://d33wubrfki0l68.cloudfront.net/88604e6ae2ae9d38feac9a830c74ee236d5aa3d2/a9f92/img/containers/assets/work/gobetterway.png/0cc8b2cd83bc587fb832ddf5b3754d86.webp 206w, https://d33wubrfki0l68.cloudfront.net/8619334f696b5d59599dc4ca2769462aa614a99f/c28a7/img/containers/assets/work/gobetterway.png/54882d5384c27fbad69cb5a53b355858.webp 246w, https://d33wubrfki0l68.cloudfront.net/865eb29b58f73a7793a4a51f05c0844fefa98753/e1cf9/img/containers/assets/work/gobetterway.png/ce82e0c29d04a74d6c88f12917b649c5.webp 295w, https://d33wubrfki0l68.cloudfront.net/3324303644651d68836d33e834eb14680f19ce4e/b2083/img/containers/assets/work/gobetterway.png/584ae1f3647334bb5c2d2fc9e7de103b.webp 352w, https://d33wubrfki0l68.cloudfront.net/43ffdf33c81f6007c751517fe309ffe3e2577fe2/28a3a/img/containers/assets/work/gobetterway.png/d64c95629f00b13bdb699df57dd51e11.webp 421w, https://d33wubrfki0l68.cloudfront.net/e18b961579d239c99d7206b4a02384a3f349fe17/36c8e/img/containers/assets/work/gobetterway.png/f7fdab0df3352a8df57ef87911c85c3d.webp 503w, https://d33wubrfki0l68.cloudfront.net/a8b1e0b520e901706a1b4902347a2918b16fbbec/41e02/img/containers/assets/work/gobetterway.png/f1e8aea2832092e3fb7bc0fd2f9bebf3.webp 602w, https://d33wubrfki0l68.cloudfront.net/c2d961a7d9c01fe2a92fb808d9810dc8ab99cf3d/48ebe/img/containers/assets/work/gobetterway.png/429be4b38911cad051b591fb6c80cc16.webp 720w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFHRmtsRVFWUlloVzJYYlk4anh3MkVueUk1MHE0dkZ5Qk8vditQQ3hEQU5tSTd1YjI3bFRSTk1oKzZSOUllTWtMdnRMUXp6V3ErRkt2MTlldlhabDNkOSttSHEybm9OV3RvaXU2bVNZcWlPK2R2RkFCQ0NFTXloR0U0a2dHYXkvQ3dFeDhOUEJsOGZIbjgyazFUVkNmVmcreEJyZEg5QUFEQ1pFaU9LWEFGUmlEc0RnL041K0tEc2Y4RDVnR29LYWJoVVRleXJveStrWFVqZTl5OThBeGdHdDl3TytFNjRiWk5JRElNZTNoZzJ1eDdHSDZFTkhkZlZPK011ckhYTzZNdWpMcVNmUUQ0d1FOTUQ3Z0M3ek5oWnpaZWNKMXhiZlNDRURQdVBUOWRWRGUxUUFnaHpjak5lTzhrVjdMWDRFWXhhUEx1cFFOMDBlaFl1K1pkQUNhc0JSSXRKdzdrMDdVN2V3MUdGOTBnQ1RmaEFzamxnU3VqcnlSajdsZzlZNnZudkhrR2t2TnJUWGpGekNObllISWlWMHh2K1ozMy9NNWx2SFBMUVRXWUdXRkdDS1NtVjhKbEg3dXV1NkVQUWV1R1ByeDZlTkl4QXJkdDVVVmdNdUtXVnk3aksxK3VmL0NmNisrOFhkKzRqQ3ZWalNUQ25EQmhSeTZzY3BOWXU0ZW5QL2RxZVFadzVJVXdUTDRxeE9iNjEzSGh5K1dOWDc3OXlpOXYvK0tQOTkvNWZuc25NMEhDSlV6QzF2cWE0Y01NWkVMR2g3S2FHWDJVN0E4QVdud29RNG00N0R0djErLzg5dlluLy96ekYzNTkrNVZ2MTIvc21YVDN4UDIwdmlUTWhhOWhMcVE1SGg3Z0k0QURST25oS2Mxblk4L2svYmJ6Mys4WC92MzJqZC9ldnZEMThvMDlCMVgxSWJ4YUFEeEVoQkdiWVM1c0lkVHl3QUdncWxkVlRlTUhtRjVyb1NheW1qMkw2MGplOThIN1hsd3l5U3lxaXE1bk55NFBwSWhxb2dzUHcremp4aHFvYWpLYlVRdElRZGVEN21VVFJEUlFEVmxRTlJNbExIQ0pYb3RVSFQxZ1FwL2VFOTFHOTN6L3FQT1ZsblJEOWdLUjg5NzFJRGs1bUNDV3YxQTNCbXdZTWtjWXJVVS9ncXdtVnpPWjN0T3M3V0x4d1QydlVCL3UxaU1jQjhHdDZyS0draFlWcjBVZE9ORnNEYjZ3N29oTE4xZEV0YWlHMWtFcVlOM3p4UVhBOUVUcGgrZWFSMlgwOFgraDdoOEFkQk5WV0E1aUJneXJaaFJjUzJTTGNZVENRQVZXWU5YMzhxeWpFcGc3cGgvSk95bGRSN0hRTFlKN25SdXUyVFRWNE5YUU5RMzBNODNva0FhVGZWdFFtcHp3MUxwbnVqUnVZRFN1SmpYekNYcHVRQ0pNd3MwNXhZblgweXUzOHlkYXdtclExV3pkdkxRb3dGc2tjMzdzeW56MkN6dDQ0T2ltcStUbGMxcXJMRE9MNm1KK21naHp6dHVaejY5LzRXK2YvODdteHJoZElKT3VJb0dCMk5mOXFBUTBkMjMyWUVudUJMU01HNWpOamtwRFZaRlo3RFc0MWM2b1FXeSs4ZW4wRS8vNDlETkc4LzNscjR6OVJpNEEwOHRIKzF5c1owSm1tSXlsSys0Wlhsa2NMZDVNaTZnTU5WVENxR1RQblV0ZXVkV05PTWVaeitkUGRQL01hMnhjYnUvcys1VXhCcFZMNDVsaHgzREgzWEFQWkVZTGttWmtrcG5rdnQ3cnhsMUVCRzRPT0ZXYTVkdzdlMS9aKzBhYzQ0UUozT0ExZ2t1Y3VGd3Y3UHVWWEFEY0RJOGc3bU1qWWtObWxPQld5WFVNYnRjYmc1MWt6Qkp6SjJMRC9VeXowUjAwaG5zaDI4R1NPUGsyUlljMVRtR2RxQWJXZzF5eGRYY2luRzBMdGppeGJTZkNUOGlkMFEwNXlCS3BtZ0traEdyS01sTkFuMmk5VW5vaDNIblp4RS9uNGhSTnVCbnFBRFlxTmpLRDNJSW15SnEwYTJaNE9KdjdiRUp1dU51ZGx1ZDROQXdCV28xb3I2WU15aHhzUTlvd004NmJlRDFCVEFVN1N6RjhZOXRPWkw4Z0UxVlRFOWc5NDIxMlBucXE0SjRsMVQyQXhGU0VRL3VrNEtwbVpKRlZsQmVtbWRRbVRjNlJQWmh3QWduQ1hqaUhDSjJvZm5CODYxQjBSVmFTUFlYbzZLSXlvUWRtQTNuU3A2WlVrSkExZ0IyekcrSEI1b1lmcmJ1YmVCeDZEQkdFenNpZFV2SkJNWlBra3VYVk41SkJkWkpkRTB4UGlwTDNrbXdOT2V2ZmNjeURVd1N2bTNGMjRVemVEaDRDSE1OcGdjeHAxZElCQjY4UFZLSlY2eVRVajFOUkplcmxZcHQ5QVFjclkxdTg1ZDZjdlRnSG5BTjg1VSt3WEFGQ3Nxa0RWRHlmRTJjWDgwbTNCd3ZXMUhoYWZhQTZaNk5aTlBoUXdodHVMNFNkT2RtSnpUYzJDM3dSV2F5dThXZ2t0c1Nqbms1SXEvMVpHMmFPVnpCNkkrdDhQeG5WL1dqV3k3eC9PSnFGblhHZENkc3d4VHdYSFhwQWkyNTFuNjlkM09YTEJLQ2VKMTIzamExUEt3K084Y2labWRDK1J0eUJtSHdCZTJpNEQzcmdZZTladVQ1ZG1pRG00ZEp4Y2htZUJIUjB3dW4rd3d0K2YxNDh1T05ZL0g5TCtuU3ZTbnMvcFFBQUFBQkpSVTVFcmtKZ2dnPT0iIC8+Cjwvc3ZnPgo= 32w, https://d33wubrfki0l68.cloudfront.net/6042d133a268597b10f805ba88e06bbb5e8a5455/1157a/img/containers/assets/work/gobetterway.png/befdac6fc35fbedfe1d376198909057a.png 206w, https://d33wubrfki0l68.cloudfront.net/9b44f2fe45bd41645f7bbc2d159d158430a35be9/585a4/img/containers/assets/work/gobetterway.png/f13a443b6d26978a134ac83369b1fa62.png 246w, https://d33wubrfki0l68.cloudfront.net/d434747007e2a909029ec7eb0b075800c8ffd9d1/fbd65/img/containers/assets/work/gobetterway.png/02b79b0dc5fc3fb4e84c3f80aaa42941.png 295w, https://d33wubrfki0l68.cloudfront.net/c84572ac525ccfaf3695e8fe4dc1c00577c34c8a/6b0b9/img/containers/assets/work/gobetterway.png/950821035e467962631ea31e84d2a276.png 352w, https://d33wubrfki0l68.cloudfront.net/fc7ceeac8293ab015b73c49862ee23a51753f4d5/7e3db/img/containers/assets/work/gobetterway.png/6810e665035f3bcceb98e602870ef6d2.png 421w, https://d33wubrfki0l68.cloudfront.net/862192614aea3410290a44ec03f7164ff3f6bc5c/6b4be/img/containers/assets/work/gobetterway.png/e27e6acd674ae4095fef2b0acec7a566.png 503w, https://d33wubrfki0l68.cloudfront.net/0b0e547241929e938f45aa4d187f13f99e19aa8b/86ff4/img/containers/assets/work/gobetterway.png/1cfa319a6775392f068506a25a384be1.png 602w, https://d33wubrfki0l68.cloudfront.net/dbe340104cad0e4b57af6c5cea5795427d2d3884/8218d/img/containers/assets/work/gobetterway.png/bd8c56dadd498bdd07d4b36770b2b2a9.png 720w"
+             sizes="1px"         >
+    
+    <img
+        alt="Better Way Property Maintenance website design" width="726" height="726" class="rounded-3xl"
+        src="https://d33wubrfki0l68.cloudfront.net/16d8bf130ccefe4f06cddc1da8751a79399ddf3e/44151/assets/work/gobetterway.png"
+                 width="720"          height="720"                 data-statamic-responsive-images
+            >
+</picture>
+
+    <div class="absolute inset-0 flex justify-center items-center overflow-hidden rounded-3xl opacity-0 hover:opacity-100 duration-500 group">
+        <div class="absolute inset-0 bg-grey-700 opacity-80"></div>
+        <div class="z-10 flex flex-col justify-center items-center translate-y-4 group-hover:translate-y-0 transition-transform duration-700">
+            <picture>
+    
+    <img
+        alt="open car sales website" class="w-5 mb-1"
+        src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg"
+                 width="448"          height="512"             >
+</picture>
+
+            <p class="text-white">gobetterway.ca</p>
+        </div>
+    </div>
+</a>
+
+            <div class="rounded-3xl relative overflow-hidden pb-[100%]">
+                <div class="z-50 absolute inset-0 flex flex-col justify-center text-center items-center">
+                    <p class="font-bold text-3xl mb-8 font-heading">Your website here</p>
+                    <a href="mailto:contact@michaelmannucci.com?subject=Wanted to chat about..." class="button px-6">Start a project</a>
+                </div>
+                <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFDRVVsRVFWUlloYTJYMlk3RE1BaEZMOWovLzdzekdzVXdEd2FiN0tFcGt0VTBqZUd3bUZENmFVMXhJV3EvaWdLTEFuOE4rQkhnVi9wM0dVL1NsUm9BMHd3QktBQ1lnSHF6NjBMTitqb3JZZ3JTQUc1WVgxajNyWUlQSS9ERzg2MGUvb0t1b0RJdlh3VDRUTklwb0xEeU8vZVNqc0FBb0NPVitUU2tBTnd3NHlvS09ZZzBBS00zRUQ2TVFGNGVBN2pIVEVBaDYyUjRINFZjRFpqWGhlWTZWL0FNSXA4Qzg3NVNYMjhoYXFhbHhqUlVCaHFBSnIwdG4zZElEYnNQQUZMV2RaNkNDa0NvTDZVTzBVNGh6a0ZTRWZEdGpHNjBFaUJzM2t1M2NRMnhCNWtBdXQ1SUFaYTIwU09BdFFORUtoS0FERUp3SjJvQW5rTUgwR25VbHlmZlFSek9VOUZEWW8rcFFaaStPNUFxQW9oRHhLZTkyVERBM0QvWDRRa0ZhYmVaZTJTS0FBczZoQmpFV1ZycXNuVGpJak9QSGdFeDQxcTZZdUw5TzJCQVdGcFk3WmphQ05mUXh6azVPU20xUlFCZEE1QVloSnAzeFQ1RGFqd3RSV2Q3TG5aRXE2WENJekhTdkVwQm16VVF4ZStSMXdmYk13ekFRRVlOaGplVEQ1dGVwT0pwOEFoczdGUzVtYkc4Tmdaa21ZK3p2UXppWVNDeVVjdDZnOUkwdkRWRkFPcWpsbTNHSTZ4N1hVSVV4Z25YL1QybFkwZFRFNUhYQ2pXckVVdkw2bmlHQy9WTFhmZVZqd0VHaEZVNzRqcFF2Z1U2a25vOVZseDM5cU0yVHNIN0orbTlpY0JKNGpBTDdtcm5rNUVwUDVZZnRPZzNzMWwrS3FiWm1nZklDMG1QWkc2YytiM3hOTUQ0UDBEZjhSNEEvZ0diYk8rUllsQWppUUFBQUFCSlJVNUVya0pnZ2c9PSIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/41398a35e6c418d5c3a6ca91f7ac0b49acaf1a6b/7ec6d/img/containers/assets/work/yourproject.png/d0fd71091c8ef6c437cb4d39a252646c.webp 800w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFDRVVsRVFWUlloYTJYMlk3RE1BaEZMOWovLzdzekdzVXdEd2FiN0tFcGt0VTBqZUd3bUZENmFVMXhJV3EvaWdLTEFuOE4rQkhnVi9wM0dVL1NsUm9BMHd3QktBQ1lnSHF6NjBMTitqb3JZZ3JTQUc1WVgxajNyWUlQSS9ERzg2MGUvb0t1b0RJdlh3VDRUTklwb0xEeU8vZVNqc0FBb0NPVitUU2tBTnd3NHlvS09ZZzBBS00zRUQ2TVFGNGVBN2pIVEVBaDYyUjRINFZjRFpqWGhlWTZWL0FNSXA4Qzg3NVNYMjhoYXFhbHhqUlVCaHFBSnIwdG4zZElEYnNQQUZMV2RaNkNDa0NvTDZVTzBVNGh6a0ZTRWZEdGpHNjBFaUJzM2t1M2NRMnhCNWtBdXQ1SUFaYTIwU09BdFFORUtoS0FERUp3SjJvQW5rTUgwR25VbHlmZlFSek9VOUZEWW8rcFFaaStPNUFxQW9oRHhLZTkyVERBM0QvWDRRa0ZhYmVaZTJTS0FBczZoQmpFV1ZycXNuVGpJak9QSGdFeDQxcTZZdUw5TzJCQVdGcFk3WmphQ05mUXh6azVPU20xUlFCZEE1QVloSnAzeFQ1RGFqd3RSV2Q3TG5aRXE2WENJekhTdkVwQm16VVF4ZStSMXdmYk13ekFRRVlOaGplVEQ1dGVwT0pwOEFoczdGUzVtYkc4Tmdaa21ZK3p2UXppWVNDeVVjdDZnOUkwdkRWRkFPcWpsbTNHSTZ4N1hVSVV4Z25YL1QybFkwZFRFNUhYQ2pXckVVdkw2bmlHQy9WTFhmZVZqd0VHaEZVNzRqcFF2Z1U2a25vOVZseDM5cU0yVHNIN0orbTlpY0JKNGpBTDdtcm5rNUVwUDVZZnRPZzNzMWwrS3FiWm1nZklDMG1QWkc2YytiM3hOTUQ0UDBEZjhSNEEvZ0diYk8rUllsQWppUUFBQUFCSlJVNUVya0pnZ2c9PSIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/9b46cd82853136a4d3e1e54f3d529a8d909c0ed1/5d956/img/containers/assets/work/yourproject.png/8f1f0dcf4130ef7652b9c9445d8dfc24.png 800w"
+             sizes="1px"         >
+    
+    <img
+        class="absolute inset-0"
+        src="https://d33wubrfki0l68.cloudfront.net/3e764f8540663a208fda9569f022451d86014d04/647f0/assets/work/yourproject.png"
+                alt="yourproject.png"
+                 width="800"          height="800"                 data-statamic-responsive-images
+            >
+</picture>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-24 pb-16">
+    <div class="flex flex-col sm:flex-row">
+        <div class="w-full sm:w-2/5" data-aos="fade-right">
+            <h3 class="font-bold uppercase tracking-widest text-grey-600">Methodology</h3>
+            <h2 class="title">My Process</h2>
+        </div>
+        <div class="w-full sm:w-3/5 flex flex-col gap-4">
+
+            
+            <div data-aos="fade-left">
+                <div class="p-8 rounded-3xl shadow-3xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-3xl transition-shadow duration-500">
+                    <div class="flex items-center">
+                        <div class="w-2 h-2 rounded-full bg-blue-900 mr-2"></div>
+                        <p class="font-bold tracking-widest text-blue-900">Phase 1</p>
+                    </div>
+                    <h4 class="font-bold text-4xl mb-2">Discovery</h4>
+                    <p>This is the phase where I dive deep into your world and get to know you. Before I can properly design your high-performing website, I need to understand you, your pain-points, and your audience.</p>
+                </div>
+            </div>
+
+            
+            <div data-aos="fade-left">
+                <div class="p-8 rounded-3xl shadow-3xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-3xl transition-shadow duration-500">
+                    <div class="flex items-center">
+                        <div class="w-2 h-2 rounded-full bg-yellow-900 mr-2"></div>
+                        <p class="font-bold tracking-widest text-yellow-900">Phase 2</p>
+                    </div>
+                    <h4 class="font-bold text-4xl mb-2">Design</h4>
+                    <p>I take what I’ve learned about you & craft a bespoke website that’s tailored to meet your unique needs, all while accurately representing your brand & keeping things aesthetically pleasing & useable for your audience.</p>
+                </div>
+            </div>
+
+            
+            <div data-aos="fade-left">
+                <div class="p-8 rounded-3xl shadow-3xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-3xl transition-shadow duration-500" data-aos="fade-left">
+                    <div class="flex items-center">
+                        <div class="w-2 h-2 rounded-full bg-red-900 mr-2"></div>
+                        <p class="font-bold tracking-widest text-red-900">Phase 3</p>
+                    </div>
+                    <h4 class="font-bold text-4xl mb-2">Build</h4>
+                    <p>Once you’re happy with the designs, I will proceed to building them making sure everything is optimised to follow modern web practices, such as speed, security and reliability.</p>
+                </div>
+            </div>
+
+            
+            <div data-aos="fade-left">
+                <div class="p-8 rounded-3xl shadow-3xl shadow-grey-500/40 sm:shadow-none sm:hover:shadow-3xl transition-shadow duration-500" data-aos="fade-left">
+                    <div class="flex items-center">
+                        <div class="w-2 h-2 rounded-full bg-purple-900 mr-2"></div>
+                        <p class="font-bold tracking-widest text-purple-900">Phase 4</p>
+                    </div>
+                    <h4 class="font-bold text-4xl mb-2">Launch</h4>
+                    <p>After I’ve completed the build and double checked everything alongside your approval, it’s time to launch your website. In this phase I will also provide some training videos on how you can add content to your website so you can do it yourself.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pt-16 pb-32 container">
+    <div data-aos="fade-up">
+        <h3 class="font-bold uppercase tracking-widest text-grey-600 text-center">Clients</h3>
+        <h2 class="title text-center mb-16">Who I've Worked With</h2>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-x-4 gap-y-24 sm:gap-4" data-aos="fade-up">
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/9100c904ad733d6fd7df4516a925a400052a2944/4dd8d/assets/companies/scotiabank.svg"
+                alt="scotiabank.svg"
+                 width="272.6"          height="39.7"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/107afaa5688a8826d6c9579bd4cdf8cc72af4549/d4f1e/assets/companies/tjx.svg"
+                alt="tjx.svg"
+                 width="55.4"          height="32.6"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/b8048504f04c553619cf609dee0d1cbc0805b3da/479b4/assets/companies/cibc.svg"
+                alt="cibc.svg"
+                 width="142"          height="36"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/988f16af0ccb7c7a1a07cbf774db3fa632b34563/cc4ca/assets/companies/bts.svg"
+                alt="bts.svg"
+                 width="64.1"          height="29.7"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/d40761224cabdaebedc8766f219c950f6e17bc63/a9cd9/assets/companies/cprail.svg"
+                alt="cprail.svg"
+                 width="95"          height="40"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/83e69196f8a04a0204b1b251483f5d5d77dc28e7/24438/assets/companies/nyf.svg"
+                alt="nyf.svg"
+                 width="75"          height="53"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/a460748428f8b534139f0f4905bd1c6c9915d318/9dc7e/assets/companies/pnc.svg"
+                alt="pnc.svg"
+                 width="205"          height="62"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/b6bf2fe7ed0822c20f2c847a4952092206bce045/1fa72/assets/companies/bell.svg"
+                alt="bell.svg"
+                 width="269.6"          height="154.4"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/908cd6625203a094a76dd937266afa8a721f3ba3/e3349/assets/companies/rbc.svg"
+                alt="rbc.svg"
+                 width="2500"          height="813"             >
+</picture>
+</div>
+        <div class="company"><picture>
+    
+    <img
+        class="max-h-8 w-full"
+        src="https://d33wubrfki0l68.cloudfront.net/df014c6e1e534d6e4431bd07ab78ac8bd3d4b79f/95544/assets/companies/ezra.svg"
+                alt="ezra.svg"
+                 width="300"          height="42.9"             >
+</picture>
+</div>
+    </div>
+</div>
+
+<div id="testimonials" class="bg-red-300 py-24 mb-24">
+    <div class="container">
+        <div class="mb-24" data-aos="fade-up">
+            <h3 class="font-bold uppercase tracking-widest text-grey-600 text-center">Reviews</h3>
+            <h2 class="title text-center">Customer Testimonials</h2>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-20 lg:gap-4 mb-12" data-aos="fade-up">
+
+            
+            <div class="bg-white text-center relative py-12 px-10 pt-16 rounded-xl flex flex-col">
+                <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFHQTBsRVFWUlloY1dXVzR0ZFp4bkhmODk3V0llOTltRm1Kek9aVEdZeW1acWt4YVFsUVZHeENYaWdMYTFnUkZEUkMwWDhCRjU1NFRmd0czZ2xxSGdocUJBb2dsZVdGR25Ba2dURkZqV2p0WlBKWVRLWlpQYnN3MXJ2eVl2SmpSZk4zdFZJRjd4MzcvdGZQLzdQLytGNUpLWEVSL21wai9UdmdQbHZINzV3NXV3YlpWbWVjeTUwblhlTXhpTnVidHlVRDZzakg3WUVheXNycVQ4M1IzOStuckpza1pMZ2ZLQjJEZVBKaExxZVhML3hweHZuL3k4QXA5ZlgwMEovbms1VmtXVVpTbWxTZ29pUVJDRmE0NXhuZTJmYnYzM3RiZnRVQWM2Y1BwV1dEdlhwVmkweXJRR0lNUklpSkZFb2F6RlpUbEthL2RHWXJUdGI4ZnFONi9xcEFKeDk5dlMxbFNNTDV4WjZYVnFaUVF1a0dBbVBBU0lLdEFGdGlVb3pkcDZkM1YyMjd0eSsrTTY3Nzd6NUpPMlpRdGd1ODNPTGN6MFc1enAwaW96TUtBU0lDVUtDa0FTZkZIV0FrUThrR29xOFFDdDlCWGhpTUdjQ21PdTA2ZmZhTFBibm1HKzNxUElNWXpTSUVKUGdrekIya2IxeHcrNXdRbUNmdmVFUUpkTzdmQ3JBcDg4L2YrMjU5VFg2dlM3ejNRNkh1bTNhcllMTVdwVFNSSVFtSklhMVIrOVA4R0ladTBpZTdhUDExQWhNQjVqcmRMdjlicGVxTE1tekRHTU1TbW1VVW1pdGtDUklqQUNJQ0Vack1wdVJaem5HVGpkNDZnMnIxRE5WbnBNYmc2U0VheHpqbEhDTlJrUUlFU2JPczE5N1JoT1BhenhDd2hpTjFVOEJvTitwNkJZRnBiVm9oT2dEVFFnNGhCQVRqUStNRzgvWWVjWXU0aUtrRU5FQ1drM1B3Qk52Zk9uRno3eXhjdmdRL1U2YlhxdWtLZ29LWTdHaWtKZ0lQdERVbnJwMnVNYVRRa1JpUWdPYUtmR2Z5WUdVbnNtdHBWTVc5S29LcXhURVFQQUI1ejBwZVJxVk1DcVN0S0NWWUZBa0NWaWxacHAwVDd6eitoK3VyajRjREZCS0tITkxWV1MwOG94V1ppbXNwYkNHM0J5YzBtYTA4dnpnWkJtWk1SZzEzWU9wR1hpd04yQlUxOFNVMEZvUUZDb3FZbFFZSlZnbGVLVlFBaWlORm8xTFlJMmVxUTJudW5SNzV3RzNkM1lZaklZNDc0Q0lVaHlFVEhoYzc0U1doQWdrSWk1NEd1K0lLZnIvR2VCM2IvMVIvcmE1ZGZIOWU5c002d21SaElpZ2xLQkZvWlFnY21CMUpESnhEZmNmN3ZMZTFoYTdlM3VmbjZZLzh6VDh3WGUrbmw1OC9qbVc1bnRrb2drdU1wbzBERVkxdzZhaERvbHhqT3pzai9qenhqLzUrZVhMTXkwbk0yOUV1NE45SnM0VFVZZzJxQlF4Sm1Kc1JJVkVUSUhhQlhZR0F6YnYzVzFtMVowWklDRkVVU1FSa2hLU1VpU2xRV25RbWhpaFNjSmc0dm45VzFmeldYVm5Ya3JiblE0bXk0aEs0Uk80R0hFcDRVZzRCSWNpYWt0V2RmbkM1MTRaUGxXQVM2KzhsSmFYamxLVUpTaUZTNUU2QmliQk13bUJPaVk4Z3BpYzN2d0NhK3VuV3ArOStQS0ZXYlNubHVDbEw3NTg0Uk5uejdCMDlCaGxxMEswRUlQSHAwU1REbHdJSkZBS296UGFXWnNqdXNXalVUMTFHWUVaSERpK2Z2TEtzYldQMFoxZndCWVYybVlvWTFEV29JeEJXNDNOTEhtZVVaWWw3VTZQL3VJeUowNmQ1Yld2Zm5kcWkzMWdHNzcybFc5ZU83YTZmbTc5eERxcmk0Zm9sNHFPOWhRNEpEWjQxekN1SGVQYTB3UndZdkc2eE5rdXRXb3pkTEM5ZlpldHpadmN2Yld4K2R2Zi9IUjFab0JMMy9oZSt2Z0xuK1Rvc2VOMHFvclNRRXNjbFhKVTJwT0poK0J3emxQN2dBdUNFMHN0QlkzdVVPc09UaFUwTGpBZTdmRmdlNU90OS83SzdWc2JGMS8vMWMvZS9FQ0FWeTk5YTdoeTRtVHIrUHF6SEZsZXBXeTFFUkxKMWRoVTB6R1JYZzZWVFJpSnBCandJVkVIbUVUTktCaEdxYUJSRmRGVWlMWkF4RGNqaG52M3VmMytCbis1Y1pWZi8rTEg4aDhBWC83YXR5OHNMYTlkV1ZrN3ljTFNDdTN1UERZdkNDRlNUOGE0eVFoTm9GdG9EclV0dmRKUVdrRUorQkFmTDZTQmgrUElmaU0wVXFEek5ublJJczh5dElib2EvYjNIbkJuOHgrOHQvRXV0LzcxOTgzTHYvekpxbnovaHo5S2h4ZVhPTFM0VEtmYkp5OHJsRGI0RUJpTmh1d1BCdFRqTVViRFhMdmtjSzlGdjFQU0xneEdDOTRIOWtZTjl4K051UGR3eUtPUkowcEdVWFhwZEhwVVZVV1JXNVJBOEEzajBZREJveDN1MzduRnZUdWJtUE9mdW9ETkN2S2loY2tLbE5LRUdISGU0MzJnYVJ5Tjg0REdKeUdJSVNoTE5CbEpLeUlCSjVHUlR3eEdEWHY3RTFBZTBSbXRWZ3VJaUFoYUg0eG5Zd3hGVWRMcHpyRjhmSjEvQXhhRXlaaHZKT081QUFBQUFFbEZUa1N1UW1DQyIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/872fb99748fe00266c7e5bcf7d9d7b89bfeeaec1/de758/img/containers/assets/reviews/michael.png/cde67739e8b0304b2c0c698218540cf9.webp 226w, https://d33wubrfki0l68.cloudfront.net/5ff8d0b891a937a45aaff389e29f8b9b6a22fd2e/1959f/img/containers/assets/reviews/michael.png/3322bc70699c387ab44d81bad51455a4.webp 270w, https://d33wubrfki0l68.cloudfront.net/7670740959b87f0b22fdce7e83a8712c83da1d03/7a6ff/img/containers/assets/reviews/michael.png/ab1d96ad6f0b21fed233ff24887515d2.webp 323w, https://d33wubrfki0l68.cloudfront.net/ae342d6cc1bf4f37d53c1b0d248385049dcd98c0/42439/img/containers/assets/reviews/michael.png/3d872fc74cec643342278b08cfce64b1.webp 387w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFHQTBsRVFWUlloY1dXVzR0ZFp4bkhmODk3V0llOTltRm1Kek9aVEdZeW1acWt4YVFsUVZHeENYaWdMYTFnUkZEUkMwWDhCRjU1NFRmd0czZ2xxSGdocUJBb2dsZVdGR25Ba2dURkZqV2p0WlBKWVRLWlpQYnN3MXJ2eVl2SmpSZk4zdFZJRjd4MzcvdGZQLzdQLytGNUpLWEVSL21wai9UdmdQbHZINzV3NXV3YlpWbWVjeTUwblhlTXhpTnVidHlVRDZzakg3WUVheXNycVQ4M1IzOStuckpza1pMZ2ZLQjJEZVBKaExxZVhML3hweHZuL3k4QXA5ZlgwMEovbms1VmtXVVpTbWxTZ29pUVJDRmE0NXhuZTJmYnYzM3RiZnRVQWM2Y1BwV1dEdlhwVmkweXJRR0lNUklpSkZFb2F6RlpUbEthL2RHWXJUdGI4ZnFONi9xcEFKeDk5dlMxbFNNTDV4WjZYVnFaUVF1a0dBbVBBU0lLdEFGdGlVb3pkcDZkM1YyMjd0eSsrTTY3Nzd6NUpPMlpRdGd1ODNPTGN6MFc1enAwaW96TUtBU0lDVUtDa0FTZkZIV0FrUThrR29xOFFDdDlCWGhpTUdjQ21PdTA2ZmZhTFBibm1HKzNxUElNWXpTSUVKUGdrekIya2IxeHcrNXdRbUNmdmVFUUpkTzdmQ3JBcDg4L2YrMjU5VFg2dlM3ejNRNkh1bTNhcllMTVdwVFNSSVFtSklhMVIrOVA4R0ladTBpZTdhUDExQWhNQjVqcmRMdjlicGVxTE1tekRHTU1TbW1VVW1pdGtDUklqQUNJQ0Vack1wdVJaem5HVGpkNDZnMnIxRE5WbnBNYmc2U0VheHpqbEhDTlJrUUlFU2JPczE5N1JoT1BhenhDd2hpTjFVOEJvTitwNkJZRnBiVm9oT2dEVFFnNGhCQVRqUStNRzgvWWVjWXU0aUtrRU5FQ1drM1B3Qk52Zk9uRno3eXhjdmdRL1U2YlhxdWtLZ29LWTdHaWtKZ0lQdERVbnJwMnVNYVRRa1JpUWdPYUtmR2Z5WUdVbnNtdHBWTVc5S29LcXhURVFQQUI1ejBwZVJxVk1DcVN0S0NWWUZBa0NWaWxacHAwVDd6eitoK3VyajRjREZCS0tITkxWV1MwOG94V1ppbXNwYkNHM0J5YzBtYTA4dnpnWkJtWk1SZzEzWU9wR1hpd04yQlUxOFNVMEZvUUZDb3FZbFFZSlZnbGVLVlFBaWlORm8xTFlJMmVxUTJudW5SNzV3RzNkM1lZaklZNDc0Q0lVaHlFVEhoYzc0U1doQWdrSWk1NEd1K0lLZnIvR2VCM2IvMVIvcmE1ZGZIOWU5c002d21SaElpZ2xLQkZvWlFnY21CMUpESnhEZmNmN3ZMZTFoYTdlM3VmbjZZLzh6VDh3WGUrbmw1OC9qbVc1bnRrb2drdU1wbzBERVkxdzZhaERvbHhqT3pzai9qenhqLzUrZVhMTXkwbk0yOUV1NE45SnM0VFVZZzJxQlF4Sm1Kc1JJVkVUSUhhQlhZR0F6YnYzVzFtMVowWklDRkVVU1FSa2hLU1VpU2xRV25RbWhpaFNjSmc0dm45VzFmeldYVm5Ya3JiblE0bXk0aEs0Uk80R0hFcDRVZzRCSWNpYWt0V2RmbkM1MTRaUGxXQVM2KzhsSmFYamxLVUpTaUZTNUU2QmliQk13bUJPaVk4Z3BpYzN2d0NhK3VuV3ArOStQS0ZXYlNubHVDbEw3NTg0Uk5uejdCMDlCaGxxMEswRUlQSHAwU1REbHdJSkZBS296UGFXWnNqdXNXalVUMTFHWUVaSERpK2Z2TEtzYldQMFoxZndCWVYybVlvWTFEV29JeEJXNDNOTEhtZVVaWWw3VTZQL3VJeUowNmQ1Yld2Zm5kcWkzMWdHNzcybFc5ZU83YTZmbTc5eERxcmk0Zm9sNHFPOWhRNEpEWjQxekN1SGVQYTB3UndZdkc2eE5rdXRXb3pkTEM5ZlpldHpadmN2Yld4K2R2Zi9IUjFab0JMMy9oZSt2Z0xuK1Rvc2VOMHFvclNRRXNjbFhKVTJwT0poK0J3emxQN2dBdUNFMHN0QlkzdVVPc09UaFUwTGpBZTdmRmdlNU90OS83SzdWc2JGMS8vMWMvZS9FQ0FWeTk5YTdoeTRtVHIrUHF6SEZsZXBXeTFFUkxKMWRoVTB6R1JYZzZWVFJpSnBCandJVkVIbUVUTktCaEdxYUJSRmRGVWlMWkF4RGNqaG52M3VmMytCbis1Y1pWZi8rTEg4aDhBWC83YXR5OHNMYTlkV1ZrN3ljTFNDdTN1UERZdkNDRlNUOGE0eVFoTm9GdG9EclV0dmRKUVdrRUorQkFmTDZTQmgrUElmaU0wVXFEek5ublJJczh5dElib2EvYjNIbkJuOHgrOHQvRXV0LzcxOTgzTHYvekpxbnovaHo5S2h4ZVhPTFM0VEtmYkp5OHJsRGI0RUJpTmh1d1BCdFRqTVViRFhMdmtjSzlGdjFQU0xneEdDOTRIOWtZTjl4K051UGR3eUtPUkowcEdVWFhwZEhwVVZVV1JXNVJBOEEzajBZREJveDN1MzduRnZUdWJtUE9mdW9ETkN2S2loY2tLbE5LRUdISGU0MzJnYVJ5Tjg0REdKeUdJSVNoTE5CbEpLeUlCSjVHUlR3eEdEWHY3RTFBZTBSbXRWZ3VJaUFoYUg0eG5Zd3hGVWRMcHpyRjhmSjEvQXhhRXlaaHZKT081QUFBQUFFbEZUa1N1UW1DQyIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/3d262a81cf30155e93479112e52f360d116173ab/6e3db/img/containers/assets/reviews/michael.png/820706cc0452b6e75d9b87de4debf521.png 226w, https://d33wubrfki0l68.cloudfront.net/16863a4935abf0a40198ddfe771e0e9e1c16b6b9/81e8e/img/containers/assets/reviews/michael.png/c6841f593fb4d8a20e2e354683e2d4c4.png 270w, https://d33wubrfki0l68.cloudfront.net/7cfc1ddcae37dfd880d466094acc9e5bf785b96b/8d5e1/img/containers/assets/reviews/michael.png/a6602080e6379bec6b37bba80d1c70ab.png 323w, https://d33wubrfki0l68.cloudfront.net/5ee05ba767df4f91e1c1a9e75c7515f56cd5fa19/1f0fe/img/containers/assets/reviews/michael.png/f24d7ab0a4300c672094d2592427a053.png 387w"
+             sizes="1px"         >
+    
+    <img
+        class="rounded-full w-24 border-white bg-blue-300 border-4 mx-auto absolute left-0 right-0 -top-10"
+        src="https://d33wubrfki0l68.cloudfront.net/7f17508e45105745b38f839387dd6cae84499bd5/ec35d/assets/reviews/michael.png"
+                alt="michael.png"
+                 width="387"          height="387"                 data-statamic-responsive-images
+            >
+</picture>
+
+                <picture>
+    
+    <img
+        class="w-10 mx-auto"
+        src="https://d33wubrfki0l68.cloudfront.net/ddc7dbebac8dc6b6e66095027e4334c224d352af/4499c/assets/site/quote.svg"
+                alt="quote.svg"
+                 width="32"          height="32"             >
+</picture>
+
+                <p class="mb-8 flex-grow">I hired Michael to build my website for my small landscaping business. Our business is growing by double digits in large part to the superb website.</p>
+                <p class="font-bold text-grey-900">Michael Verduyn</p>
+                <a href="https://gobetterway.ca/" target="_blank" class="flex justify-center items-center text-grey-600 stroke-grey-300 hover:stroke-grey-900 hover:underline hover:decoration-grey-900 hover:text-grey-900">
+                    <p class="text-sm mr-1.5 text-current">gobetterway.ca</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10" class="w-3 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.50002 4.5L0.800021 6.205C0.412363 6.59249 0.412363 7.24051 0.800021 7.628L2.37202 9.205C2.75951 9.59266 3.40753 9.59266 3.79502 9.205L5.50002 7.5"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.50002L9.205 3.80002C9.591 3.41418 9.59458 2.76648 9.205 2.37702L7.628 0.800021C7.24051 0.412363 6.59249 0.412363 6.205 0.800021L4.5 2.50002"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 6.5L6.5 3.5"></path>
+                    </svg>
+                </a>
+            </div>
+
+            
+            <div class="bg-white text-center relative py-12 px-10 pt-16 rounded-xl flex flex-col">
+                <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFGM2tsRVFWUlloY1dYMzQ0ZFJ4R0h2NjdxbnBuelovZXMxM2JpV01ZNGptUEhCa1ZCSUs0Y2NZRWk4UVR3RHZBSVhIUEZEVnlFZDhndFQ0RFlQQUdLSUk1dGdvSUpDTWRLMW1mUG1lbnBQOFhGT2RrSW9maHM0a2lNVkZLUE5GMzFxYXI3VnpYT3pQaC9QdjdyYnJ4eDljcmRKdmdqQjFRenhseisrUENqUnovNnFuN2NWODNBdHk5ZnNvTzlPZnZ6R1pPMndUbklwYkR1SThmTEpjZkxGZjk0L01SOTR3QlhMMSs2ZTdBM1B6clltek9mVHVpYUJxK0NZZVNVR0dKazFROHMxejNMVmM5Skg5LzgxeWRQM3QzbDk4d2x1SGh1Y1hUcHdubm0wNDRtQkZRRWdGb0t5VG1jR1ZoRmdDQ0NjKzRJMkptSk13RzhjZnRWdS9yU0MxdzRXREJwRzBTVVdvMWFLemtuQklOYXNPS2hxWUJSZ2V0WEx0dGZIMzM4VElpZEFOLzd6dTJmWDd2eUVwY3ZuR014bTlHRWdCbWtVa2hqSmlVaE9ZZGlpRlVFUXdEdlBhSHBlTzNWVjk1NS8vN0RuMzF0Z1BtcysvV0w1OC94NHZsREZ2TXBqVytvMVloalpvaVJNVWJTR0JtRHAvZktXZ1d2U3FqZ1cwZENMajFYQmhyVjZkNTB3dUZpajhQRmdxNXBNWU1ZRThNd0VJZUJNVWJpTUxEdUc1WmVVZTJSVktqWjhDcS9mQzRBcjhLa2JkaWJ6VGpZMzJmYVRRQWhqWm40T2NBdzBQZHJUcnppTUVvMXhqcGc0MGhLNlZmQWwrckRUZ0FWb1FtQnJtM28ycGF1bStDYzBJWkNxNTdSZXdaVkZLaDVVNVlUSHhFaU1VWldxOVh6WlVCRjhPb1I4WmdUaW9FWW1EbWMrOEp3RG5NT1JCQVJ3TWpqeVBzUFAzeW1Gc2h1QUVWVndRbTVHTU9ZNkdPa0h3YUdyYTJIZ1hXTXhKekp4VEJBbmFQMXl1MXJWOTU1UGdCVmdvYk4zVGRJS1JOalpCaDYxdXMxeTlXSzVXckZxdThaWWlMWGdnTzhDSlBnYVZWLytsd0F3U3R0RTJoRElJaWdEcWlWbWpQakdCbjZucjd2aVRGU1NnYmJ5SitLUTUxRGRtamhHVzZCcHdtZUxuZzY3Nm1sSXBLeHJmclZuS2c1UVMwYkFSS0hGN2ZWWUdOWHF6bURGQnNZQ0J2SFpvQ0REQWlHczQwcElPSkFIQUxVV3VqSHhEcU85Vm5lZDViZzZjbjZrK1BsQ2VNNFlqbER5VmdwVUFzYkdrTzJBT28yRHF0dER1dG5KeXZ1UGZxblBoZkE3Ly93N3NXUC8vMllrL1dLY1l6a2xLZzVVMnZGcXAxQ2JESmxWS3VNS2ZOMFBmQmt1ZHJsZmpjQXdLZFBuN0x1ZTFKT204QUFweG9nZ01QTUtGWklwVENreFBGNnpWOCtlblluUEROQXpKbVlFcmxXRUlkNnhhdEh2VWRFY2M1UnJKSnkyWHliTS8yWXorTDZiUE9BT1NIaktMQTVaRTVRWDFGVlJCd0c1RklaVW1KSW1WaU5zbnNXQWM2WWdmbmkzSnY0aHJLRjJJd2NZQmpWakZRTGZVNnN4c1FxRlVaemFOdjk1aHNCZU91dG56eGNIRjQ4OHQyTUtwNVVJZFhDV0FwakxzUlNHSEtoVDVWMXJ2UUZSaE15Y3Y4c0FLY2x1UFA2OSsrMjNmUklWWEU0MUhzT0Z2dTgvTXBORGkrK1NET2RReENLRlVyWkJpNlZXSTBSWVhUSzZBS2pxeVJYS2FadkE3L2JDZkREdXo4K0RxSGR2M3I5RnJQWlBqNDBxQWdoZUdiVENlY1A5dGhiN05GTlc0STNwSTVrTTRvVWl2ZFkwK0VtaGhJUVNlQXlMaXZkZk1HTm0zZnN3UWQvZnZaTWVPMzZhL3ZpQTAzVDBiWWRQalI0cndUdjZkcUcrYnhqTXB2UVRnT05HbElDVHBRaWdVWWJKbjVLYWlPcGpReXJBWlVlYjRGNVZTNmFjdVBXNi9iZzNwKytGTUx2SFJ3aTRsRWZ0c0hEWnFielN0c0dtcmJETngwK0JMd0hOWThQTGRvVi9NelFNV09yeVBoMHhZb2xtajIrQmliU0lzMkVwcDN3eGcvdTJtcjUyUy91MzN2dmYwcmlRelBCaWFMaVVRMklla1FWVVQxOWQrS3BUaW1BcXVBYklhZ25JTGhZR1AwS254VzNLa2dvK0NLSTcyaTZPZDFrem5TK3ovR25qOSsrY2V1N3YzMXc3NzN3WHdDaUFlY0VKNXVoQXpiVERXN1RXSENPVWlHbWlsUURMM1JOaTU5TWNlS0prcUN2VkxlaU9nVUorR2F6eitGb3V3bSthWEFpVkRQLzhvMDc5dUdETDg2RmQrSzNJNVZzZ3A0S3lHWmR0LzhBUXl4VVY3RTJvSjNEYThBMFVNUVlLNHpaeUdVald1cWJUUlpGc0JJQVI4bVovWnpJS2ZHdGF6ZnQ3My83d0FHSTJ3WjF6bjNlZWJjOTNFN1hwVlJTem93cEUzTWxGU2dtVkJOS05YSXhjcWxVNHpTYnFsdnpBUTBCSDFxYWRzcDB0cy9lNGh3WFhyaHNBUDhCWVduMGdWbnFMOG9BQUFBQVNVVk9SSzVDWUlJPSIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/c1dab0627c24bc6e1d559a0105f7fdc25e6979f0/1bc9a/img/containers/assets/reviews/david.png/de3e5c873741c3559186a658aba0aa9a.webp 204w, https://d33wubrfki0l68.cloudfront.net/d024499771e3de5eec1795ef39407b03bd5e39a9/1d421/img/containers/assets/reviews/david.png/5e2b40d82e1745445474b68583708c04.webp 244w, https://d33wubrfki0l68.cloudfront.net/4d5fab8ddaab75b7bc0561f68f6f735e57a427a7/ad457/img/containers/assets/reviews/david.png/0c2bd2a00a8b6ea3bb9c52ee83c48647.webp 292w, https://d33wubrfki0l68.cloudfront.net/e1f9e7e8ac4c447fd523c2f0c2d9a068421c660c/8883b/img/containers/assets/reviews/david.png/92e39dc24283204b60a93c62ba6f0c9f.webp 349w, https://d33wubrfki0l68.cloudfront.net/865dd44516ddce069fa0048350ddd4660424e23a/02b9e/img/containers/assets/reviews/david.png/2285909e5d7235bc0e9f918f01922fda.webp 418w, https://d33wubrfki0l68.cloudfront.net/9bd31e1d374df976b5e8d2434301430fbb92996d/1820e/img/containers/assets/reviews/david.png/6ccb66d63f6483d6b0379748c05468fa.webp 500w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFGM2tsRVFWUlloY1dYMzQ0ZFJ4R0h2NjdxbnBuelovZXMxM2JpV01ZNGptUEhCa1ZCSUs0Y2NZRWk4UVR3RHZBSVhIUEZEVnlFZDhndFQ0RFlQQUdLSUk1dGdvSUpDTWRLMW1mUG1lbnBQOFhGT2RrSW9maHM0a2lNVkZLUE5GMzFxYXI3VnpYT3pQaC9QdjdyYnJ4eDljcmRKdmdqQjFRenhseisrUENqUnovNnFuN2NWODNBdHk5ZnNvTzlPZnZ6R1pPMndUbklwYkR1SThmTEpjZkxGZjk0L01SOTR3QlhMMSs2ZTdBM1B6clltek9mVHVpYUJxK0NZZVNVR0dKazFROHMxejNMVmM5Skg5LzgxeWRQM3QzbDk4d2x1SGh1Y1hUcHdubm0wNDRtQkZRRWdGb0t5VG1jR1ZoRmdDQ0NjKzRJMkptSk13RzhjZnRWdS9yU0MxdzRXREJwRzBTVVdvMWFLemtuQklOYXNPS2hxWUJSZ2V0WEx0dGZIMzM4VElpZEFOLzd6dTJmWDd2eUVwY3ZuR014bTlHRWdCbWtVa2hqSmlVaE9ZZGlpRlVFUXdEdlBhSHBlTzNWVjk1NS8vN0RuMzF0Z1BtcysvV0w1OC94NHZsREZ2TXBqVytvMVloalpvaVJNVWJTR0JtRHAvZktXZ1d2U3FqZ1cwZENMajFYQmhyVjZkNTB3dUZpajhQRmdxNXBNWU1ZRThNd0VJZUJNVWJpTUxEdUc1WmVVZTJSVktqWjhDcS9mQzRBcjhLa2JkaWJ6VGpZMzJmYVRRQWhqWm40T2NBdzBQZHJUcnppTUVvMXhqcGc0MGhLNlZmQWwrckRUZ0FWb1FtQnJtM28ycGF1bStDYzBJWkNxNTdSZXdaVkZLaDVVNVlUSHhFaU1VWldxOVh6WlVCRjhPb1I4WmdUaW9FWW1EbWMrOEp3RG5NT1JCQVJ3TWpqeVBzUFAzeW1Gc2h1QUVWVndRbTVHTU9ZNkdPa0h3YUdyYTJIZ1hXTXhKekp4VEJBbmFQMXl1MXJWOTU1UGdCVmdvYk4zVGRJS1JOalpCaDYxdXMxeTlXSzVXckZxdThaWWlMWGdnTzhDSlBnYVZWLytsd0F3U3R0RTJoRElJaWdEcWlWbWpQakdCbjZucjd2aVRGU1NnYmJ5SitLUTUxRGRtamhHVzZCcHdtZUxuZzY3Nm1sSXBLeHJmclZuS2c1UVMwYkFSS0hGN2ZWWUdOWHF6bURGQnNZQ0J2SFpvQ0REQWlHczQwcElPSkFIQUxVV3VqSHhEcU85Vm5lZDViZzZjbjZrK1BsQ2VNNFlqbER5VmdwVUFzYkdrTzJBT28yRHF0dER1dG5KeXZ1UGZxblBoZkE3Ly93N3NXUC8vMllrL1dLY1l6a2xLZzVVMnZGcXAxQ2JESmxWS3VNS2ZOMFBmQmt1ZHJsZmpjQXdLZFBuN0x1ZTFKT204QUFweG9nZ01QTUtGWklwVENreFBGNnpWOCtlblluUEROQXpKbVlFcmxXRUlkNnhhdEh2VWRFY2M1UnJKSnkyWHliTS8yWXorTDZiUE9BT1NIaktMQTVaRTVRWDFGVlJCd0c1RklaVW1KSW1WaU5zbnNXQWM2WWdmbmkzSnY0aHJLRjJJd2NZQmpWakZRTGZVNnN4c1FxRlVaemFOdjk1aHNCZU91dG56eGNIRjQ4OHQyTUtwNVVJZFhDV0FwakxzUlNHSEtoVDVWMXJ2UUZSaE15Y3Y4c0FLY2x1UFA2OSsrMjNmUklWWEU0MUhzT0Z2dTgvTXBORGkrK1NET2RReENLRlVyWkJpNlZXSTBSWVhUSzZBS2pxeVJYS2FadkE3L2JDZkREdXo4K0RxSGR2M3I5RnJQWlBqNDBxQWdoZUdiVENlY1A5dGhiN05GTlc0STNwSTVrTTRvVWl2ZFkwK0VtaGhJUVNlQXlMaXZkZk1HTm0zZnN3UWQvZnZaTWVPMzZhL3ZpQTAzVDBiWWRQalI0cndUdjZkcUcrYnhqTXB2UVRnT05HbElDVHBRaWdVWWJKbjVLYWlPcGpReXJBWlVlYjRGNVZTNmFjdVBXNi9iZzNwKytGTUx2SFJ3aTRsRWZ0c0hEWnFielN0c0dtcmJETngwK0JMd0hOWThQTGRvVi9NelFNV09yeVBoMHhZb2xtajIrQmliU0lzMkVwcDN3eGcvdTJtcjUyUy91MzN2dmYwcmlRelBCaWFMaVVRMklla1FWVVQxOWQrS3BUaW1BcXVBYklhZ25JTGhZR1AwS254VzNLa2dvK0NLSTcyaTZPZDFrem5TK3ovR25qOSsrY2V1N3YzMXc3NzN3WHdDaUFlY0VKNXVoQXpiVERXN1RXSENPVWlHbWlsUURMM1JOaTU5TWNlS0prcUN2VkxlaU9nVUorR2F6eitGb3V3bSthWEFpVkRQLzhvMDc5dUdETDg2RmQrSzNJNVZzZ3A0S3lHWmR0LzhBUXl4VVY3RTJvSjNEYThBMFVNUVlLNHpaeUdVald1cWJUUlpGc0JJQVI4bVovWnpJS2ZHdGF6ZnQ3My83d0FHSTJ3WjF6bjNlZWJjOTNFN1hwVlJTem93cEUzTWxGU2dtVkJOS05YSXhjcWxVNHpTYnFsdnpBUTBCSDFxYWRzcDB0cy9lNGh3WFhyaHNBUDhCWVduMGdWbnFMOG9BQUFBQVNVVk9SSzVDWUlJPSIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/3de59632638f05e4df611cf0a8edb1f65fd5e181/90a4e/img/containers/assets/reviews/david.png/b514d9772cc18a74dd30d5b30891b7fc.png 204w, https://d33wubrfki0l68.cloudfront.net/9b0ec034e7b922133e00580bfe728df9bd16c5b2/f6aaa/img/containers/assets/reviews/david.png/69824fcbe06fecb3e83cb9e75e04d3f0.png 244w, https://d33wubrfki0l68.cloudfront.net/eeddfba3e068d15c7fe3057b83cbf449c17f2d6c/77f45/img/containers/assets/reviews/david.png/e23581fccb3321db248208f9b95f7908.png 292w, https://d33wubrfki0l68.cloudfront.net/e5be15a7097c74e67ce7464140bed140a26c4a9c/4bbf4/img/containers/assets/reviews/david.png/d020c12492e80d11e7945450027d4295.png 349w, https://d33wubrfki0l68.cloudfront.net/b8ebc5a0b46c4c4b836aa1b18174469db34889b9/4c4b6/img/containers/assets/reviews/david.png/b15901123bfceec7036ce8097a9d2d8c.png 418w, https://d33wubrfki0l68.cloudfront.net/786a4223b318b7397601394218de06effcb446c6/33cb7/img/containers/assets/reviews/david.png/ca0256759d77cdfb22dda2820dc993f9.png 500w"
+             sizes="1px"         >
+    
+    <img
+        class="rounded-full w-24 border-white bg-purple-300 border-4 mx-auto absolute left-0 right-0 -top-10"
+        src="https://d33wubrfki0l68.cloudfront.net/8610df6bfd149b979bf90062c45bae110b903f05/692e2/assets/reviews/david.png"
+                alt="david.png"
+                 width="500"          height="500"                 data-statamic-responsive-images
+            >
+</picture>
+
+                <picture>
+    
+    <img
+        class="w-10 mx-auto"
+        src="https://d33wubrfki0l68.cloudfront.net/ddc7dbebac8dc6b6e66095027e4334c224d352af/4499c/assets/site/quote.svg"
+                alt="quote.svg"
+                 width="32"          height="32"             >
+</picture>
+
+                <p class="mb-8 flex-grow">Creative, professional, and reliable. A keen eye for design, both in form and function. Very highly recommended!</p>
+                <p class="font-bold text-grey-900">David Robinson</p>
+                <a href="https://www.westminsterchapel.ca" target="_blank" class="flex justify-center items-center text-grey-600 stroke-grey-300 hover:stroke-grey-900 hover:underline hover:decoration-grey-900 hover:text-grey-900">
+                    <p class="text-sm mr-1.5 text-current">westminsterchapel.ca</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10" class="w-3 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.50002 4.5L0.800021 6.205C0.412363 6.59249 0.412363 7.24051 0.800021 7.628L2.37202 9.205C2.75951 9.59266 3.40753 9.59266 3.79502 9.205L5.50002 7.5"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.50002L9.205 3.80002C9.591 3.41418 9.59458 2.76648 9.205 2.37702L7.628 0.800021C7.24051 0.412363 6.59249 0.412363 6.205 0.800021L4.5 2.50002"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 6.5L6.5 3.5"></path>
+                    </svg>
+                </a>
+            </div>
+
+            
+            <div class="bg-white text-center relative py-12 px-10 pt-16 rounded-xl flex flex-col">
+                <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFHVzBsRVFWUlloY1dYelk5ZlpSWEhQK2M1ejNQdmI2YlQwbmFHS2FWQWE5SElpd2tWaVN2VUZhWW1vSkVZWWtUMmhzU1ZmNHV1VEZ5d3drQWFFaGZHYUtLQ2tVVU54SmZJUXQ2cUZwQU9URHZ6Ky8zdWZWN09jWEVIRmtxbnRaandKSGR6azN2TzU1ejdQUytQdUR1ZjVBbWZxSGNnZnB5UHYzWDJxdzhlT1hqdytaUVN6UnBiMjVjWHovejhGd2YrRnh0eUk3L2c4VWUrOXZSdG01dVBuVHgrbk0zMW84ejZudHFNUzl2YnZQYjNmL0xYMTE3bjNDOS9KZjkzZ01lLy9zaURKMi9aZlA3T1c0OXpZdU1vUnc2dXNiYTZTa29kRGl6R3pOYVZLN3o2ajR1OCtNYy84Wk56ejEwVDRyb0J2dmZFZDE4OTg1bFBuejYxZVRNYnF6MXJYV0lsUmJxVWlERkJDRlNIWmExYzJ0bmhsVGN1OE5zL3ZNU1BuejIzTDhSMWFlQTdqMzd6NlFlL2NQL3B1MCtkWW1PbFo4VXJ5U3NKSTFsRExTQkI2RlRwWTA4WEl4b0NwVldlK01iRHYzbnF1Wjk5NVdNQnJLMnNQclo1ZEoxREIxYnBCQ1NQZU1rWTROSEFwM0tTS0lRWU9kQW5ObTQ2eEtuang5azRjdVRMSHpzREdnSkJoRlliMlFwMVdLSWxUekNkSVlDSUVDUWdJUkJEWkNVbERoODh5TEgxOVgxdFgxY2ZXSm4xdEZxWXozZTVzclBEbGQxZGRoZHo1c09TNVRBd2pDTjVIQ2s1MDByQldrTWxzTGE2eWgwblR2RHRSeDYrcXRDdW1ZRnZuRDM3NUFQMzNFMGVCaTYzaXBZUkxTTTl4aXhHY2pWbTFlaHJJN1ZHTWtNQnVwNis2N2g1ZlozTm16ZXVhdithQURldHJQeGdwb0ZoWjRmbWpWQUx5WTFlQTJOS0xFdWo3d3A5enZTNTBKZEtaMFpFYUJwUlZWSk1OdzRROG5pNnplY3M4a2l3TmptUENpbmg1dVJtREtYUzVjcXNOR2JObVJGSUtGbVZ4VERRek95R0FCNDZjOStUZDk5K0c3NjdROVpBeElrcEVzSU1GUUVFTTZkaWlCaEJEYTBOTFpVMkR1eFU0NjIzMzJGcisvTDNid2lnRS9uaGlnaVNSd2hDaUVwS2tWNER2VWFpS3I2bi9LUktGeU5KSXlxQ2xjWmlaNGNMYjc3SlU4ODg4Nk1iQWhBUkV5Y0VjMklRa2dncENKMEV1aUJvQ0RpQ3lOU0Vaakd5MmtXU0t0bU1PcDl6ZVd0clB4ZjdBN1NndXdVT3VRUTA2TlFQRUhESFdnTUVSQWdvNGtZVTZFSWdCcUhtU2gwRzhuTFlGK0NxZmVET0U3ZTdpeDRhbTFIZE1abWNHVTVwbFZ3TFl4NFo4MGpPbVZZTGJnM2NvRlhHY2VDOTdXM2UzZDYrTnNESms2ZjlzM2ZkKzlJSEwwOGN1OVVQcks3aENNdFNXZFpLYm8xcVJqV2pXSnNBeXZTVVdtbk5hR1kwYTVSYTJSbVdYTmk2eExPL2YzSC9ZWFR2UGZmNUxjZU9FMU02Yy8vbnYrakRjc0hodzBmcG90TE1XSTZaUmFmTUFzUUFxZ0UxaGRZUWNVUUNFZkE5TjJaRzlzcmx4Wngzcmx6Wk4zcUF1SDUwblpRU3FwRStkWXhkVHg1SHBGVnFNNFpjbUEvS1RJV2tRb3FCYUpFUWxDQVFQdFNISWlIUWNPWjU1SzN0YlM1dXZYZHRnSlYrUnBCSkNzWTBVSUlJanRETUdXcGxrVE1yVWVoVVNGRkp5WWdSVkpRWUl5a2x1cFJRVlVvejNwOHZlUDJkZjNIdWQvdW5IeUQycVFPSGFoWE1jWnZHSzBCekdHdGxQanA5Y0ZLQUdKVzR0NFNrS01RWTZidEVTdE5Tc3F5RmkrOXY4N2VMYjE4emVvQTQ2MmFZRzFLZ2hvb3dRVHVDdVZHYXM4aEdFa2NGUWdoVCtrTWt4VzRxUTFVSWdXTE96cEI1ZTN1WG4vNzZoZXZhQ1dQZmRUUXpjS2RvUVRVZ0lvaE1FTldOc1JxN2JzamUrbVlBRWxDTmRIM1ByRFlvaFZvcTc4OEhpaXVQUG5UV0w3eDc2VXZuWHo3L3dyNEFHaFFRb2thaXhnOGJEaDdBSGN5cFppenJWT1B1Um5NSEVVUVZUUWtMQWMyWm9UcmJ5NUhtZ1dQcm14RDc1eDg0ODBBOS8vTDVxNDdENk82VEkvWVVyVXBReFhIRUhaR3A4OVZtTEszaE9DNkNhQ1RFRGpReXI1VkdZSkVyaTJLTUptaFFEcThkWXR3bzhkNjdQdmZxWDE3NTg1MGZDZEJhdy9jaWc4bWhCb1VwU0lJYmlPQTR6U3BqYzBKdHhGS0k0MGliSzJFNU10VEdjcXdVQjQwOXNac2hJcXgwUFFkV1ZrOWZOUU90VmN5ZDFnemJ5NFFFUVZHQ0NDcEFVRHdJclJiTUd3VmxXUjNObGV4THFqbkxNVE9XaGdSbDFodWRnWWVBTmFQdmVrN2Q4U2wvNDhMci95WE0yTXd3TTFxcm1EWGNwKzRtd2RHZ3hDQklqQkFqclJWc0QzZzB3WVpLR0J1NVZzYWNhZVowcVVOQ3dvTmlJcFRXVUZYNnJ0OG5BMmJVVm1tdFllN1RsaHNtUGFncUdnVGNpQzFSYTZYV1NyYkdPRmFzVFhPaDFvSktJSVJJTllOYWFRakZHdTVNbDVlUE9NSDJCa2hyN2NOeS9FQ1FJUVNDVGlBeEpXTFhvYWxETk5KY0dJdXhHQXZMSVpOTG81bmpUQ2FhKzJUWERCQzZic1p0Sis1WS9pZkF2d0YrMFhjcm5IZkVqUUFBQUFCSlJVNUVya0pnZ2c9PSIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/0e72a2f69559b08ddee7ba6f68ec12b2c2a7f20a/3e5e4/img/containers/assets/reviews/darren.png/e8d6baf5030ee48f855a4569b959b221.webp 85w, https://d33wubrfki0l68.cloudfront.net/ad97d119ba116cf2f0b0d7ae6daff286ce3ce837/dabca/img/containers/assets/reviews/darren.png/7438ef6cafe46a2b35eb463718cbcd7f.webp 102w, https://d33wubrfki0l68.cloudfront.net/3b5cb8ca54506722539f59f58984487cc3c53de4/b81ae/img/containers/assets/reviews/darren.png/4d0ea76db27bccf53889643092f07ad4.webp 122w, https://d33wubrfki0l68.cloudfront.net/e781ac2f085d9f4cf1b707f2547e7b56072c8d32/a64a6/img/containers/assets/reviews/darren.png/5419b12e2948ce217555f83a29ab9231.webp 146w, https://d33wubrfki0l68.cloudfront.net/216fa5045ff671ad55b19b619179b93215e89cfe/137ad/img/containers/assets/reviews/darren.png/1eb1372c74eb4913e0c159bf42d0fa5f.webp 175w, https://d33wubrfki0l68.cloudfront.net/ee2e93ff417131f07aedd08cf8704cb02b98eb42/0bf64/img/containers/assets/reviews/darren.png/abd95e109fdb3a3183dd77e8d2444a46.webp 209w, https://d33wubrfki0l68.cloudfront.net/3cf1910edbb3734493729de6ff0889467e3d9626/05086/img/containers/assets/reviews/darren.png/e2b59e6e256184cbee1467cf566a870c.webp 250w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDMyIj4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBZ0NBWUFBQUJ6ZW5yMEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFHVzBsRVFWUlloY1dYelk5ZlpSWEhQK2M1ejNQdmI2YlQwbmFHS2FWQWE5SElpd2tWaVN2VUZhWW1vSkVZWWtUMmhzU1ZmNHV1VEZ5d3drQWFFaGZHYUtLQ2tVVU54SmZJUXQ2cUZwQU9URHZ6Ky8zdWZWN09jWEVIRmtxbnRaandKSGR6azN2TzU1ejdQUytQdUR1ZjVBbWZxSGNnZnB5UHYzWDJxdzhlT1hqdytaUVN6UnBiMjVjWHovejhGd2YrRnh0eUk3L2c4VWUrOXZSdG01dVBuVHgrbk0zMW84ejZudHFNUzl2YnZQYjNmL0xYMTE3bjNDOS9KZjkzZ01lLy9zaURKMi9aZlA3T1c0OXpZdU1vUnc2dXNiYTZTa29kRGl6R3pOYVZLN3o2ajR1OCtNYy84Wk56ejEwVDRyb0J2dmZFZDE4OTg1bFBuejYxZVRNYnF6MXJYV0lsUmJxVWlERkJDRlNIWmExYzJ0bmhsVGN1OE5zL3ZNU1BuejIzTDhSMWFlQTdqMzd6NlFlL2NQL3B1MCtkWW1PbFo4VXJ5U3NKSTFsRExTQkI2RlRwWTA4WEl4b0NwVldlK01iRHYzbnF1Wjk5NVdNQnJLMnNQclo1ZEoxREIxYnBCQ1NQZU1rWTROSEFwM0tTS0lRWU9kQW5ObTQ2eEtuang5azRjdVRMSHpzREdnSkJoRlliMlFwMVdLSWxUekNkSVlDSUVDUWdJUkJEWkNVbERoODh5TEgxOVgxdFgxY2ZXSm4xdEZxWXozZTVzclBEbGQxZGRoZHo1c09TNVRBd2pDTjVIQ2s1MDByQldrTWxzTGE2eWgwblR2RHRSeDYrcXRDdW1ZRnZuRDM3NUFQMzNFMGVCaTYzaXBZUkxTTTl4aXhHY2pWbTFlaHJJN1ZHTWtNQnVwNis2N2g1ZlozTm16ZXVhdithQURldHJQeGdwb0ZoWjRmbWpWQUx5WTFlQTJOS0xFdWo3d3A5enZTNTBKZEtaMFpFYUJwUlZWSk1OdzRROG5pNnplY3M4a2l3TmptUENpbmg1dVJtREtYUzVjcXNOR2JObVJGSUtGbVZ4VERRek95R0FCNDZjOStUZDk5K0c3NjdROVpBeElrcEVzSU1GUUVFTTZkaWlCaEJEYTBOTFpVMkR1eFU0NjIzMzJGcisvTDNid2lnRS9uaGlnaVNSd2hDaUVwS2tWNER2VWFpS3I2bi9LUktGeU5KSXlxQ2xjWmlaNGNMYjc3SlU4ODg4Nk1iQWhBUkV5Y0VjMklRa2dncENKMEV1aUJvQ0RpQ3lOU0Vaakd5MmtXU0t0bU1PcDl6ZVd0clB4ZjdBN1NndXdVT3VRUTA2TlFQRUhESFdnTUVSQWdvNGtZVTZFSWdCcUhtU2gwRzhuTFlGK0NxZmVET0U3ZTdpeDRhbTFIZE1abWNHVTVwbFZ3TFl4NFo4MGpPbVZZTGJnM2NvRlhHY2VDOTdXM2UzZDYrTnNESms2ZjlzM2ZkKzlJSEwwOGN1OVVQcks3aENNdFNXZFpLYm8xcVJqV2pXSnNBeXZTVVdtbk5hR1kwYTVSYTJSbVdYTmk2eExPL2YzSC9ZWFR2UGZmNUxjZU9FMU02Yy8vbnYrakRjc0hodzBmcG90TE1XSTZaUmFmTUFzUUFxZ0UxaGRZUWNVUUNFZkE5TjJaRzlzcmx4Wngzcmx6Wk4zcUF1SDUwblpRU3FwRStkWXhkVHg1SHBGVnFNNFpjbUEvS1RJV2tRb3FCYUpFUWxDQVFQdFNISWlIUWNPWjU1SzN0YlM1dXZYZHRnSlYrUnBCSkNzWTBVSUlJanRETUdXcGxrVE1yVWVoVVNGRkp5WWdSVkpRWUl5a2x1cFJRVlVvejNwOHZlUDJkZjNIdWQvdW5IeUQycVFPSGFoWE1jWnZHSzBCekdHdGxQanA5Y0ZLQUdKVzR0NFNrS01RWTZidEVTdE5Tc3F5RmkrOXY4N2VMYjE4emVvQTQ2MmFZRzFLZ2hvb3dRVHVDdVZHYXM4aEdFa2NGUWdoVCtrTWt4VzRxUTFVSWdXTE96cEI1ZTN1WG4vNzZoZXZhQ1dQZmRUUXpjS2RvUVRVZ0lvaE1FTldOc1JxN2JzamUrbVlBRWxDTmRIM1ByRFlvaFZvcTc4OEhpaXVQUG5UV0w3eDc2VXZuWHo3L3dyNEFHaFFRb2thaXhnOGJEaDdBSGN5cFppenJWT1B1Um5NSEVVUVZUUWtMQWMyWm9UcmJ5NUhtZ1dQcm14RDc1eDg0ODBBOS8vTDVxNDdENk82VEkvWVVyVXBReFhIRUhaR3A4OVZtTEszaE9DNkNhQ1RFRGpReXI1VkdZSkVyaTJLTUptaFFEcThkWXR3bzhkNjdQdmZxWDE3NTg1MGZDZEJhdy9jaWc4bWhCb1VwU0lJYmlPQTR6U3BqYzBKdHhGS0k0MGliSzJFNU10VEdjcXdVQjQwOXNac2hJcXgwUFFkV1ZrOWZOUU90VmN5ZDFnemJ5NFFFUVZHQ0NDcEFVRHdJclJiTUd3VmxXUjNObGV4THFqbkxNVE9XaGdSbDFodWRnWWVBTmFQdmVrN2Q4U2wvNDhMci95WE0yTXd3TTFxcm1EWGNwKzRtd2RHZ3hDQklqQkFqclJWc0QzZzB3WVpLR0J1NVZzYWNhZVowcVVOQ3dvTmlJcFRXVUZYNnJ0OG5BMmJVVm1tdFllN1RsaHNtUGFncUdnVGNpQzFSYTZYV1NyYkdPRmFzVFhPaDFvSktJSVJJTllOYWFRakZHdTVNbDVlUE9NSDJCa2hyN2NOeS9FQ1FJUVNDVGlBeEpXTFhvYWxETk5KY0dJdXhHQXZMSVpOTG81bmpUQ2FhKzJUWERCQzZic1p0Sis1WS9pZkF2d0YrMFhjcm5IZkVqUUFBQUFCSlJVNUVya0pnZ2c9PSIgLz4KPC9zdmc+Cg== 32w, https://d33wubrfki0l68.cloudfront.net/661319567598efda072a5143c3305a1e93c5f169/d86a2/img/containers/assets/reviews/darren.png/95361e210e8b2b86fe2ac033cb656ea0.png 85w, https://d33wubrfki0l68.cloudfront.net/b67a6f98ea89eba12aea829cb976a885958468c9/c9240/img/containers/assets/reviews/darren.png/eaeab0b9141006a172c9d787c995a1fb.png 102w, https://d33wubrfki0l68.cloudfront.net/85d55686834c09efa7f26223c426b680b7bc7026/7773f/img/containers/assets/reviews/darren.png/24045fcfd06f8c90540a523f77f883e6.png 122w, https://d33wubrfki0l68.cloudfront.net/29f28590edc94fc5bf533d4c7bca0711a876f65c/b62dc/img/containers/assets/reviews/darren.png/43d0489606e9ee240ce10a79ac943d15.png 146w, https://d33wubrfki0l68.cloudfront.net/1cddce58677c768dfbb34fa6faea1a86ee87a8a1/71ac5/img/containers/assets/reviews/darren.png/ef4be351dd239c08388e13959f302485.png 175w, https://d33wubrfki0l68.cloudfront.net/bcc09ca5620915ee01cd9a3a7e5c8dfece990533/ec052/img/containers/assets/reviews/darren.png/861dffcf7b4684a9a21c1657b3969552.png 209w, https://d33wubrfki0l68.cloudfront.net/eca05c2cddb61dac2b6d95a14385ab5ae3031f3e/c225c/img/containers/assets/reviews/darren.png/383fa622a0451e9826a5af18dbcdb78c.png 250w"
+             sizes="1px"         >
+    
+    <img
+        class="rounded-full w-24 border-white bg-yellow-300 border-4 mx-auto absolute left-0 right-0 -top-10"
+        src="https://d33wubrfki0l68.cloudfront.net/9e3606e69865209a668830b71ccadce066010743/d2002/assets/reviews/darren.png"
+                alt="darren.png"
+                 width="250"          height="250"                 data-statamic-responsive-images
+            >
+</picture>
+
+                <picture>
+    
+    <img
+        class="w-10 h-full mx-auto"
+        src="https://d33wubrfki0l68.cloudfront.net/ddc7dbebac8dc6b6e66095027e4334c224d352af/4499c/assets/site/quote.svg"
+                alt="quote.svg"
+                 width="32"          height="32"             >
+</picture>
+
+                <p class="mb-8 flex-grow">Michael was an absolute pleasure to work with. He listened to my website requirements, and designed a perfect site for us!</p>
+                <p class="font-bold text-grey-900">Darren Nickerson</p>
+                <a href="https://canada1carsales.ca/" target="_blank" class="flex justify-center items-center text-grey-600 stroke-grey-300 hover:stroke-grey-900 hover:underline hover:decoration-grey-900 hover:text-grey-900">
+                    <p class="text-sm mr-1.5 text-current">canada1carsales.ca</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10" class="w-3 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.50002 4.5L0.800021 6.205C0.412363 6.59249 0.412363 7.24051 0.800021 7.628L2.37202 9.205C2.75951 9.59266 3.40753 9.59266 3.79502 9.205L5.50002 7.5"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.50002L9.205 3.80002C9.591 3.41418 9.59458 2.76648 9.205 2.37702L7.628 0.800021C7.24051 0.412363 6.59249 0.412363 6.205 0.800021L4.5 2.50002"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 6.5L6.5 3.5"></path>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+        <a href="https://www.trustpilot.com/review/michaelmannucci.com" target="_blank" class="flex flex-col gap-2 items-center justify-center" data-aos="fade-up">
+            <p class="text-2xl font-bold text-[black]">Five stars</p>
+            <picture>
+    
+    <img
+        class="h-7"
+        src="https://d33wubrfki0l68.cloudfront.net/3acf4c5ca7d485b8d2c947cb79a3fdb392182d04/6be90/assets/site/tp-stars.svg"
+                alt="tp-stars.svg"
+                 width="2500"          height="469"             >
+</picture>
+
+            <p class="text-sm text-[black]">Based on <span class="underline">8 reviews</span></p>
+            <picture>
+    
+    <img
+        class="h-6"
+        src="https://d33wubrfki0l68.cloudfront.net/4847ebbde0fc6169fb03bd81887bc0d7021c1587/a14d3/assets/site/trustpilot.svg"
+                alt="trustpilot.svg"
+                 width="126"          height="31"             >
+</picture>
+
+        </a>
+    </div>
+</div>
+
+<div class="pt-16 pb-32 container">
+    <div data-aos="fade-up">
+        <h3 class="font-bold uppercase tracking-widest text-grey-600 text-center">Latest</h3>
+        <h2 class="title text-center mb-16">From the Blog</h2>
+    </div>
+    <div data-aos="fade-up">
+        <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                            <a href="/blog/3-tips-for-picking-the-right-web-designer" class="rounded-3xl overflow-hidden shadow-lg shadow-grey-500/40 hover:-translate-y-1 transition-transform duration-300">
+                    <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDE3Ij4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMTciIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBUkNBWUFBQUM4WEs3OEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFESjBsRVFWUklpWDJWMjI3Y1NBeEVEOWtYYVd3anlXYi8vei8yS1VEK2FEZDJScGZ1WnUzREtQWk03QWtGUVEyb1cxV3NJaW43OXYwZmNZU2tkODhRZE1FdXNVdDBCUjZpeEtCRVVQb2dqMGFOUm9sT1JwQ2NxQk85VEl3eUVaN0JEY3d2UUdZSG9wRzVFOUtGd0JpaWhWZ2xGb21tSUNtWUlxQjNySGR5My9IWUtOSElCTXFaNFVMSmtUTENFZWtqbFBzRWtJZ2hXaDhzZmZCakJNOFNPNklTUEkyQjlZNjNEZldWRkN1Wm5ZeFFGSEFST1dNcTJFV1hhMXc0Uk1odmVMclpJSWtSUVd1ZDg5NzRydzMrbFdpSUUwR0tRVzA3dFc5RUxHQXJXRWR1aENEVWtRWW9Ec1FEd3d3UUpyc2w4SzRPZ0FqUnhtRFpPeS9iem5NUHVnSlQwS0xUeDA2UGxlNGJyWFk4Z2FWTXBFSllSbVlFaGw0cHZJLzgwUnNkVjNENDN3Zm5yWEhlZHFJMXBoaTA2QXcxaHUrMGFiQlVwK1VKNVJsOHd0T0VXOFZJQ0wvcjlCK0xjQnlTYnpIWTlzWjJYbURkYUtQVENVWUtvb2hlbklVS2ZrTHBoUHRFOVVxeGdsdDZNL3htOVJFQlhTOENHRWlkaUU3MEhkWVZMU3VTVU0xNHFuaE5LQ2QyTDNSbXhFd2hnMldNUk1ZeDdCM3dIeFFRU0pnQzF5QkZKMGVuUm1lS2dSQTVKOHJEQStYcGtUcFhQQnQ3Tm5ZU2ttTnlpaTRwdkJhODdIMzZIeEg0dGNjUm1hQmFjSEx4bUl6SVRpZ3pUelA1MDJmeVg1L0o4M1Q0ZFZTOTNYYlQ2MjBmR1FENXB2MFE2TExOTWJJNVU4bzgxVXFiQSs5aWF3T3ZFK00wczgwbjl0T0pKRUZ2cEdpNE90bUM1RTZ5KzlMcllIV25DQTB6eDFOaHFzNGpoVUVCTDlpeXNabnhNZ1pzRzhPZGg1SXBPVlBOeVdTS0JRWGg3cGo3MitSRkZ5dXVhUHltd0pVUm5qQ01iSmxUcW9SZmVudkhPQzhyenk4dnZLd0x5K25FMzQrUGZIbDY0R211MUpRdkNpZ08xZTNJOVFLdWE0c3dNaEYzUkxvY1RzbXBEc0xvSXpodkt6dzN6aitlYWIzVHBvbnk5UXRQL2hVdm42aWxraXhkTXRWUkFOS3ZXWGhWSXBlSm1LUDNleTY4a25CQklaaE56SWpTRzV4L3N2MDhrMnBoOGFDZENzd1pTMER5TitEZkZOYk54eUhySG9GYm9uakVhenZXNkpTMjQvdDJtUlByekZqT2pIVm1KTWR5T2tTL040RGZJc2NZM0ovVVZ4R0JqMEZXVUJUa28wMDlETVpBdlJHdEVXMG5sSy8rK1I5bDlCYi9BL0lWR0FZS3htME5BQUFBQUVsRlRrU3VRbUNDIiAvPgo8L3N2Zz4K 32w, https://d33wubrfki0l68.cloudfront.net/eb6724593894a37534470712337623bfe4a5e570/bafe2/img/containers/assets/blog/business-owner-web-design-options.png/7c29f0b781e831051af71445786c0e31.webp 241w, https://d33wubrfki0l68.cloudfront.net/388e6462e3e1a7df376f51a5efd281b2b149a44a/d179d/img/containers/assets/blog/business-owner-web-design-options.png/4c5709e4b06e7ab500618a4daea59b1c.webp 288w, https://d33wubrfki0l68.cloudfront.net/9e1a346146593cd23be56ccfed0eed26e873232c/2894a/img/containers/assets/blog/business-owner-web-design-options.png/d367964f0f424fba30528378788a038f.webp 344w, https://d33wubrfki0l68.cloudfront.net/99c0d50e3aa7051a1e4f504d19f5e648444455ca/a7c28/img/containers/assets/blog/business-owner-web-design-options.png/84f1a9c841159eacb3983c53cd031876.webp 411w, https://d33wubrfki0l68.cloudfront.net/2f59a58ccceb37987893aff713816e84922214cb/8949b/img/containers/assets/blog/business-owner-web-design-options.png/c82474fd3e9c6d20c45fa0b5c7c4c60a.webp 491w, https://d33wubrfki0l68.cloudfront.net/85dd3c7119042261c9a62cd223ad353d38a2d663/a99ba/img/containers/assets/blog/business-owner-web-design-options.png/f175ff8f60f639d90dc7174a65c9659f.webp 587w, https://d33wubrfki0l68.cloudfront.net/1353785c1446b33ce70d120c15d2a7d7543a7272/634a8/img/containers/assets/blog/business-owner-web-design-options.png/659ae7011d99839000f38999c7eff72d.webp 702w, https://d33wubrfki0l68.cloudfront.net/71a60bc86a32439f771927fcebb65654b28fed7a/52364/img/containers/assets/blog/business-owner-web-design-options.png/76de81e525750435792712b1e597a03c.webp 839w, https://d33wubrfki0l68.cloudfront.net/9d4982c29c1699301fd9dfaac806c11a3c0b66d4/72b8b/img/containers/assets/blog/business-owner-web-design-options.png/6fcedfdf701a509d80a6cc01e20dce89.webp 1003w, https://d33wubrfki0l68.cloudfront.net/0db9e9241ccd717fd05a3d6153e2ccb906334bcc/5bd5c/img/containers/assets/blog/business-owner-web-design-options.png/7a9e3fb34ab1666487bf5badc2d4574e.webp 1200w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDE3Ij4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMTciIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBUkNBWUFBQUM4WEs3OEFBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFESjBsRVFWUklpWDJWMjI3Y1NBeEVEOWtYYVd3anlXYi8vei8yS1VEK2FEZDJScGZ1WnUzREtQWk03QWtGUVEyb1cxV3NJaW43OXYwZmNZU2tkODhRZE1FdXNVdDBCUjZpeEtCRVVQb2dqMGFOUm9sT1JwQ2NxQk85VEl3eUVaN0JEY3d2UUdZSG9wRzVFOUtGd0JpaWhWZ2xGb21tSUNtWUlxQjNySGR5My9IWUtOSElCTXFaNFVMSmtUTENFZWtqbFBzRWtJZ2hXaDhzZmZCakJNOFNPNklTUEkyQjlZNjNEZldWRkN1Wm5ZeFFGSEFST1dNcTJFV1hhMXc0Uk1odmVMclpJSWtSUVd1ZDg5NzRydzMrbFdpSUUwR0tRVzA3dFc5RUxHQXJXRWR1aENEVWtRWW9Ec1FEd3d3UUpyc2w4SzRPZ0FqUnhtRFpPeS9iem5NUHVnSlQwS0xUeDA2UGxlNGJyWFk4Z2FWTXBFSllSbVlFaGw0cHZJLzgwUnNkVjNENDN3Zm5yWEhlZHFJMXBoaTA2QXcxaHUrMGFiQlVwK1VKNVJsOHd0T0VXOFZJQ0wvcjlCK0xjQnlTYnpIWTlzWjJYbURkYUtQVENVWUtvb2hlbklVS2ZrTHBoUHRFOVVxeGdsdDZNL3htOVJFQlhTOENHRWlkaUU3MEhkWVZMU3VTVU0xNHFuaE5LQ2QyTDNSbXhFd2hnMldNUk1ZeDdCM3dIeFFRU0pnQzF5QkZKMGVuUm1lS2dSQTVKOHJEQStYcGtUcFhQQnQ3Tm5ZU2ttTnlpaTRwdkJhODdIMzZIeEg0dGNjUm1hQmFjSEx4bUl6SVRpZ3pUelA1MDJmeVg1L0o4M1Q0ZFZTOTNYYlQ2MjBmR1FENXB2MFE2TExOTWJJNVU4bzgxVXFiQSs5aWF3T3ZFK00wczgwbjl0T0pKRUZ2cEdpNE90bUM1RTZ5KzlMcllIV25DQTB6eDFOaHFzNGpoVUVCTDlpeXNabnhNZ1pzRzhPZGg1SXBPVlBOeVdTS0JRWGg3cGo3MitSRkZ5dXVhUHltd0pVUm5qQ01iSmxUcW9SZmVudkhPQzhyenk4dnZLd0x5K25FMzQrUGZIbDY0R211MUpRdkNpZ08xZTNJOVFLdWE0c3dNaEYzUkxvY1RzbXBEc0xvSXpodkt6dzN6aitlYWIzVHBvbnk5UXRQL2hVdm42aWxraXhkTXRWUkFOS3ZXWGhWSXBlSm1LUDNleTY4a25CQklaaE56SWpTRzV4L3N2MDhrMnBoOGFDZENzd1pTMER5TitEZkZOYk54eUhySG9GYm9uakVhenZXNkpTMjQvdDJtUlByekZqT2pIVm1KTWR5T2tTL040RGZJc2NZM0ovVVZ4R0JqMEZXVUJUa28wMDlETVpBdlJHdEVXMG5sSy8rK1I5bDlCYi9BL0lWR0FZS3htME5BQUFBQUVsRlRrU3VRbUNDIiAvPgo8L3N2Zz4K 32w, https://d33wubrfki0l68.cloudfront.net/e3c6b8867022a2367f64500b605f19d0b3c3e6b6/0d814/img/containers/assets/blog/business-owner-web-design-options.png/adeecc24d4bcc1e907306ea236449bf7.png 241w, https://d33wubrfki0l68.cloudfront.net/723c78a3b4c7a48354e9ba110d217868a7218e37/05950/img/containers/assets/blog/business-owner-web-design-options.png/e0878022c315a1d660c1e638ce2fe160.png 288w, https://d33wubrfki0l68.cloudfront.net/ddc36e7ddafa6c7b04db37ce11479d741ab6d644/28284/img/containers/assets/blog/business-owner-web-design-options.png/7dad7181568bf4d4b8a33e4ba8056a8e.png 344w, https://d33wubrfki0l68.cloudfront.net/4f3a0d3275ec2a423b47a94f1634de662dcd1d0a/6ea5e/img/containers/assets/blog/business-owner-web-design-options.png/339b48c4fea3001bc882a015db9c1239.png 411w, https://d33wubrfki0l68.cloudfront.net/459c3259f8e2f8a91a08d3664c41298e37f4bfc7/17edc/img/containers/assets/blog/business-owner-web-design-options.png/cd93b7fe6a611fc33d09f771c2756696.png 491w, https://d33wubrfki0l68.cloudfront.net/a2cd09c2a966a4c228e95556a63d586b87257a54/d1ac9/img/containers/assets/blog/business-owner-web-design-options.png/6fcac19156fbe99dfe3a0693131384a4.png 587w, https://d33wubrfki0l68.cloudfront.net/40eb0b9f39ec019372df90e6cb82703426e98db5/16fb1/img/containers/assets/blog/business-owner-web-design-options.png/f9cad971309cc0ce93457dfc8729e3af.png 702w, https://d33wubrfki0l68.cloudfront.net/5bef3e78ef21ae8b9414acdb381f8e5a2ba1f0d5/50c34/img/containers/assets/blog/business-owner-web-design-options.png/8696d9fac01700065c3edcad93893fd6.png 839w, https://d33wubrfki0l68.cloudfront.net/d826ffbbc05fde59db710d2dece65a178f1470fd/e15f0/img/containers/assets/blog/business-owner-web-design-options.png/67f90edf84a4bee8e2c5bb3a6c05e96c.png 1003w, https://d33wubrfki0l68.cloudfront.net/eed6a4cfafebf774b93f7fe244c1e3d90a374264/bcfa5/img/containers/assets/blog/business-owner-web-design-options.png/8dbf19b7a54ca4c5bc4775579cef16d1.png 1200w"
+             sizes="1px"         >
+    
+    <img
+        alt="Business owner facing a lot of web design options" class="h-52 w-full object-cover"
+        src="https://d33wubrfki0l68.cloudfront.net/bf5ef710b1529de52170740bcc8b331aab06c2ef/61822/assets/blog/business-owner-web-design-options.png"
+                 width="1200"          height="630"                 data-statamic-responsive-images
+            >
+</picture>
+
+                    <div class="bg-white p-8">
+                        <h1 class="font-bold text-2xl mb-2">3 Tips for Picking <span class="text-blue-900">The Right Web Designer</span></h1>
+                        <p class="text-base">January 23rd, 2023</p>
+                    </div>
+                </a>
+                            <a href="/blog/how-to-lazy-load-google-analytics" class="rounded-3xl overflow-hidden shadow-lg shadow-grey-500/40 hover:-translate-y-1 transition-transform duration-300">
+                    <picture>
+                                <source
+                type="image/webp"
+                 media=""                 srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDE4Ij4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMTgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBU0NBWUFBQUE2eU54U0FBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFDZUVsRVFWUklpY1dWNjI0Yk54U0V2em1IdTJzcmRxMjgvL3NWS0ZMVU1KTEc4YTdJeVE4eWttV3BTWW9HS0lHOWtjTXp3M05iL2ZGaTh6K093aS9tUDdlbTcySWxLTCtlOU9kV0FPeWpBTC9DK3NwRzRhdW51Y1QxMlIrZi9Oc29KenVEMkJWVHdXM01CU2o3UlF3U2QvazBqaUZVWUozV2p5YXZFTnVnOFZGT0tHTWZvSDBCUDBOYnV3Vk5FTGVnbS81K0ZIQ0F0dlVuR3JnSkt6R2ltYlAwa29aODZjdy81VVRlb0wxQWZjS0hSMXcvZ28xamg4cDdsQThRdSs2SlZsRjlodm9adFJkUTR0emgzTkUwVXdrT2h0YTZKeVJJaVF4Um9vdndPRW81ZWFxQlgzQjlvcTIvMDlZL2FiVkI3b201RWN1RXNpQVZxRi93K29TMngrNnhYR0RhWTVLcVlIT3lOdGdNdGdtSktZTUZDQW5wVkIrbktuREQzbkQ5bTdvK3NuMyt3S0ZXVkJxRmU2YmNrOXhpRG1qN0JNOS93Y3NINEF1YTdyQm1pRHNjQ3dlTHRjTGFURE9VNktRbGt1SnZPZkJXd0hDRm02aFZIQ3BzRzhoR00yU0RjRU90d2ZZTTYwZFlQNEVPRU1zSWVQZWxFT2l5QkRWdVYzS2daekdhY093ZzMrUFN3QlhLQStROXhFeFBvelo0c3MvRmpNczd5QnNVRTVsSmNUQUxKTk5zY29RZ28xdmdvZ3hSTng0TEtudGlNWk4rSTJwRHVhUE1lNks4NjRRS21HNmg3WEdaSVFQbU81anVVVm1JU0NZQ05TZzJkbzk3Q1NnUjE2cGdsSlVDdEtEeVFHcEIwMHBwaHBpSVhJaWNrUkphOWkwNWd6Y3NvYkpBM3NMQUpDUG1vNzhKQ0kwU2ZOT2pYdVZBZ0FyS0lHSW15bkMxTkJwUmpCZ21SSUZ5MDV2VmNYMWdKRFFFSEh2VW05anJsWW95WnNCR281TkplZHp0dDFrandIbXVmV0NFWHFmaHhXbmZtanIzd0JHdGE0OExRK2Q5VmxmZWZqd2tkUUhmMi9UUC83T2ZvYnFPT2Y4WlhmanAzOVA4bC9FVkgzVC83MVlKUUNBQUFBQUFTVVZPUks1Q1lJST0iIC8+Cjwvc3ZnPgo= 32w, https://d33wubrfki0l68.cloudfront.net/49049f805c2f4e8037f08e2f21752ae9db8f8efc/87226/img/containers/assets/blog/google-analytics.png/ab7a19fb6fbb6bce9b6060407bebe0df.webp 1440w"
+                 sizes="1px"             >
+        
+        <source
+             media=""             srcset="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHg9IjAiCiAgICAgeT0iMCIgdmlld0JveD0iMCAwIDMyIDE4Ij4KICAgIDxpbWFnZSB3aWR0aD0iMzIiIGhlaWdodD0iMTgiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQ0FBQUFBU0NBWUFBQUE2eU54U0FBQUFDWEJJV1hNQUFBN0VBQUFPeEFHVkt3NGJBQUFDZUVsRVFWUklpY1dWNjI0Yk54U0V2em1IdTJzcmRxMjgvL3NWS0ZMVU1KTEc4YTdJeVE4eWttV3BTWW9HS0lHOWtjTXp3M05iL2ZGaTh6K093aS9tUDdlbTcySWxLTCtlOU9kV0FPeWpBTC9DK3NwRzRhdW51Y1QxMlIrZi9Oc29KenVEMkJWVHdXM01CU2o3UlF3U2QvazBqaUZVWUozV2p5YXZFTnVnOFZGT0tHTWZvSDBCUDBOYnV3Vk5FTGVnbS81K0ZIQ0F0dlVuR3JnSkt6R2ltYlAwa29aODZjdy81VVRlb0wxQWZjS0hSMXcvZ28xamg4cDdsQThRdSs2SlZsRjlodm9adFJkUTR0emgzTkUwVXdrT2h0YTZKeVJJaVF4Um9vdndPRW81ZWFxQlgzQjlvcTIvMDlZL2FiVkI3b201RWN1RXNpQVZxRi93K29TMngrNnhYR0RhWTVLcVlIT3lOdGdNdGdtSktZTUZDQW5wVkIrbktuREQzbkQ5bTdvK3NuMyt3S0ZXVkJxRmU2YmNrOXhpRG1qN0JNOS93Y3NINEF1YTdyQm1pRHNjQ3dlTHRjTGFURE9VNktRbGt1SnZPZkJXd0hDRm02aFZIQ3BzRzhoR00yU0RjRU90d2ZZTTYwZFlQNEVPRU1zSWVQZWxFT2l5QkRWdVYzS2daekdhY093ZzMrUFN3QlhLQStROXhFeFBvelo0c3MvRmpNczd5QnNVRTVsSmNUQUxKTk5zY29RZ28xdmdvZ3hSTng0TEtudGlNWk4rSTJwRHVhUE1lNks4NjRRS21HNmg3WEdaSVFQbU81anVVVm1JU0NZQ05TZzJkbzk3Q1NnUjE2cGdsSlVDdEtEeVFHcEIwMHBwaHBpSVhJaWNrUkphOWkwNWd6Y3NvYkpBM3NMQUpDUG1vNzhKQ0kwU2ZOT2pYdVZBZ0FyS0lHSW15bkMxTkJwUmpCZ21SSUZ5MDV2VmNYMWdKRFFFSEh2VW05anJsWW95WnNCR281TkplZHp0dDFrandIbXVmV0NFWHFmaHhXbmZtanIzd0JHdGE0OExRK2Q5VmxmZWZqd2tkUUhmMi9UUC83T2ZvYnFPT2Y4WlhmanAzOVA4bC9FVkgzVC83MVlKUUNBQUFBQUFTVVZPUks1Q1lJST0iIC8+Cjwvc3ZnPgo= 32w, https://d33wubrfki0l68.cloudfront.net/dd1f9df4ef545358e180d121dae4f85e6649bbfc/2397f/img/containers/assets/blog/google-analytics.png/1dddf756b0487a5ad6b18630d5d4ed1b.png 1440w"
+             sizes="1px"         >
+    
+    <img
+        alt="" class="h-52 w-full object-cover"
+        src="https://d33wubrfki0l68.cloudfront.net/9ed59f6b1e823087c1159baa43e60f78f878a00a/f02af/assets/blog/google-analytics.png"
+                 width="1440"          height="810"                 data-statamic-responsive-images
+            >
+</picture>
+
+                    <div class="bg-white p-8">
+                        <h1 class="font-bold text-2xl mb-2">How To Lazy-load <span class="text-blue-900">Google Analytics</span></h1>
+                        <p class="text-base">November 30th, 2022</p>
+                    </div>
+                </a>
+            
+        </div>
+        <a href="/blog" class="w-full flex justify-end group">
+            <p class="group-hover:text-blue-900 mr-2">View all</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-3 fill-current group-hover:text-blue-900"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </a>
+    </div>
+</div>
+
+<div id="connect" class="container" data-aos="fade-up">
+    <div class="bg-blue-300 rounded-3xl py-24 lg:pt-24 lg:pb-12 px-12">
+        <div class="text-center">
+            <h3 class="font-bold uppercase tracking-widest text-grey-600 mb-4">Contact Me</h3>
+            <h2 class="title text-4xl">Got a Project? Lets Talk!</h2>
+            <div class="flex flex-col sm:flex-row justify-center items-center mt-12">
+                <picture>
+    
+    <img
+        class="w-12 mr-4"
+        src="https://d33wubrfki0l68.cloudfront.net/08410ce2cf34f129b7fd89cada11458fb69836bb/584bd/assets/site/mail.svg"
+                alt="mail.svg"
+                 width="48"          height="48"             >
+</picture>
+
+                <a href="mailto:contact@michaelmannucci.com?subject=Wanted to chat about..." class="text-xl sm:text-3xl text-grey-600 font-bold tracking-tight hover:underline">contact@michaelmannucci.com</a>
+            </div>
+        </div>
+        <div class="hidden lg:flex justify-between items-center mt-24">
+            <a href="/" class="flex-grow text-3xl">👋</a>
+            <div class="flex gap-12 font-bold items-center">
+                <a href="#services" class="link">Services</a>
+                <a href="#portfolio" class="link">Portfolio</a>
+                <a href="#testimonials" class="link">Testimonials</a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="container py-12 text-center">
+    <p class="text-base text-grey-600">© 2023 Michael Mannucci. All rights reserved.</p
+</div>
+        </div>
+        <script src="/js/site.js?id=447a820b88fc654e792428720bac01b7"></script>
+
+        <!-- Google Analytics load on scroll -->
+        <script>
+            function analyticsOnScroll() {
+                var head = document.getElementsByTagName('head')[0]
+                var script = document.createElement('script')
+                script.type = 'text/javascript';
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-3HHV1G02B4'
+                head.appendChild(script);
+            
+                document.removeEventListener('scroll', analyticsOnScroll);
+            };
+            
+            document.addEventListener('scroll', analyticsOnScroll);
+        </script>
+        
+        <!-- Google tag (gtag.js) -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-3HHV1G02B4');
+        </script>
+    </body>
+</html>
